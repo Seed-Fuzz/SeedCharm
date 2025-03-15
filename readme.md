@@ -1,6 +1,6 @@
 # 🎯SeedCharm: Intelligent LLM-driven Seed Generation for Smart Contract Fuzzing 
-## ⛄Introduction
-#### Hi! Welcome to this place! This repository provides the code or the data which will be used in our paper. It contains  
+## 👋Introduction
+#### Hi! Welcome to this place! This repository provides the code and the data which will be used in our paper. It contains  
     1. chars verifying
     2. reduction verifying
     3. LSeedSmartian's coverage/bugs count 
@@ -29,9 +29,9 @@
     ```  
 
 ### 🎁Method2: use the llm generated seed
-#### In order to avoid the randomness, we provide the seed that the llm generated, which has already be transferred into the Smartian seed format.The seeds are in the directory.
+#### In order to avoid the randomness, we provide the seed of `D1` that the llm generated, which has already be transferred into the Smartian seed format.The seeds are in the directory `seed`. And the `seed_withoutR` in the `dataset_project` is the `seed` of `D2` without reduction, the `seed_withR` is the `seed` of `D2` with reduction. NOTICE: When you want to use seed we provide, you should put the directory in the `dataset_project`, and rename it to `seed`.
 
-## 👋Verifying the chars or lines of our dataset 
+## ⛄Verifying the chars or lines of our dataset 
     ```bash
         $ cd calc_chars_lines
         $ python deal_call_dataset_lines.py -dataset D1/D2
@@ -70,4 +70,4 @@
     ./calc_chars_lines/Web3Bugs_file.txt
 
 ## 👉Result :
-    
+#### We have also provide the example result which the llm generates in the directory `examples`.
