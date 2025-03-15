@@ -1,0 +1,4969 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "EnumerableSetUpgradeable": {
+        "src": "contracts/solidity/util/EnumerableMapUpgradeable.sol:29",
+        "version": {
+          "withMetadata": "79ae17b26735b2be1ffe571fd3a29790e20a5f1a260cd97b45cbefee27bccce5",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "SafeMath": {
+        "src": "contracts/solidity/testing/SafeMath.sol:18",
+        "version": {
+          "withMetadata": "6a4398bbcd50624496f0108587997f702db034b98de9653d7f06bd36e1782371",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "EnumerableMap": {
+        "src": "contracts/solidity/testing/EnumerableMap.sol:31",
+        "version": {
+          "withMetadata": "d7d1628237cb819d1551df86843be27ce22c8f1c55f17e3008fa41c6d33cd85a",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "EnumerableSet"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "EnumerableSet": {
+        "src": "contracts/solidity/testing/EnumerableSet.sol:29",
+        "version": {
+          "withMetadata": "552e1eeb6805e5aa49f2e36d72ff67a7c583a7bfb01d420ccd053f45a4701325",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "DummyToken": {
+        "src": "contracts/solidity/testing/DummyToken.sol:5",
+        "version": {
+          "withMetadata": "4dc2adb15fb37ee2cc68f28e27b1b00c4ac2c49c9ff012a5786d7b6509625215",
+          "withoutMetadata": "0dba8823a078ecbe985f050b93e0c9471a362a1945b06e98cb1c13168e227c1b",
+          "linkedWithoutMetadata": "0dba8823a078ecbe985f050b93e0c9471a362a1945b06e98cb1c13168e227c1b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "(string,string)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "DummyToken",
+            "src": "contracts/solidity/testing/DummyToken.sol:10"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "decimals",
+            "src": "contracts/solidity/testing/DummyToken.sol:8"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "DummyToken",
+              "label": "name",
+              "type": "t_string_storage",
+              "src": "contracts/solidity/testing/DummyToken.sol:6"
+            },
+            {
+              "contract": "DummyToken",
+              "label": "symbol",
+              "type": "t_string_storage",
+              "src": "contracts/solidity/testing/DummyToken.sol:7"
+            },
+            {
+              "contract": "DummyToken",
+              "label": "decimals",
+              "type": "t_uint8",
+              "src": "contracts/solidity/testing/DummyToken.sol:8"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "CryptoPunksMarket": {
+        "src": "contracts/solidity/testing/CryptoPunks.sol:6",
+        "version": {
+          "withMetadata": "3d4ad5c3dc806bcb39a1cb2c4ecf060fb06a1448272255d2f1919e3b4c9d5f62",
+          "withoutMetadata": "3d4ad5c3dc806bcb39a1cb2c4ecf060fb06a1448272255d2f1919e3b4c9d5f62",
+          "linkedWithoutMetadata": "3d4ad5c3dc806bcb39a1cb2c4ecf060fb06a1448272255d2f1919e3b4c9d5f62"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "setInitialOwner(address,uint256)",
+          "setInitialOwners(address[],uint256[])",
+          "allInitialOwnersAssigned()",
+          "getPunk(uint256)",
+          "transferPunk(address,uint256)",
+          "punkNoLongerForSale(uint256)",
+          "offerPunkForSale(uint256,uint256)",
+          "offerPunkForSaleToAddress(uint256,uint256,address)",
+          "buyPunk(uint256)",
+          "withdraw()",
+          "enterBidForPunk(uint256)",
+          "acceptBidForPunk(uint256,uint256)",
+          "withdrawBidForPunk(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "CryptoPunksMarket",
+            "src": "contracts/solidity/testing/CryptoPunks.sol:63"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "imageHash",
+            "src": "contracts/solidity/testing/CryptoPunks.sol:9"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "standard",
+            "src": "contracts/solidity/testing/CryptoPunks.sol:13"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "nextPunkIndexToAssign",
+            "src": "contracts/solidity/testing/CryptoPunks.sol:19"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "allPunksAssigned",
+            "src": "contracts/solidity/testing/CryptoPunks.sol:21"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "punksRemainingToAssign",
+            "src": "contracts/solidity/testing/CryptoPunks.sol:22"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "imageHash",
+              "type": "t_string_storage",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:9"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "owner",
+              "type": "t_address",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:11"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "standard",
+              "type": "t_string_storage",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:13"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "name",
+              "type": "t_string_storage",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:14"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "symbol",
+              "type": "t_string_storage",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:15"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "decimals",
+              "type": "t_uint8",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:16"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "totalSupply",
+              "type": "t_uint256",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:17"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "nextPunkIndexToAssign",
+              "type": "t_uint256",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:19"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "allPunksAssigned",
+              "type": "t_bool",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:21"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "punksRemainingToAssign",
+              "type": "t_uint256",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:22"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "punkIndexToAddress",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:25"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "balanceOf",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:28"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "punksOfferedForSale",
+              "type": "t_mapping(t_uint256,t_struct(Offer)45_storage)",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:46"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "punkBids",
+              "type": "t_mapping(t_uint256,t_struct(Bid)54_storage)",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:49"
+            },
+            {
+              "contract": "CryptoPunksMarket",
+              "label": "pendingWithdrawals",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/solidity/testing/CryptoPunks.sol:51"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_uint256,t_address)": {
+              "label": "mapping(uint256 => address)"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_mapping(t_uint256,t_struct(Offer)45_storage)": {
+              "label": "mapping(uint256 => struct CryptoPunksMarket.Offer)"
+            },
+            "t_struct(Offer)45_storage": {
+              "label": "struct CryptoPunksMarket.Offer",
+              "members": [
+                {
+                  "label": "isForSale",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "punkIndex",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "seller",
+                  "type": "t_address"
+                },
+                {
+                  "label": "minValue",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "onlySellTo",
+                  "type": "t_address"
+                }
+              ]
+            },
+            "t_mapping(t_uint256,t_struct(Bid)54_storage)": {
+              "label": "mapping(uint256 => struct CryptoPunksMarket.Bid)"
+            },
+            "t_struct(Bid)54_storage": {
+              "label": "struct CryptoPunksMarket.Bid",
+              "members": [
+                {
+                  "label": "hasBid",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "punkIndex",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "bidder",
+                  "type": "t_address"
+                },
+                {
+                  "label": "value",
+                  "type": "t_uint256"
+                }
+              ]
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "IUniswapV2Pair": {
+        "src": "contracts/solidity/interface/IUniswapV2Pair.sol:3",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transfer(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "DOMAIN_SEPARATOR()",
+          "PERMIT_TYPEHASH()",
+          "nonces(address)",
+          "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)",
+          "MINIMUM_LIQUIDITY()",
+          "factory()",
+          "token0()",
+          "token1()",
+          "getReserves()",
+          "price0CumulativeLast()",
+          "price1CumulativeLast()",
+          "kLast()",
+          "mint(address)",
+          "burn(address)",
+          "swap(uint256,uint256,address,bytes)",
+          "skim(address)",
+          "sync()",
+          "initialize(address,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "NFTXEligibilityManager": {
+        "src": "contracts/solidity/NFTXEligibilityManager.sol:11",
+        "version": {
+          "withMetadata": "7825b37f15089fe492ac2a2c01805d9ac37bc34f1c67bb3be77e7b8114ab03e9",
+          "withoutMetadata": "bccefd3cb652b73412707e27473f43a87c1d25473b89ed72cb3d84e6e0193788",
+          "linkedWithoutMetadata": "bccefd3cb652b73412707e27473f43a87c1d25473b89ed72cb3d84e6e0193788"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "ClonesUpgradeable"
+        ],
+        "methods": [
+          "__NFTXEligibilityManager_init()",
+          "addModule(address)",
+          "updateModule(uint256,address)",
+          "deployEligibility(uint256,bytes)",
+          "allModules()",
+          "allModuleNames()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXEligibilityManager",
+              "label": "modules",
+              "type": "t_array(t_struct(EligibilityModule)15_storage)dyn_storage",
+              "src": "contracts/solidity/NFTXEligibilityManager.sol:17"
+            }
+          ],
+          "types": {
+            "t_array(t_struct(EligibilityModule)15_storage)dyn_storage": {
+              "label": "struct NFTXEligibilityManager.EligibilityModule[]"
+            },
+            "t_struct(EligibilityModule)15_storage": {
+              "label": "struct NFTXEligibilityManager.EligibilityModule",
+              "members": [
+                {
+                  "label": "implementation",
+                  "type": "t_address"
+                },
+                {
+                  "label": "targetAsset",
+                  "type": "t_address"
+                },
+                {
+                  "label": "name",
+                  "type": "t_string_storage"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_string_storage": {
+              "label": "string"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXInventoryStaking": {
+        "src": "contracts/solidity/NFTXInventoryStaking.sol:25",
+        "version": {
+          "withMetadata": "c8d01558153c6aa4da34ae740e35e3f178e9d3186842f9c3a0f585c41c1aac54",
+          "withoutMetadata": "f124c8d124db4d4b260be15603d4d24495978717c91105865dde1be54f9418a4",
+          "linkedWithoutMetadata": "f124c8d124db4d4b260be15603d4d24495978717c91105865dde1be54f9418a4"
+        },
+        "inherit": [
+          "INFTXInventoryStaking",
+          "UpgradeableBeacon",
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable",
+          "IBeacon"
+        ],
+        "libraries": [
+          "SafeERC20Upgradeable",
+          "Create2"
+        ],
+        "methods": [
+          "__NFTXInventoryStaking_init(address)",
+          "setNFTXVaultFactory(address)",
+          "deployXTokenForVault(uint256)",
+          "receiveRewards(uint256,uint256)",
+          "deposit(uint256,uint256)",
+          "timelockMintFor(uint256,uint256,address,uint256)",
+          "withdraw(uint256,uint256)",
+          "xTokenShareValue(uint256)",
+          "timelockUntil(uint256,address)",
+          "balanceOf(uint256,address)",
+          "xTokenAddr(address)",
+          "vaultXToken(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXInventoryStaking",
+              "label": "nftxVaultFactory",
+              "type": "t_contract(INFTXVaultFactory)14840",
+              "src": "contracts/solidity/NFTXInventoryStaking.sol:32"
+            },
+            {
+              "contract": "NFTXInventoryStaking",
+              "label": "UNUSED",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts/solidity/NFTXInventoryStaking.sol:33"
+            }
+          ],
+          "types": {
+            "t_contract(INFTXVaultFactory)14840": {
+              "label": "contract INFTXVaultFactory"
+            },
+            "t_mapping(t_uint256,t_address)": {
+              "label": "mapping(uint256 => address)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXLPStaking": {
+        "src": "contracts/solidity/NFTXLPStaking.sol:22",
+        "version": {
+          "withMetadata": "cfe6cdfb6b65f019262b97c275c3ceb28936a3ff7ce612fe2d30e9f8fc60044e",
+          "withoutMetadata": "38514d139f9e5d5f00a1654542ca749a81bea8286df041ee3c5799ebf5b0149f",
+          "linkedWithoutMetadata": "38514d139f9e5d5f00a1654542ca749a81bea8286df041ee3c5799ebf5b0149f"
+        },
+        "inherit": [
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "SafeERC20Upgradeable",
+          "ClonesUpgradeable"
+        ],
+        "methods": [
+          "__NFTXLPStaking__init(address)",
+          "assignNewImpl()",
+          "setNFTXVaultFactory(address)",
+          "setStakingTokenProvider(address)",
+          "addPoolForVault(uint256)",
+          "updatePoolForVaults(uint256[])",
+          "updatePoolForVault(uint256)",
+          "receiveRewards(uint256,uint256)",
+          "deposit(uint256,uint256)",
+          "timelockDepositFor(uint256,address,uint256,uint256)",
+          "exit(uint256)",
+          "emergencyExitAndClaim(address,address)",
+          "emergencyExit(address,address)",
+          "emergencyMigrate(uint256)",
+          "withdraw(uint256,uint256)",
+          "claimRewards(uint256)",
+          "claimMultipleRewards(uint256[])",
+          "newRewardDistributionToken(uint256)",
+          "rewardDistributionToken(uint256)",
+          "oldRewardDistributionToken(uint256)",
+          "unusedRewardDistributionToken(uint256)",
+          "rewardDistributionTokenAddr(address,address)",
+          "balanceOf(uint256,address)",
+          "oldBalanceOf(uint256,address)",
+          "unusedBalanceOf(uint256,address)",
+          "lockedUntil(uint256,address)",
+          "lockedLPBalance(uint256,address)",
+          "_rewardDistributionTokenAddr((address,address))",
+          "_oldRewardDistributionTokenAddr((address,address))",
+          "_unusedRewardDistributionTokenAddr((address,address))"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXLPStaking",
+              "label": "nftxVaultFactory",
+              "type": "t_contract(INFTXVaultFactory)14840",
+              "src": "contracts/solidity/NFTXLPStaking.sol:25"
+            },
+            {
+              "contract": "NFTXLPStaking",
+              "label": "rewardDistTokenImpl",
+              "type": "t_contract(IRewardDistributionToken)14916",
+              "src": "contracts/solidity/NFTXLPStaking.sol:26"
+            },
+            {
+              "contract": "NFTXLPStaking",
+              "label": "stakingTokenProvider",
+              "type": "t_contract(StakingTokenProvider)10276",
+              "src": "contracts/solidity/NFTXLPStaking.sol:27"
+            },
+            {
+              "contract": "NFTXLPStaking",
+              "label": "vaultStakingInfo",
+              "type": "t_mapping(t_uint256,t_struct(StakingPool)1020_storage)",
+              "src": "contracts/solidity/NFTXLPStaking.sol:37"
+            },
+            {
+              "contract": "NFTXLPStaking",
+              "label": "newTimelockRewardDistTokenImpl",
+              "type": "t_contract(TimelockRewardDistributionTokenImpl)23117",
+              "src": "contracts/solidity/NFTXLPStaking.sol:39"
+            }
+          ],
+          "types": {
+            "t_contract(INFTXVaultFactory)14840": {
+              "label": "contract INFTXVaultFactory"
+            },
+            "t_contract(IRewardDistributionToken)14916": {
+              "label": "contract IRewardDistributionToken"
+            },
+            "t_contract(StakingTokenProvider)10276": {
+              "label": "contract StakingTokenProvider"
+            },
+            "t_mapping(t_uint256,t_struct(StakingPool)1020_storage)": {
+              "label": "mapping(uint256 => struct NFTXLPStaking.StakingPool)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_struct(StakingPool)1020_storage": {
+              "label": "struct NFTXLPStaking.StakingPool",
+              "members": [
+                {
+                  "label": "stakingToken",
+                  "type": "t_address"
+                },
+                {
+                  "label": "rewardToken",
+                  "type": "t_address"
+                }
+              ]
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_contract(TimelockRewardDistributionTokenImpl)23117": {
+              "label": "contract TimelockRewardDistributionTokenImpl"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IWETH": {
+        "src": "contracts/solidity/other/PalmNFTXStakingZap.sol:20",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "deposit()",
+          "transfer(address,uint256)",
+          "withdraw(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXMarketplaceZap": {
+        "src": "contracts/solidity/NFTXMarketplaceZap.sol:152",
+        "version": {
+          "withMetadata": "1d614614c59d8e77bac182ce844f7603954e7c468e3b3f4da70f7594dea78e4a",
+          "withoutMetadata": "17a3bc9c9c44ecd55babe2807b6b1a766dd5e7a0b930d83039a7d6670806f2f5",
+          "linkedWithoutMetadata": "17a3bc9c9c44ecd55babe2807b6b1a766dd5e7a0b930d83039a7d6670806f2f5"
+        },
+        "inherit": [
+          "ERC1155HolderUpgradeable",
+          "ERC1155ReceiverUpgradeable",
+          "IERC1155ReceiverUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ERC721HolderUpgradeable",
+          "IERC721ReceiverUpgradeable",
+          "ReentrancyGuard",
+          "Ownable"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address)",
+          "mintAndSell721(uint256,uint256[],uint256,address[],address)",
+          "mintAndSell721WETH(uint256,uint256[],uint256,address[],address)",
+          "buyAndSwap721(uint256,uint256[],uint256[],address[],address)",
+          "buyAndSwap721WETH(uint256,uint256[],uint256[],uint256,address[],address)",
+          "buyAndSwap1155(uint256,uint256[],uint256[],uint256[],address[],address)",
+          "buyAndSwap1155WETH(uint256,uint256[],uint256[],uint256[],uint256,address[],address)",
+          "buyAndRedeem(uint256,uint256,uint256[],address[],address)",
+          "buyAndRedeemWETH(uint256,uint256,uint256[],uint256,address[],address)",
+          "mintAndSell1155(uint256,uint256[],uint256[],uint256,address[],address)",
+          "mintAndSell1155WETH(uint256,uint256[],uint256[],uint256,address[],address)",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "NFTXMarketplaceZap",
+            "src": "contracts/solidity/NFTXMarketplaceZap.sol:164"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "WETH",
+            "src": "contracts/solidity/NFTXMarketplaceZap.sol:153"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "lpStaking",
+            "src": "contracts/solidity/NFTXMarketplaceZap.sol:154"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "nftxFactory",
+            "src": "contracts/solidity/NFTXMarketplaceZap.sol:155"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "sushiRouter",
+            "src": "contracts/solidity/NFTXMarketplaceZap.sol:156"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Ownable": {
+        "src": "contracts/solidity/util/Ownable.sol:19",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "contracts/solidity/util/Ownable.sol:27"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "contracts/solidity/util/Ownable.sol:20"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ReentrancyGuard": {
+        "src": "contracts/solidity/other/PalmNFTXStakingZap.sol:42",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ReentrancyGuard",
+            "src": "contracts/solidity/other/PalmNFTXStakingZap.sol:59"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ReentrancyGuard",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "contracts/solidity/other/PalmNFTXStakingZap.sol:57"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXSimpleFeeDistributor": {
+        "src": "contracts/solidity/NFTXSimpleFeeDistributor.sol:15",
+        "version": {
+          "withMetadata": "c034492c89dbccbb2fb93a9a4fc22a08522bf2856593dcee005016fe2e08074b",
+          "withoutMetadata": "7c5501c68a9088aee0055fb0d13230543a7970140be15581f1e8ae84acf2bf9b",
+          "linkedWithoutMetadata": "7c5501c68a9088aee0055fb0d13230543a7970140be15581f1e8ae84acf2bf9b"
+        },
+        "inherit": [
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "ReentrancyGuardUpgradeable",
+          "Initializable",
+          "INFTXSimpleFeeDistributor"
+        ],
+        "libraries": [
+          "SafeERC20Upgradeable"
+        ],
+        "methods": [
+          "__SimpleFeeDistributor__init__(address,address)",
+          "distribute(uint256)",
+          "addReceiver(uint256,address,bool)",
+          "initializeVaultReceivers(uint256)",
+          "changeReceiverAlloc(uint256,uint256)",
+          "changeReceiverAddress(uint256,address,bool)",
+          "removeReceiver(uint256)",
+          "setTreasuryAddress(address)",
+          "setLPStakingAddress(address)",
+          "setInventoryStakingAddress(address)",
+          "setNFTXVaultFactory(address)",
+          "pauseFeeDistribution(bool)",
+          "rescueTokens(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXSimpleFeeDistributor",
+              "label": "distributionPaused",
+              "type": "t_bool",
+              "src": "contracts/solidity/NFTXSimpleFeeDistributor.sol:18"
+            },
+            {
+              "contract": "NFTXSimpleFeeDistributor",
+              "label": "nftxVaultFactory",
+              "type": "t_address",
+              "src": "contracts/solidity/NFTXSimpleFeeDistributor.sol:20"
+            },
+            {
+              "contract": "NFTXSimpleFeeDistributor",
+              "label": "lpStaking",
+              "type": "t_address",
+              "src": "contracts/solidity/NFTXSimpleFeeDistributor.sol:21"
+            },
+            {
+              "contract": "NFTXSimpleFeeDistributor",
+              "label": "treasury",
+              "type": "t_address",
+              "src": "contracts/solidity/NFTXSimpleFeeDistributor.sol:22"
+            },
+            {
+              "contract": "NFTXSimpleFeeDistributor",
+              "label": "allocTotal",
+              "type": "t_uint256",
+              "src": "contracts/solidity/NFTXSimpleFeeDistributor.sol:25"
+            },
+            {
+              "contract": "NFTXSimpleFeeDistributor",
+              "label": "feeReceivers",
+              "type": "t_array(t_struct(FeeReceiver)14146_storage)dyn_storage",
+              "src": "contracts/solidity/NFTXSimpleFeeDistributor.sol:26"
+            },
+            {
+              "contract": "NFTXSimpleFeeDistributor",
+              "label": "inventoryStaking",
+              "type": "t_address",
+              "src": "contracts/solidity/NFTXSimpleFeeDistributor.sol:28"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_array(t_struct(FeeReceiver)14146_storage)dyn_storage": {
+              "label": "struct INFTXSimpleFeeDistributor.FeeReceiver[]"
+            },
+            "t_struct(FeeReceiver)14146_storage": {
+              "label": "struct INFTXSimpleFeeDistributor.FeeReceiver",
+              "members": [
+                {
+                  "label": "allocPoint",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "receiver",
+                  "type": "t_address"
+                },
+                {
+                  "label": "isContract",
+                  "type": "t_bool"
+                }
+              ]
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXStakingZap": {
+        "src": "contracts/solidity/NFTXStakingZap.sol:152",
+        "version": {
+          "withMetadata": "ec419e8bf69718a24317c1991baa8bed7408be1fa01b8e1f6a14f5c82a229491",
+          "withoutMetadata": "1e31c32657a004e902c218ef8815397f1e3a8188082cca9f598d299668b13209",
+          "linkedWithoutMetadata": "1e31c32657a004e902c218ef8815397f1e3a8188082cca9f598d299668b13209"
+        },
+        "inherit": [
+          "ERC1155HolderUpgradeable",
+          "ERC1155ReceiverUpgradeable",
+          "IERC1155ReceiverUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ERC721HolderUpgradeable",
+          "IERC721ReceiverUpgradeable",
+          "ReentrancyGuard",
+          "Ownable"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address)",
+          "setLPLockTime(uint256)",
+          "setInventoryLockTime(uint256)",
+          "provideInventory721(uint256,uint256[])",
+          "provideInventory1155(uint256,uint256[],uint256[])",
+          "addLiquidity721ETH(uint256,uint256[],uint256)",
+          "addLiquidity721ETHTo(uint256,uint256[],uint256,address)",
+          "addLiquidity1155ETH(uint256,uint256[],uint256[],uint256)",
+          "addLiquidity1155ETHTo(uint256,uint256[],uint256[],uint256,address)",
+          "addLiquidity721(uint256,uint256[],uint256,uint256)",
+          "addLiquidity721To(uint256,uint256[],uint256,uint256,address)",
+          "addLiquidity1155(uint256,uint256[],uint256[],uint256,uint256)",
+          "addLiquidity1155To(uint256,uint256[],uint256[],uint256,uint256,address)",
+          "()",
+          "rescue(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "NFTXStakingZap",
+            "src": "contracts/solidity/NFTXStakingZap.sol:165"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "WETH",
+            "src": "contracts/solidity/NFTXStakingZap.sol:153"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "lpStaking",
+            "src": "contracts/solidity/NFTXStakingZap.sol:154"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "inventoryStaking",
+            "src": "contracts/solidity/NFTXStakingZap.sol:155"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "nftxFactory",
+            "src": "contracts/solidity/NFTXStakingZap.sol:156"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "sushiRouter",
+            "src": "contracts/solidity/NFTXStakingZap.sol:157"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "lpLockTime",
+            "src": "contracts/solidity/NFTXStakingZap.sol:159"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "inventoryLockTime",
+            "src": "contracts/solidity/NFTXStakingZap.sol:160"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXStakingZap",
+              "label": "lpLockTime",
+              "type": "t_uint256",
+              "src": "contracts/solidity/NFTXStakingZap.sol:159"
+            },
+            {
+              "contract": "NFTXStakingZap",
+              "label": "inventoryLockTime",
+              "type": "t_uint256",
+              "src": "contracts/solidity/NFTXStakingZap.sol:160"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IV1Token": {
+        "src": "contracts/solidity/NFTXV1Buyout.sol:7",
+        "inherit": [
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "burnFrom(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXV1Buyout": {
+        "src": "contracts/solidity/NFTXV1Buyout.sol:11",
+        "version": {
+          "withMetadata": "3d87bcc3cd95a0ad4b07b1d7d66a74e0479ec97b6e0c583ad12117527f5d33c1",
+          "withoutMetadata": "eecb227e0be1e0b876843e2768e9a7bfb9acc001691608d5770a5fb57deafb7f",
+          "linkedWithoutMetadata": "eecb227e0be1e0b876843e2768e9a7bfb9acc001691608d5770a5fb57deafb7f"
+        },
+        "inherit": [
+          "ReentrancyGuardUpgradeable",
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "__NFTXV1Buyout_init()",
+          "emergencyWithdraw()",
+          "clearBuyout(address)",
+          "addBuyout(address)",
+          "removeBuyout(address)",
+          "claimETH(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXV1Buyout",
+              "label": "ethAvailiable",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/solidity/NFTXV1Buyout.sol:13"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXVaultFactoryUpgradeable": {
+        "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:16",
+        "version": {
+          "withMetadata": "aae12173659647a910d24addeb18e455a60785f5507d2dcbe6fff7c8123d4e90",
+          "withoutMetadata": "89c7c1ce8d490fda2487222f7298e90ae1d23e0c64e2a3de25e93759b614ae6d",
+          "linkedWithoutMetadata": "89c7c1ce8d490fda2487222f7298e90ae1d23e0c64e2a3de25e93759b614ae6d"
+        },
+        "inherit": [
+          "INFTXVaultFactory",
+          "UpgradeableBeacon",
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable",
+          "IBeacon"
+        ],
+        "libraries": [],
+        "methods": [
+          "__NFTXVaultFactory_init(address,address)",
+          "assignFees()",
+          "createVault(string,string,address,bool,bool)",
+          "setFactoryFees(uint256,uint256,uint256,uint256,uint256)",
+          "setVaultFees(uint256,uint256,uint256,uint256,uint256,uint256)",
+          "disableVaultFees(uint256)",
+          "setFeeDistributor(address)",
+          "setZapContract(address)",
+          "setFeeExclusion(address,bool)",
+          "setEligibilityManager(address)",
+          "vaultFees(uint256)",
+          "isLocked(uint256)",
+          "vaultsForAsset(address)",
+          "vault(uint256)",
+          "allVaults()",
+          "numVaults()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "NOT_USED1",
+              "type": "t_uint256",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:21"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "zapContract",
+              "type": "t_address",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:22"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "feeDistributor",
+              "type": "t_address",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:23"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "eligibilityManager",
+              "type": "t_address",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:24"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "NOT_USED2",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:26"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "_vaultsForAsset",
+              "type": "t_mapping(t_address,t_array(t_address)dyn_storage)",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:27"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "vaults",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:29"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "excludedFromFees",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:32"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "_vaultFees",
+              "type": "t_mapping(t_uint256,t_struct(VaultFees)7547_storage)",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:43"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "factoryMintFee",
+              "type": "t_uint64",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:44"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "factoryRandomRedeemFee",
+              "type": "t_uint64",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:45"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "factoryTargetRedeemFee",
+              "type": "t_uint64",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:46"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "factoryRandomSwapFee",
+              "type": "t_uint64",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:47"
+            },
+            {
+              "contract": "NFTXVaultFactoryUpgradeable",
+              "label": "factoryTargetSwapFee",
+              "type": "t_uint64",
+              "src": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol:48"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_uint256,t_address)": {
+              "label": "mapping(uint256 => address)"
+            },
+            "t_mapping(t_address,t_array(t_address)dyn_storage)": {
+              "label": "mapping(address => address[])"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_uint256,t_struct(VaultFees)7547_storage)": {
+              "label": "mapping(uint256 => struct NFTXVaultFactoryUpgradeable.VaultFees)"
+            },
+            "t_struct(VaultFees)7547_storage": {
+              "label": "struct NFTXVaultFactoryUpgradeable.VaultFees",
+              "members": [
+                {
+                  "label": "active",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "mintFee",
+                  "type": "t_uint64"
+                },
+                {
+                  "label": "randomRedeemFee",
+                  "type": "t_uint64"
+                },
+                {
+                  "label": "targetRedeemFee",
+                  "type": "t_uint64"
+                },
+                {
+                  "label": "randomSwapFee",
+                  "type": "t_uint64"
+                },
+                {
+                  "label": "targetSwapFee",
+                  "type": "t_uint64"
+                }
+              ]
+            },
+            "t_uint64": {
+              "label": "uint64"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXVaultUpgradeable": {
+        "src": "contracts/solidity/NFTXVaultUpgradeable.sol:23",
+        "version": {
+          "withMetadata": "54059425f91aa79ab47dd6908337a6e7b96bfcb5758df3bf1a8c76e26b9fd441",
+          "withoutMetadata": "d865a64c23b122d8a82922c2cad646af4133e319c6d8ac993cce6371a23e9770",
+          "linkedWithoutMetadata": "d865a64c23b122d8a82922c2cad646af4133e319c6d8ac993cce6371a23e9770"
+        },
+        "inherit": [
+          "INFTXVault",
+          "ERC1155SafeHolderUpgradeable",
+          "ERC1155ReceiverUpgradeable",
+          "IERC1155ReceiverUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ERC721SafeHolderUpgradeable",
+          "IERC721ReceiverUpgradeable",
+          "ReentrancyGuardUpgradeable",
+          "ERC20FlashMintUpgradeable",
+          "IERC3156FlashLenderUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20Metadata",
+          "IERC20Upgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "EnumerableSetUpgradeable"
+        ],
+        "methods": [
+          "__NFTXVault_init(string,string,address,bool,bool)",
+          "finalizeVault()",
+          "setVaultMetadata(string,string)",
+          "setVaultFeatures(bool,bool,bool,bool,bool)",
+          "assignDefaultFeatures()",
+          "setFees(uint256,uint256,uint256,uint256,uint256)",
+          "disableVaultFees()",
+          "deployEligibilityStorage(uint256,bytes)",
+          "setManager(address)",
+          "mint(uint256[],uint256[])",
+          "mintTo(uint256[],uint256[],address)",
+          "redeem(uint256,uint256[])",
+          "redeemTo(uint256,uint256[],address)",
+          "swap(uint256[],uint256[],uint256[])",
+          "swapTo(uint256[],uint256[],uint256[],address)",
+          "flashLoan(address,address,uint256,bytes)",
+          "mintFee()",
+          "randomRedeemFee()",
+          "targetRedeemFee()",
+          "randomSwapFee()",
+          "targetSwapFee()",
+          "vaultFees()",
+          "allValidNFTs(uint256[])",
+          "nftIdAt(uint256)",
+          "allHoldings()",
+          "totalHoldings()",
+          "version()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "vaultId",
+              "type": "t_uint256",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:35"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "manager",
+              "type": "t_address",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:36"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "assetAddress",
+              "type": "t_address",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:37"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "vaultFactory",
+              "type": "t_contract(INFTXVaultFactory)14840",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:38"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "eligibilityStorage",
+              "type": "t_contract(INFTXEligibility)13714",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:39"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "randNonce",
+              "type": "t_uint256",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:41"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "UNUSED_FEE1",
+              "type": "t_uint256",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:42"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "UNUSED_FEE2",
+              "type": "t_uint256",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:43"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "UNUSED_FEE3",
+              "type": "t_uint256",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:44"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "is1155",
+              "type": "t_bool",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:46"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "allowAllItems",
+              "type": "t_bool",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:47"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "enableMint",
+              "type": "t_bool",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:48"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "enableRandomRedeem",
+              "type": "t_bool",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:49"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "enableTargetRedeem",
+              "type": "t_bool",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:50"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "holdings",
+              "type": "t_struct(UintSet)24694_storage",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:52"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "quantity1155",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:53"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "enableRandomSwap",
+              "type": "t_bool",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:55"
+            },
+            {
+              "contract": "NFTXVaultUpgradeable",
+              "label": "enableTargetSwap",
+              "type": "t_bool",
+              "src": "contracts/solidity/NFTXVaultUpgradeable.sol:56"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_contract(INFTXVaultFactory)14840": {
+              "label": "contract INFTXVaultFactory"
+            },
+            "t_contract(INFTXEligibility)13714": {
+              "label": "contract INFTXEligibility"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_struct(UintSet)24694_storage": {
+              "label": "struct EnumerableSetUpgradeable.UintSet",
+              "members": [
+                {
+                  "label": "_inner",
+                  "type": "t_struct(Set)24296_storage"
+                }
+              ]
+            },
+            "t_struct(Set)24296_storage": {
+              "label": "struct EnumerableSetUpgradeable.Set",
+              "members": [
+                {
+                  "label": "_values",
+                  "type": "t_array(t_bytes32)dyn_storage"
+                },
+                {
+                  "label": "_indexes",
+                  "type": "t_mapping(t_bytes32,t_uint256)"
+                }
+              ]
+            },
+            "t_array(t_bytes32)dyn_storage": {
+              "label": "bytes32[]"
+            },
+            "t_bytes32": {
+              "label": "bytes32"
+            },
+            "t_mapping(t_bytes32,t_uint256)": {
+              "label": "mapping(bytes32 => uint256)"
+            },
+            "t_mapping(t_uint256,t_uint256)": {
+              "label": "mapping(uint256 => uint256)"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "StakingTokenProvider": {
+        "src": "contracts/solidity/StakingTokenProvider.sol:11",
+        "version": {
+          "withMetadata": "70e62f4bb6699d698823f088ee275bb5a369137364228218d7173a661ed72b99",
+          "withoutMetadata": "34799accda6ebeaf24b363ccb0c4413aea6592a12ad839d6013eadd028d81438",
+          "linkedWithoutMetadata": "34799accda6ebeaf24b363ccb0c4413aea6592a12ad839d6013eadd028d81438"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "__StakingTokenProvider_init(address,address,string)",
+          "setPairedTokenForVaultToken(address,address,string)",
+          "setDefaultPairedToken(address,string)",
+          "stakingTokenForVaultToken(address)",
+          "nameForStakingToken(address)",
+          "pairForVaultToken(address,address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "StakingTokenProvider",
+              "label": "uniLikeExchange",
+              "type": "t_address",
+              "src": "contracts/solidity/StakingTokenProvider.sol:13"
+            },
+            {
+              "contract": "StakingTokenProvider",
+              "label": "defaultPairedToken",
+              "type": "t_address",
+              "src": "contracts/solidity/StakingTokenProvider.sol:14"
+            },
+            {
+              "contract": "StakingTokenProvider",
+              "label": "defaultPrefix",
+              "type": "t_string_storage",
+              "src": "contracts/solidity/StakingTokenProvider.sol:15"
+            },
+            {
+              "contract": "StakingTokenProvider",
+              "label": "pairedToken",
+              "type": "t_mapping(t_address,t_address)",
+              "src": "contracts/solidity/StakingTokenProvider.sol:16"
+            },
+            {
+              "contract": "StakingTokenProvider",
+              "label": "pairedPrefix",
+              "type": "t_mapping(t_address,t_string_storage)",
+              "src": "contracts/solidity/StakingTokenProvider.sol:17"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)"
+            },
+            "t_mapping(t_address,t_string_storage)": {
+              "label": "mapping(address => string)"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Avastar": {
+        "src": "contracts/solidity/eligibility/NFTXAvastarRank60Eligibility.sol:7",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "getPrimeByTokenId(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXAvastarRank60Eligibility": {
+        "src": "contracts/solidity/eligibility/NFTXAvastarRank60Eligibility.sol:23",
+        "version": {
+          "withMetadata": "1f3ec9c5d6596f41bc7b98223310a6bc1377a0b3d3ee9dac6b07303969f542ee",
+          "withoutMetadata": "9dd7e10213f899f1c24e0d04125f4a95ae76fbf0304f0ddb3ab1879eaf869a96",
+          "linkedWithoutMetadata": "9dd7e10213f899f1c24e0d04125f4a95ae76fbf0304f0ddb3ab1879eaf869a96"
+        },
+        "inherit": [
+          "NFTXEligibility",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "__NFTXEligibility_init()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXDeferEligibility": {
+        "src": "contracts/solidity/eligibility/NFTXDeferEligibility.sol:8",
+        "version": {
+          "withMetadata": "2b039f4c1000f36e3ecd7762cfcb666a82f28613f0ce99e7f2f160d414bcf5b4",
+          "withoutMetadata": "78f4690930812707f40879ab1d948d7307235232cad871e1a95568b7efa898df",
+          "linkedWithoutMetadata": "78f4690930812707f40879ab1d948d7307235232cad871e1a95568b7efa898df"
+        },
+        "inherit": [
+          "NFTXEligibility",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "__NFTXEligibility_init(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXDeferEligibility",
+              "label": "deferAddress",
+              "type": "t_address",
+              "src": "contracts/solidity/eligibility/NFTXDeferEligibility.sol:22"
+            },
+            {
+              "contract": "NFTXDeferEligibility",
+              "label": "deferVaultId",
+              "type": "t_uint256",
+              "src": "contracts/solidity/eligibility/NFTXDeferEligibility.sol:23"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXDenyEligibility": {
+        "src": "contracts/solidity/eligibility/NFTXDenyEligibility.sol:7",
+        "version": {
+          "withMetadata": "22ec2fb7312a036166950e8f82fd325f4c8a447b18e58e0091e87c673c82b9bd",
+          "withoutMetadata": "b51ad2a8e72232433154a24376849538fcb9814669e077dba33b507506af672c",
+          "linkedWithoutMetadata": "b51ad2a8e72232433154a24376849538fcb9814669e077dba33b507506af672c"
+        },
+        "inherit": [
+          "NFTXUniqueEligibility",
+          "UniqueEligibility",
+          "NFTXEligibility",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "afterRedeemHook(uint256[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXEligibility": {
+        "src": "contracts/solidity/eligibility/NFTXEligibility.sol:9",
+        "inherit": [
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "checkIsEligible(uint256)",
+          "checkEligible(uint256[])",
+          "checkAllEligible(uint256[])",
+          "checkAllIneligible(uint256[])",
+          "beforeMintHook(uint256[])",
+          "afterMintHook(uint256[])",
+          "beforeRedeemHook(uint256[])",
+          "afterRedeemHook(uint256[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "KittyCore": {
+        "src": "contracts/solidity/eligibility/NFTXGen0FastEligibility.sol:7",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "ownerOf(uint256)",
+          "getKitty(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXGen0KittyEligibility": {
+        "src": "contracts/solidity/eligibility/NFTXGen0Eligibility.sol:26",
+        "version": {
+          "withMetadata": "de9e2a55fa009c59b731a946277522a42a33af76cebbbf8722106628bf6f528f",
+          "withoutMetadata": "8f541ac290ccaf85fa712bbf3a11622a7b3762835d879e1c30c2adeeabb655fd",
+          "linkedWithoutMetadata": "8f541ac290ccaf85fa712bbf3a11622a7b3762835d879e1c30c2adeeabb655fd"
+        },
+        "inherit": [
+          "NFTXEligibility",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "__NFTXEligibility_init()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXGen0FastKittyEligibility": {
+        "src": "contracts/solidity/eligibility/NFTXGen0FastEligibility.sol:12",
+        "version": {
+          "withMetadata": "365728c9486d005b9dc2336744477ab6884b9103558d9a15d734953bc329b5ed",
+          "withoutMetadata": "51aacd50a8a099f8df3a5cb28f40922813dccb8701b46ea841b04c139b921ef9",
+          "linkedWithoutMetadata": "51aacd50a8a099f8df3a5cb28f40922813dccb8701b46ea841b04c139b921ef9"
+        },
+        "inherit": [
+          "NFTXEligibility",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "__NFTXEligibility_init()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXListEligibility": {
+        "src": "contracts/solidity/eligibility/NFTXListEligibility.sol:8",
+        "version": {
+          "withMetadata": "6e68a2fc81b9a2c8e8256cf12dc286e2db11bf1970574385ba98bf2915a68384",
+          "withoutMetadata": "02075811e77476c7a4ef66a55321b458ea2106f2b205974f8daf5e2a94dd49f1",
+          "linkedWithoutMetadata": "02075811e77476c7a4ef66a55321b458ea2106f2b205974f8daf5e2a94dd49f1"
+        },
+        "inherit": [
+          "UniqueEligibility",
+          "NFTXEligibility",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "__NFTXEligibility_init(uint256[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXMintRequestEligibility": {
+        "src": "contracts/solidity/eligibility/NFTXMintRequestEligibility.sol:20",
+        "version": {
+          "withMetadata": "f63259e0bd09f62a9b1a4624e3b121f3e3cd21842bd9105fe700f02db822d32c",
+          "withoutMetadata": "3a601901cbd1ba7dfc1dd3f56cd383f9eb8ace311645140c456b7593f9aec09b",
+          "linkedWithoutMetadata": "3a601901cbd1ba7dfc1dd3f56cd383f9eb8ace311645140c456b7593f9aec09b"
+        },
+        "inherit": [
+          "ERC1155HolderUpgradeable",
+          "ERC1155ReceiverUpgradeable",
+          "IERC1155ReceiverUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ERC721HolderUpgradeable",
+          "IERC721ReceiverUpgradeable",
+          "NFTXEligibility",
+          "UniqueEligibility",
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [
+          "SafeMathUpgradeable"
+        ],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "__NFTXEligibility_init(address,address,bool,uint256[])",
+          "finalizeEligibility()",
+          "setEligibilityPreferences(bool)",
+          "requestMint(uint256[],uint256[])",
+          "approveMintRequests(uint256[],address[],bool)",
+          "claimUnminted(uint256[],address[])",
+          "reclaimRequestedMint(uint256[])",
+          "setUniqueEligibilities(uint256[],bool)",
+          "afterRedeemHook(uint256[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXMintRequestEligibility",
+              "label": "vault",
+              "type": "t_contract(INFTXVault)14600",
+              "src": "contracts/solidity/eligibility/NFTXMintRequestEligibility.sol:41"
+            },
+            {
+              "contract": "NFTXMintRequestEligibility",
+              "label": "isInitialized",
+              "type": "t_bool",
+              "src": "contracts/solidity/eligibility/NFTXMintRequestEligibility.sol:42"
+            },
+            {
+              "contract": "NFTXMintRequestEligibility",
+              "label": "is1155",
+              "type": "t_bool",
+              "src": "contracts/solidity/eligibility/NFTXMintRequestEligibility.sol:43"
+            },
+            {
+              "contract": "NFTXMintRequestEligibility",
+              "label": "negateEligOnRedeem",
+              "type": "t_bool",
+              "src": "contracts/solidity/eligibility/NFTXMintRequestEligibility.sol:44"
+            },
+            {
+              "contract": "NFTXMintRequestEligibility",
+              "label": "allowTrustedApprovals",
+              "type": "t_bool",
+              "src": "contracts/solidity/eligibility/NFTXMintRequestEligibility.sol:45"
+            },
+            {
+              "contract": "NFTXMintRequestEligibility",
+              "label": "approvedMints",
+              "type": "t_mapping(t_address,t_mapping(t_uint256,t_bool))",
+              "src": "contracts/solidity/eligibility/NFTXMintRequestEligibility.sol:47"
+            },
+            {
+              "contract": "NFTXMintRequestEligibility",
+              "label": "mintRequests",
+              "type": "t_mapping(t_address,t_mapping(t_uint256,t_uint256))",
+              "src": "contracts/solidity/eligibility/NFTXMintRequestEligibility.sol:48"
+            }
+          ],
+          "types": {
+            "t_contract(INFTXVault)14600": {
+              "label": "contract INFTXVault"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_address,t_mapping(t_uint256,t_bool))": {
+              "label": "mapping(address => mapping(uint256 => bool))"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_uint256,t_bool)": {
+              "label": "mapping(uint256 => bool)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_mapping(t_uint256,t_uint256))": {
+              "label": "mapping(address => mapping(uint256 => uint256))"
+            },
+            "t_mapping(t_uint256,t_uint256)": {
+              "label": "mapping(uint256 => uint256)"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXOpenseaEligibility": {
+        "src": "contracts/solidity/eligibility/NFTXOpenseaEligibility.sol:7",
+        "version": {
+          "withMetadata": "86aa075e61581248369b2b8ebf9bc62fe6fbe01300b99c33626ee060e96d5e1d",
+          "withoutMetadata": "26c5cdbd513d9559edff148be8f0aafdf9c69702cf7ea9558adcf79341960746",
+          "linkedWithoutMetadata": "26c5cdbd513d9559edff148be8f0aafdf9c69702cf7ea9558adcf79341960746"
+        },
+        "inherit": [
+          "NFTXEligibility",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "__NFTXEligibility_init(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXOpenseaEligibility",
+              "label": "collectionId",
+              "type": "t_uint256",
+              "src": "contracts/solidity/eligibility/NFTXOpenseaEligibility.sol:21"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXRangeEligibility": {
+        "src": "contracts/solidity/eligibility/NFTXRangeEligibility.sol:8",
+        "version": {
+          "withMetadata": "52671ec11020e901c639038e7feb1f50167710fdd39a2e552f024dee9b4076fb",
+          "withoutMetadata": "13a2c36ac246a473f68a054d66cd2a9c37f105356af1f6d6a987e891a05c9787",
+          "linkedWithoutMetadata": "13a2c36ac246a473f68a054d66cd2a9c37f105356af1f6d6a987e891a05c9787"
+        },
+        "inherit": [
+          "NFTXEligibility",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "__NFTXEligibility_init(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXRangeEligibility",
+              "label": "rangeStart",
+              "type": "t_uint256",
+              "src": "contracts/solidity/eligibility/NFTXRangeEligibility.sol:21"
+            },
+            {
+              "contract": "NFTXRangeEligibility",
+              "label": "rangeEnd",
+              "type": "t_uint256",
+              "src": "contracts/solidity/eligibility/NFTXRangeEligibility.sol:22"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXRangeExtendedEligibility": {
+        "src": "contracts/solidity/eligibility/NFTXRangeExtendedEligibility.sol:9",
+        "version": {
+          "withMetadata": "72dae61d59098175d4b31286132978780d339ec6f031a0cfd72543e57555d436",
+          "withoutMetadata": "acbbc4a9f3dfd8dfe23f62d6ab241632945819747ee6fb87d8c1c68c4b94e7ed",
+          "linkedWithoutMetadata": "acbbc4a9f3dfd8dfe23f62d6ab241632945819747ee6fb87d8c1c68c4b94e7ed"
+        },
+        "inherit": [
+          "UniqueEligibility",
+          "NFTXEligibility",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "__NFTXEligibility_init(address,uint256,uint256)",
+          "setEligibilityPreferences(uint256,uint256)",
+          "setUniqueEligibilities(uint256[],bool)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXRangeExtendedEligibility",
+              "label": "isInitialized",
+              "type": "t_bool",
+              "src": "contracts/solidity/eligibility/NFTXRangeExtendedEligibility.sol:27"
+            },
+            {
+              "contract": "NFTXRangeExtendedEligibility",
+              "label": "rangeStart",
+              "type": "t_uint256",
+              "src": "contracts/solidity/eligibility/NFTXRangeExtendedEligibility.sol:28"
+            },
+            {
+              "contract": "NFTXRangeExtendedEligibility",
+              "label": "rangeEnd",
+              "type": "t_uint256",
+              "src": "contracts/solidity/eligibility/NFTXRangeExtendedEligibility.sol:29"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IPolymorph": {
+        "src": "contracts/solidity/eligibility/NFTXUglyEligibility.sol:7",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "geneOf(uint256)",
+          "lastTokenId()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXUglyEligibility": {
+        "src": "contracts/solidity/eligibility/NFTXUglyEligibility.sol:12",
+        "version": {
+          "withMetadata": "60de76dfce3ce96fee9e79f30dd3d9970ab668f881f36008bbb1c945cd56ad6e",
+          "withoutMetadata": "a8be585817fb69ce3cb3b6d240f16fc9e68a06d7c8c178f06564cb43b5e721de",
+          "linkedWithoutMetadata": "a8be585817fb69ce3cb3b6d240f16fc9e68a06d7c8c178f06564cb43b5e721de"
+        },
+        "inherit": [
+          "NFTXEligibility",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "__NFTXEligibility_init()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXUniqueEligibility": {
+        "src": "contracts/solidity/eligibility/NFTXUniqueEligibility.sol:10",
+        "version": {
+          "withMetadata": "902369309f310a9bd0887fed33c41eb42d8dca9f814965fec2479d950f7119ac",
+          "withoutMetadata": "9d321f4b854c057e30ac0bd8e574b1ee7edbf915069ed57b986a9a0c8fd18089",
+          "linkedWithoutMetadata": "9d321f4b854c057e30ac0bd8e574b1ee7edbf915069ed57b986a9a0c8fd18089"
+        },
+        "inherit": [
+          "UniqueEligibility",
+          "NFTXEligibility",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "__NFTXEligibility_init(address,address,bool,bool,uint256[])",
+          "setEligibilityPreferences(bool)",
+          "setUniqueEligibilities(uint256[],bool)",
+          "afterRedeemHook(uint256[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXUniqueEligibility",
+              "label": "vault",
+              "type": "t_address",
+              "src": "contracts/solidity/eligibility/NFTXUniqueEligibility.sol:27"
+            },
+            {
+              "contract": "NFTXUniqueEligibility",
+              "label": "isInitialized",
+              "type": "t_bool",
+              "src": "contracts/solidity/eligibility/NFTXUniqueEligibility.sol:28"
+            },
+            {
+              "contract": "NFTXUniqueEligibility",
+              "label": "negateEligOnRedeem",
+              "type": "t_bool",
+              "src": "contracts/solidity/eligibility/NFTXUniqueEligibility.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "UniqueEligibility": {
+        "src": "contracts/solidity/eligibility/UniqueEligibility.sol:5",
+        "version": {
+          "withMetadata": "c1c481871fd07f836bbbc77469face2a107bfd9012568ef78d02f2deffb460ea",
+          "withoutMetadata": "c6fadba5c101b47bf71968ad1aa6b3563bc9c04b6e4250119542625c2185f5a8",
+          "linkedWithoutMetadata": "c6fadba5c101b47bf71968ad1aa6b3563bc9c04b6e4250119542625c2185f5a8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "isUniqueEligible(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "UniqueEligibility",
+              "label": "eligibleBitMap",
+              "type": "t_mapping(t_uint256,t_uint256)",
+              "src": "contracts/solidity/eligibility/UniqueEligibility.sol:6"
+            }
+          ],
+          "types": {
+            "t_mapping(t_uint256,t_uint256)": {
+              "label": "mapping(uint256 => uint256)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "BitMath": {
+        "src": "contracts/solidity/eligibility/UniswapV3SparkleEligibility.sol:9",
+        "version": {
+          "withMetadata": "6f80389d8de11c35b115cbb625badbd9c4a7febf59851cf2933ac9b1d20968ba",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "INonfungiblePositionManager": {
+        "src": "contracts/solidity/eligibility/UniswapV3SparkleEligibility.sol:51",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "positions(uint256)",
+          "factory()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "UniswapV3SparkleEligibility": {
+        "src": "contracts/solidity/eligibility/UniswapV3SparkleEligibility.sol:88",
+        "version": {
+          "withMetadata": "c9f6b18a469fd5e1d04e35b6b0d86a548042664d74421539c590350b4bc26629",
+          "withoutMetadata": "939d68e89cd8c31b1ff27a51fbe0f45742a72d99c2b63360f89f64f45388f7fb",
+          "linkedWithoutMetadata": "939d68e89cd8c31b1ff27a51fbe0f45742a72d99c2b63360f89f64f45388f7fb"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "NFTXEligibility",
+          "Initializable",
+          "INFTXEligibility"
+        ],
+        "libraries": [
+          "BitMath"
+        ],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "__NFTXEligibility_init(address[],address)",
+          "addValidPools(address[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "UniswapV3SparkleEligibility",
+              "label": "isInitialized",
+              "type": "t_bool",
+              "src": "contracts/solidity/eligibility/UniswapV3SparkleEligibility.sol:92"
+            },
+            {
+              "contract": "UniswapV3SparkleEligibility",
+              "label": "validPools",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/solidity/eligibility/UniswapV3SparkleEligibility.sol:93"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IAdminUpgradeabilityProxy": {
+        "src": "contracts/solidity/interface/IAdminUpgradeabilityProxy.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "admin()",
+          "implementation()",
+          "changeAdmin(address)",
+          "upgradeTo(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC165Upgradeable": {
+        "src": "contracts/solidity/interface/IERC165Upgradeable.sol:14",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC3156FlashBorrowerUpgradeable": {
+        "src": "contracts/solidity/interface/IERC3156Upgradeable.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "onFlashLoan(address,address,uint256,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC3156FlashLenderUpgradeable": {
+        "src": "contracts/solidity/interface/IERC3156Upgradeable.sol:32",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "maxFlashLoan(address)",
+          "flashFee(address,uint256)",
+          "flashLoan(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "INFTXEligibility": {
+        "src": "contracts/solidity/interface/INFTXEligibility.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "finalized()",
+          "targetAsset()",
+          "checkAllEligible(uint256[])",
+          "checkEligible(uint256[])",
+          "checkAllIneligible(uint256[])",
+          "checkIsEligible(uint256)",
+          "__NFTXEligibility_init_bytes(bytes)",
+          "beforeMintHook(uint256[])",
+          "afterMintHook(uint256[])",
+          "beforeRedeemHook(uint256[])",
+          "afterRedeemHook(uint256[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "INFTXEligibilityManager": {
+        "src": "contracts/solidity/interface/INFTXEligibilityManager.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "nftxVaultFactory()",
+          "eligibilityImpl()",
+          "deployEligibility(uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "INFTXFeeDistributor": {
+        "src": "contracts/solidity/interface/INFTXFeeDistributor.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "nftxVaultFactory()",
+          "lpStaking()",
+          "treasury()",
+          "defaultTreasuryAlloc()",
+          "defaultLPAlloc()",
+          "allocTotal(uint256)",
+          "specificTreasuryAlloc(uint256)",
+          "__FeeDistributor__init__(address,address)",
+          "rescueTokens(address)",
+          "distribute(uint256)",
+          "addReceiver(uint256,uint256,address,bool)",
+          "initializeVaultReceivers(uint256)",
+          "changeMultipleReceiverAlloc(uint256[],uint256[],uint256[])",
+          "changeMultipleReceiverAddress(uint256[],uint256[],address[],bool[])",
+          "changeReceiverAlloc(uint256,uint256,uint256)",
+          "changeReceiverAddress(uint256,uint256,address,bool)",
+          "removeReceiver(uint256,uint256)",
+          "setTreasuryAddress(address)",
+          "setDefaultTreasuryAlloc(uint256)",
+          "setSpecificTreasuryAlloc(uint256,uint256)",
+          "setLPStakingAddress(address)",
+          "setNFTXVaultFactory(address)",
+          "setDefaultLPAlloc(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "INFTXInventoryStaking": {
+        "src": "contracts/solidity/interface/INFTXInventoryStaking.sol:7",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "nftxVaultFactory()",
+          "vaultXToken(uint256)",
+          "xTokenAddr(address)",
+          "xTokenShareValue(uint256)",
+          "__NFTXInventoryStaking_init(address)",
+          "setNFTXVaultFactory(address)",
+          "deployXTokenForVault(uint256)",
+          "receiveRewards(uint256,uint256)",
+          "timelockMintFor(uint256,uint256,address,uint256)",
+          "deposit(uint256,uint256)",
+          "withdraw(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "INFTXLPStaking": {
+        "src": "contracts/solidity/interface/INFTXLPStaking.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "nftxVaultFactory()",
+          "rewardDistTokenImpl()",
+          "stakingTokenProvider()",
+          "vaultToken(address)",
+          "stakingToken(address)",
+          "rewardDistributionToken(uint256)",
+          "newRewardDistributionToken(uint256)",
+          "oldRewardDistributionToken(uint256)",
+          "unusedRewardDistributionToken(uint256)",
+          "rewardDistributionTokenAddr(address,address)",
+          "__NFTXLPStaking__init(address)",
+          "setNFTXVaultFactory(address)",
+          "setStakingTokenProvider(address)",
+          "addPoolForVault(uint256)",
+          "updatePoolForVault(uint256)",
+          "updatePoolForVaults(uint256[])",
+          "receiveRewards(uint256,uint256)",
+          "deposit(uint256,uint256)",
+          "timelockDepositFor(uint256,address,uint256,uint256)",
+          "exit(uint256,uint256)",
+          "rescue(uint256)",
+          "withdraw(uint256,uint256)",
+          "claimRewards(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "INFTXSimpleFeeDistributor": {
+        "src": "contracts/solidity/interface/INFTXSimpleFeeDistributor.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "nftxVaultFactory()",
+          "lpStaking()",
+          "inventoryStaking()",
+          "treasury()",
+          "allocTotal()",
+          "__SimpleFeeDistributor__init__(address,address)",
+          "rescueTokens(address)",
+          "distribute(uint256)",
+          "addReceiver(uint256,address,bool)",
+          "initializeVaultReceivers(uint256)",
+          "changeReceiverAlloc(uint256,uint256)",
+          "changeReceiverAddress(uint256,address,bool)",
+          "removeReceiver(uint256)",
+          "setTreasuryAddress(address)",
+          "setLPStakingAddress(address)",
+          "setInventoryStakingAddress(address)",
+          "setNFTXVaultFactory(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "INFTXVault": {
+        "src": "contracts/solidity/interface/INFTXVault.sol:9",
+        "inherit": [
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "manager()",
+          "assetAddress()",
+          "vaultFactory()",
+          "eligibilityStorage()",
+          "is1155()",
+          "allowAllItems()",
+          "enableMint()",
+          "enableRandomRedeem()",
+          "enableTargetRedeem()",
+          "enableRandomSwap()",
+          "enableTargetSwap()",
+          "vaultId()",
+          "nftIdAt(uint256)",
+          "allHoldings()",
+          "totalHoldings()",
+          "mintFee()",
+          "randomRedeemFee()",
+          "targetRedeemFee()",
+          "randomSwapFee()",
+          "targetSwapFee()",
+          "vaultFees()",
+          "__NFTXVault_init(string,string,address,bool,bool)",
+          "finalizeVault()",
+          "setVaultMetadata(string,string)",
+          "setVaultFeatures(bool,bool,bool,bool,bool)",
+          "setFees(uint256,uint256,uint256,uint256,uint256)",
+          "disableVaultFees()",
+          "deployEligibilityStorage(uint256,bytes)",
+          "setManager(address)",
+          "mint(uint256[],uint256[])",
+          "mintTo(uint256[],uint256[],address)",
+          "redeem(uint256,uint256[])",
+          "redeemTo(uint256,uint256[],address)",
+          "swap(uint256[],uint256[],uint256[])",
+          "swapTo(uint256[],uint256[],uint256[],address)",
+          "allValidNFTs(uint256[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "INFTXVaultFactory": {
+        "src": "contracts/solidity/interface/INFTXVaultFactory.sol:7",
+        "inherit": [
+          "IBeacon"
+        ],
+        "libraries": [],
+        "methods": [
+          "numVaults()",
+          "zapContract()",
+          "feeDistributor()",
+          "eligibilityManager()",
+          "vault(uint256)",
+          "allVaults()",
+          "vaultsForAsset(address)",
+          "isLocked(uint256)",
+          "excludedFromFees(address)",
+          "factoryMintFee()",
+          "factoryRandomRedeemFee()",
+          "factoryTargetRedeemFee()",
+          "factoryRandomSwapFee()",
+          "factoryTargetSwapFee()",
+          "vaultFees(uint256)",
+          "__NFTXVaultFactory_init(address,address)",
+          "createVault(string,string,address,bool,bool)",
+          "setFeeDistributor(address)",
+          "setEligibilityManager(address)",
+          "setZapContract(address)",
+          "setFeeExclusion(address,bool)",
+          "setFactoryFees(uint256,uint256,uint256,uint256,uint256)",
+          "setVaultFees(uint256,uint256,uint256,uint256,uint256,uint256)",
+          "disableVaultFees(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IPrevNftxContract": {
+        "src": "contracts/solidity/interface/IPrevNftxContract.sol:7",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "isEligible(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IRewardDistributionToken": {
+        "src": "contracts/solidity/interface/IRewardDistributionToken.sol:7",
+        "inherit": [
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "distributeRewards(uint256)",
+          "__RewardDistributionToken_init(address,string,string)",
+          "mint(address,address,uint256)",
+          "burnFrom(address,uint256)",
+          "withdrawReward(address)",
+          "dividendOf(address)",
+          "withdrawnRewardOf(address)",
+          "accumulativeRewardOf(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ITimelockRewardDistributionToken": {
+        "src": "contracts/solidity/interface/ITimelockRewardDistributionToken.sol:7",
+        "inherit": [
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "distributeRewards(uint256)",
+          "__TimelockRewardDistributionToken_init(address,string,string)",
+          "mint(address,address,uint256)",
+          "timelockMint(address,uint256,uint256)",
+          "burnFrom(address,uint256)",
+          "withdrawReward(address)",
+          "dividendOf(address)",
+          "withdrawnRewardOf(address)",
+          "accumulativeRewardOf(address)",
+          "timelockUntil(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IUniswapV2Router01": {
+        "src": "contracts/solidity/interface/IUniswapV2Router01.sol:5",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "factory()",
+          "WETH()",
+          "addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)",
+          "addLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidityETH(address,uint256,uint256,uint256,address,uint256)",
+          "removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "removeLiquidityETHWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)",
+          "swapExactTokensForTokens(uint256,uint256,address[],address,uint256)",
+          "swapTokensForExactTokens(uint256,uint256,address[],address,uint256)",
+          "swapExactETHForTokens(uint256,address[],address,uint256)",
+          "swapTokensForExactETH(uint256,uint256,address[],address,uint256)",
+          "swapExactTokensForETH(uint256,uint256,address[],address,uint256)",
+          "swapETHForExactTokens(uint256,address[],address,uint256)",
+          "quote(uint256,uint256,uint256)",
+          "getAmountOut(uint256,uint256,uint256)",
+          "getAmountIn(uint256,uint256,uint256)",
+          "getAmountsOut(uint256,address[])",
+          "getAmountsIn(uint256,address[])"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IVaultTokenUpgradeable": {
+        "src": "contracts/solidity/interface/IVaultTokenUpgradeable.sol:7",
+        "inherit": [
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "mint(address,uint256)",
+          "burnFrom(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "PalmNFTXStakingZap": {
+        "src": "contracts/solidity/other/PalmNFTXStakingZap.sol:151",
+        "version": {
+          "withMetadata": "8c43e10a7295868631649f64206b5a18d1dab5643cc3d6e267ef0ae409ea444f",
+          "withoutMetadata": "d92e7193ef6d830d989ad26f673358489fb845515c5c40f6fc7ebdd59ebb0efe",
+          "linkedWithoutMetadata": "d92e7193ef6d830d989ad26f673358489fb845515c5c40f6fc7ebdd59ebb0efe"
+        },
+        "inherit": [
+          "ERC1155HolderUpgradeable",
+          "ERC1155ReceiverUpgradeable",
+          "IERC1155ReceiverUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ERC721HolderUpgradeable",
+          "IERC721ReceiverUpgradeable",
+          "ReentrancyGuard",
+          "Ownable"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address,address)",
+          "setLockTime(uint256)",
+          "addLiquidity721(uint256,uint256[],uint256,uint256)",
+          "addLiquidity721To(uint256,uint256[],uint256,uint256,address)",
+          "addLiquidity1155(uint256,uint256[],uint256[],uint256,uint256)",
+          "addLiquidity1155To(uint256,uint256[],uint256[],uint256,uint256,address)",
+          "lockedUntil(uint256,address)",
+          "lockedLPBalance(uint256,address)",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "PalmNFTXStakingZap",
+            "src": "contracts/solidity/other/PalmNFTXStakingZap.sol:162"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "pairedToken",
+            "src": "contracts/solidity/other/PalmNFTXStakingZap.sol:152"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "lpStaking",
+            "src": "contracts/solidity/other/PalmNFTXStakingZap.sol:153"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "nftxFactory",
+            "src": "contracts/solidity/other/PalmNFTXStakingZap.sol:154"
+          },
+          {
+            "kind": "state-variable-immutable",
+            "name": "sushiRouter",
+            "src": "contracts/solidity/other/PalmNFTXStakingZap.sol:155"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "lockTime",
+            "src": "contracts/solidity/other/PalmNFTXStakingZap.sol:157"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "PalmNFTXStakingZap",
+              "label": "lockTime",
+              "type": "t_uint256",
+              "src": "contracts/solidity/other/PalmNFTXStakingZap.sol:157"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "BeaconProxy": {
+        "src": "contracts/solidity/proxy/BeaconProxy.sol:17",
+        "version": {
+          "withMetadata": "ae37c04174173adf3a8e5cc79a307c969229f4d87689a1c234e50484ff3d06d5",
+          "withoutMetadata": "ae37c04174173adf3a8e5cc79a307c969229f4d87689a1c234e50484ff3d06d5",
+          "linkedWithoutMetadata": "ae37c04174173adf3a8e5cc79a307c969229f4d87689a1c234e50484ff3d06d5"
+        },
+        "inherit": [
+          "Proxy"
+        ],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [
+          "(address,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "BeaconProxy",
+            "src": "contracts/solidity/proxy/BeaconProxy.sol:35"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ClonesUpgradeable": {
+        "src": "contracts/solidity/proxy/ClonesUpgradeable.sol:18",
+        "version": {
+          "withMetadata": "3a8613495f1540746849cee4d4c1e0905ba901a5af4fc080f7e63d97b0e0feec",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Create2BeaconProxy": {
+        "src": "contracts/solidity/proxy/Create2BeaconProxy.sol:18",
+        "version": {
+          "withMetadata": "5fade05cab79203626e6b2fc6f87d25ee3a82bd14b24f2ef5f627f5c79ab3e06",
+          "withoutMetadata": "5fade05cab79203626e6b2fc6f87d25ee3a82bd14b24f2ef5f627f5c79ab3e06",
+          "linkedWithoutMetadata": "5fade05cab79203626e6b2fc6f87d25ee3a82bd14b24f2ef5f627f5c79ab3e06"
+        },
+        "inherit": [
+          "Proxy"
+        ],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Create2BeaconProxy",
+            "src": "contracts/solidity/proxy/Create2BeaconProxy.sol:36"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IBeacon": {
+        "src": "contracts/solidity/proxy/IBeacon.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "childImplementation()",
+          "upgradeChildTo(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Initializable": {
+        "src": "contracts/solidity/proxy/Initializable.sol:18",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "contracts/solidity/proxy/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "contracts/solidity/proxy/Initializable.sol:28"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Proxy": {
+        "src": "contracts/solidity/proxy/Proxy.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ProxyController": {
+        "src": "contracts/solidity/proxy/ProxyController.sol:8",
+        "version": {
+          "withMetadata": "c8f24d15bb810353504d219dadf0c8f348fcc9aa731209fc868b7f2c1c52c2ea",
+          "withoutMetadata": "b400ea2e859b17852d0fc213ccfd0ff9f7dc88f9c15d8d674b19cfbc74dc73d1",
+          "linkedWithoutMetadata": "b400ea2e859b17852d0fc213ccfd0ff9f7dc88f9c15d8d674b19cfbc74dc73d1"
+        },
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,address,address,address,address)",
+          "getAdmin(uint256)",
+          "fetchImplAddress(uint256)",
+          "changeAllProxyAdmins(address)",
+          "changeProxyAdmin(uint256,address)",
+          "upgradeProxyTo(uint256,address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ProxyController",
+            "src": "contracts/solidity/proxy/ProxyController.sol:24"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ProxyController",
+              "label": "vaultFactoryImpl",
+              "type": "t_address",
+              "src": "contracts/solidity/proxy/ProxyController.sol:9"
+            },
+            {
+              "contract": "ProxyController",
+              "label": "eligManagerImpl",
+              "type": "t_address",
+              "src": "contracts/solidity/proxy/ProxyController.sol:10"
+            },
+            {
+              "contract": "ProxyController",
+              "label": "stakingProviderImpl",
+              "type": "t_address",
+              "src": "contracts/solidity/proxy/ProxyController.sol:11"
+            },
+            {
+              "contract": "ProxyController",
+              "label": "stakingImpl",
+              "type": "t_address",
+              "src": "contracts/solidity/proxy/ProxyController.sol:12"
+            },
+            {
+              "contract": "ProxyController",
+              "label": "feeDistribImpl",
+              "type": "t_address",
+              "src": "contracts/solidity/proxy/ProxyController.sol:13"
+            },
+            {
+              "contract": "ProxyController",
+              "label": "vaultFactoryProxy",
+              "type": "t_contract(IAdminUpgradeabilityProxy)13568",
+              "src": "contracts/solidity/proxy/ProxyController.sol:15"
+            },
+            {
+              "contract": "ProxyController",
+              "label": "eligManagerProxy",
+              "type": "t_contract(IAdminUpgradeabilityProxy)13568",
+              "src": "contracts/solidity/proxy/ProxyController.sol:16"
+            },
+            {
+              "contract": "ProxyController",
+              "label": "stakingProviderProxy",
+              "type": "t_contract(IAdminUpgradeabilityProxy)13568",
+              "src": "contracts/solidity/proxy/ProxyController.sol:17"
+            },
+            {
+              "contract": "ProxyController",
+              "label": "stakingProxy",
+              "type": "t_contract(IAdminUpgradeabilityProxy)13568",
+              "src": "contracts/solidity/proxy/ProxyController.sol:18"
+            },
+            {
+              "contract": "ProxyController",
+              "label": "feeDistribProxy",
+              "type": "t_contract(IAdminUpgradeabilityProxy)13568",
+              "src": "contracts/solidity/proxy/ProxyController.sol:19"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_contract(IAdminUpgradeabilityProxy)13568": {
+              "label": "contract IAdminUpgradeabilityProxy"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ProxyControllerSimple": {
+        "src": "contracts/solidity/proxy/ProxyControllerSimple.sol:8",
+        "version": {
+          "withMetadata": "5d0f1b80ce71358b26026fe69b944cfcf37717278d8594e7bc1f55c52cab12d6",
+          "withoutMetadata": "f83287ba9f8d4774a51ac3db4b3e64df597d7442202e68835010491d3e8e8c65",
+          "linkedWithoutMetadata": "f83287ba9f8d4774a51ac3db4b3e64df597d7442202e68835010491d3e8e8c65"
+        },
+        "inherit": [
+          "Ownable",
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "getAdmin()",
+          "fetchImplAddress()",
+          "changeProxyAdmin(address)",
+          "upgradeProxyTo(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ProxyControllerSimple",
+            "src": "contracts/solidity/proxy/ProxyControllerSimple.sol:16"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ProxyControllerSimple",
+              "label": "impl",
+              "type": "t_address",
+              "src": "contracts/solidity/proxy/ProxyControllerSimple.sol:9"
+            },
+            {
+              "contract": "ProxyControllerSimple",
+              "label": "proxy",
+              "type": "t_contract(IAdminUpgradeabilityProxy)13568",
+              "src": "contracts/solidity/proxy/ProxyControllerSimple.sol:11"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_contract(IAdminUpgradeabilityProxy)13568": {
+              "label": "contract IAdminUpgradeabilityProxy"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "UpgradeableBeacon": {
+        "src": "contracts/solidity/proxy/UpgradeableBeacon.sol:15",
+        "version": {
+          "withMetadata": "aeef8e65fe2fc6efa4b716cfc73bf8e8a1575d0f536436ece1706427333f76ab",
+          "withoutMetadata": "619b4e4427f285e6b8a7a05e1bdb43f23a370a4e2eed5aea616c6ac2e96a204d",
+          "linkedWithoutMetadata": "619b4e4427f285e6b8a7a05e1bdb43f23a370a4e2eed5aea616c6ac2e96a204d"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable",
+          "IBeacon"
+        ],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [
+          "__UpgradeableBeacon__init(address)",
+          "childImplementation()",
+          "upgradeChildTo(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "UpgradeableBeacon",
+              "label": "_childImplementation",
+              "type": "t_address",
+              "src": "contracts/solidity/proxy/UpgradeableBeacon.sol:16"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "contracts/solidity/util/Address.sol:8",
+        "version": {
+          "withMetadata": "3b67cbb15d31c6477fa31f56d862d9105427aa487368585454c6044440ddd81c",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "contracts/solidity/util/Address.sol:167"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "src": "contracts/solidity/testing/Context.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "DummyXToken": {
+        "src": "contracts/solidity/testing/DummyXToken.sol:9",
+        "version": {
+          "withMetadata": "2a308b8bce2a94703887eec89db22ea10204bda3ce62cbe27c27caae89e6caa5",
+          "withoutMetadata": "2a308b8bce2a94703887eec89db22ea10204bda3ce62cbe27c27caae89e6caa5",
+          "linkedWithoutMetadata": "2a308b8bce2a94703887eec89db22ea10204bda3ce62cbe27c27caae89e6caa5"
+        },
+        "inherit": [
+          "ERC20Upgradeable",
+          "IERC20Metadata",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "burnFrom(address,uint256)",
+          "mint(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "DummyXToken",
+            "src": "contracts/solidity/testing/DummyXToken.sol:10"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC1155": {
+        "src": "contracts/solidity/testing/ERC1155.sol:20",
+        "version": {
+          "withMetadata": "69352d6e9110bdae8962f19411a828658938bfde9769664001263dbff4138937",
+          "withoutMetadata": "52ea1dcb3a3fa1359f3a12107042afeb3762cc4038289cba3bfffa5750062e4c",
+          "linkedWithoutMetadata": "52ea1dcb3a3fa1359f3a12107042afeb3762cc4038289cba3bfffa5750062e4c"
+        },
+        "inherit": [
+          "IERC1155MetadataURI",
+          "IERC1155",
+          "ERC165",
+          "IERC165",
+          "Context"
+        ],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [
+          "(string)",
+          "supportsInterface(bytes4)",
+          "uri(uint256)",
+          "balanceOf(address,uint256)",
+          "balanceOfBatch(address[],uint256[])",
+          "setApprovalForAll(address,bool)",
+          "isApprovedForAll(address,address)",
+          "safeTransferFrom(address,address,uint256,uint256,bytes)",
+          "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)",
+          "publicMint(address,uint256,uint256)",
+          "publicMintBatch(address,uint256[],uint256[])"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC1155",
+            "src": "contracts/solidity/testing/ERC1155.sol:35"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC1155",
+              "label": "_balances",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_uint256))",
+              "src": "contracts/solidity/testing/ERC1155.sol:24"
+            },
+            {
+              "contract": "ERC1155",
+              "label": "_operatorApprovals",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "src": "contracts/solidity/testing/ERC1155.sol:27"
+            },
+            {
+              "contract": "ERC1155",
+              "label": "_uri",
+              "type": "t_string_storage",
+              "src": "contracts/solidity/testing/ERC1155.sol:30"
+            }
+          ],
+          "types": {
+            "t_mapping(t_uint256,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(uint256 => mapping(address => uint256))"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+              "label": "mapping(address => mapping(address => bool))"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_string_storage": {
+              "label": "string"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC1155Receiver": {
+        "src": "contracts/solidity/testing/ERC1155Receiver.sol:11",
+        "inherit": [
+          "IERC1155Receiver",
+          "ERC165",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC165": {
+        "src": "contracts/solidity/testing/ERC165.sol:21",
+        "inherit": [
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC721": {
+        "src": "contracts/solidity/testing/ERC721.sol:20",
+        "version": {
+          "withMetadata": "d7278c06d98614c7588a395d0d334c4273662d0a7595d45e31a270e8a394d756",
+          "withoutMetadata": "c9794192c446a8707406f15abc365df068dcf48befd31bcab2cefedaccf02a0e",
+          "linkedWithoutMetadata": "c9794192c446a8707406f15abc365df068dcf48befd31bcab2cefedaccf02a0e"
+        },
+        "inherit": [
+          "IERC721Metadata",
+          "IERC721",
+          "ERC165",
+          "IERC165",
+          "Context"
+        ],
+        "libraries": [
+          "Address",
+          "Strings"
+        ],
+        "methods": [
+          "(string,string)",
+          "supportsInterface(bytes4)",
+          "balanceOf(address)",
+          "ownerOf(uint256)",
+          "name()",
+          "symbol()",
+          "tokenURI(uint256)",
+          "approve(address,uint256)",
+          "getApproved(uint256)",
+          "setApprovalForAll(address,bool)",
+          "isApprovedForAll(address,address)",
+          "transferFrom(address,address,uint256)",
+          "safeTransferFrom(address,address,uint256)",
+          "safeTransferFrom(address,address,uint256,bytes)",
+          "publicMint(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC721",
+            "src": "contracts/solidity/testing/ERC721.sol:45"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC721",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "contracts/solidity/testing/ERC721.sol:25"
+            },
+            {
+              "contract": "ERC721",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "contracts/solidity/testing/ERC721.sol:28"
+            },
+            {
+              "contract": "ERC721",
+              "label": "_owners",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts/solidity/testing/ERC721.sol:31"
+            },
+            {
+              "contract": "ERC721",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/solidity/testing/ERC721.sol:34"
+            },
+            {
+              "contract": "ERC721",
+              "label": "_tokenApprovals",
+              "type": "t_mapping(t_uint256,t_address)",
+              "src": "contracts/solidity/testing/ERC721.sol:37"
+            },
+            {
+              "contract": "ERC721",
+              "label": "_operatorApprovals",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+              "src": "contracts/solidity/testing/ERC721.sol:40"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_mapping(t_uint256,t_address)": {
+              "label": "mapping(uint256 => address)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+              "label": "mapping(address => mapping(address => bool))"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "FlashBorrower": {
+        "src": "contracts/solidity/testing/FlashBorrower.sol:7",
+        "version": {
+          "withMetadata": "3c03c075e97dc42814cf0008d53c0a3b48127f5428d3b9c12a75b41891f38241",
+          "withoutMetadata": "c820fe8e5884db8e581a5c0dac4095bafe5ea197774724f70f797d0817277109",
+          "linkedWithoutMetadata": "c820fe8e5884db8e581a5c0dac4095bafe5ea197774724f70f797d0817277109"
+        },
+        "inherit": [
+          "IERC3156FlashBorrowerUpgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "onFlashLoan(address,address,uint256,uint256,bytes)",
+          "flashBorrow(address,address,uint256)",
+          "flashBorrowAndSteal(address,address,uint256)",
+          "flashBorrowAndReenter(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "FlashBorrower",
+              "label": "flashBalance",
+              "type": "t_uint256",
+              "src": "contracts/solidity/testing/FlashBorrower.sol:10"
+            },
+            {
+              "contract": "FlashBorrower",
+              "label": "flashUser",
+              "type": "t_address",
+              "src": "contracts/solidity/testing/FlashBorrower.sol:11"
+            },
+            {
+              "contract": "FlashBorrower",
+              "label": "flashToken",
+              "type": "t_address",
+              "src": "contracts/solidity/testing/FlashBorrower.sol:12"
+            },
+            {
+              "contract": "FlashBorrower",
+              "label": "flashValue",
+              "type": "t_uint256",
+              "src": "contracts/solidity/testing/FlashBorrower.sol:13"
+            },
+            {
+              "contract": "FlashBorrower",
+              "label": "flashFee",
+              "type": "t_uint256",
+              "src": "contracts/solidity/testing/FlashBorrower.sol:14"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC1155": {
+        "src": "contracts/solidity/testing/IERC1155.sol:13",
+        "inherit": [
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "balanceOf(address,uint256)",
+          "balanceOfBatch(address[],uint256[])",
+          "setApprovalForAll(address,bool)",
+          "isApprovedForAll(address,address)",
+          "safeTransferFrom(address,address,uint256,uint256,bytes)",
+          "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC1155MetadataURI": {
+        "src": "contracts/solidity/testing/IERC1155MetadataURI.sol:13",
+        "inherit": [
+          "IERC1155",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "uri(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC1155Receiver": {
+        "src": "contracts/solidity/testing/IERC1155Receiver.sol:10",
+        "inherit": [
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "onERC1155Received(address,address,uint256,uint256,bytes)",
+          "onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC165": {
+        "src": "contracts/solidity/testing/IERC165.sol:14",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721": {
+        "src": "contracts/solidity/testing/IERC721.sol:10",
+        "inherit": [
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "balanceOf(address)",
+          "ownerOf(uint256)",
+          "safeTransferFrom(address,address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "approve(address,uint256)",
+          "getApproved(uint256)",
+          "setApprovalForAll(address,bool)",
+          "isApprovedForAll(address,address)",
+          "safeTransferFrom(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721Enumerable": {
+        "src": "contracts/solidity/token/IERC721Enumerable.sol:11",
+        "inherit": [
+          "IERC721Upgradeable",
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "tokenOfOwnerByIndex(address,uint256)",
+          "tokenByIndex(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721Metadata": {
+        "src": "contracts/solidity/testing/IERC721Metadata.sol:11",
+        "inherit": [
+          "IERC721",
+          "IERC165"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "tokenURI(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721Receiver": {
+        "src": "contracts/solidity/testing/IERC721Receiver.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "onERC721Received(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "MockDistributor": {
+        "src": "contracts/solidity/testing/MockDistributor.sol:10",
+        "version": {
+          "withMetadata": "a56a981c67d5718f385938920245616cf67ed851d9cf3cbc0d2c1a6959e95a82",
+          "withoutMetadata": "9a094c041c960f8652f497debd821c141e6ba1b6bb59035be6885cea541ac0e0",
+          "linkedWithoutMetadata": "9a094c041c960f8652f497debd821c141e6ba1b6bb59035be6885cea541ac0e0"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "__MockDistributor_init()",
+          "distribute(uint256)",
+          "initializeVaultReceivers(uint256)",
+          "withdrawTokens(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "MockStakingProvider": {
+        "src": "contracts/solidity/testing/MockStakingProvider.sol:10",
+        "version": {
+          "withMetadata": "a1c606deaaac42e74332ab3d3ce9cedd301491d99073b8f12d8567ed2fef48c0",
+          "withoutMetadata": "a1c606deaaac42e74332ab3d3ce9cedd301491d99073b8f12d8567ed2fef48c0",
+          "linkedWithoutMetadata": "a1c606deaaac42e74332ab3d3ce9cedd301491d99073b8f12d8567ed2fef48c0"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "()",
+          "stakingTokenForVaultToken(address)",
+          "setChanged(bool)",
+          "nameForStakingToken(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "MockStakingProvider",
+            "src": "contracts/solidity/testing/MockStakingProvider.sol:14"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "MockStakingProvider",
+              "label": "changed",
+              "type": "t_bool",
+              "src": "contracts/solidity/testing/MockStakingProvider.sol:12"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "MockVault": {
+        "src": "contracts/solidity/testing/MockVault.sol:7",
+        "version": {
+          "withMetadata": "5513d0fec9435f6d8a699a3b8f93debaf5a03fb2b9190cae42d91a16a9022988",
+          "withoutMetadata": "8d4ffdd4516880514cebd592f91bdfb645ef79b47bffc371e4c7ce21deeb1288",
+          "linkedWithoutMetadata": "8d4ffdd4516880514cebd592f91bdfb645ef79b47bffc371e4c7ce21deeb1288"
+        },
+        "inherit": [
+          "ERC721HolderUpgradeable",
+          "IERC721ReceiverUpgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "(address,bool)",
+          "mintTo(uint256[],uint256[],address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "MockVault",
+            "src": "contracts/solidity/testing/MockVault.sol:11"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "MockVault",
+              "label": "assetAddress",
+              "type": "t_address",
+              "src": "contracts/solidity/testing/MockVault.sol:8"
+            },
+            {
+              "contract": "MockVault",
+              "label": "is1155",
+              "type": "t_bool",
+              "src": "contracts/solidity/testing/MockVault.sol:9"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXEligibilityManager2": {
+        "src": "contracts/solidity/testing/NFTXEligibilityManager2.sol:7",
+        "version": {
+          "withMetadata": "cd22d430abb173ddfdab482a01b5033be226e3d964eee6ded2cf238e32725b4c",
+          "withoutMetadata": "265fef642f14a6f2c549786c59aa34752d5a3ea778101824ee0e61f25952b97b",
+          "linkedWithoutMetadata": "265fef642f14a6f2c549786c59aa34752d5a3ea778101824ee0e61f25952b97b"
+        },
+        "inherit": [
+          "NFTXEligibilityManager",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "sum(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXLPStaking2": {
+        "src": "contracts/solidity/testing/NFTXLPStaking2.sol:7",
+        "version": {
+          "withMetadata": "033220bb8031e37dc58188061e67a1d6c0c91d51e953e4ee3e2c9569d2c5bfa8",
+          "withoutMetadata": "d129c25b7104050feda73718856f7adc7aed3ac7d81e8f87679ad6fc90180a54",
+          "linkedWithoutMetadata": "d129c25b7104050feda73718856f7adc7aed3ac7d81e8f87679ad6fc90180a54"
+        },
+        "inherit": [
+          "NFTXLPStaking",
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "sum(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXVaultFactoryUpgradeable2": {
+        "src": "contracts/solidity/testing/NFTXVaultFactoryUpgradeable2.sol:9",
+        "version": {
+          "withMetadata": "6fe6141f19871a3d1eb20627a426bb3236d498cb812acfa3742317b34e58bdc0",
+          "withoutMetadata": "3bccae5bd473b8ddc0a75f172d1c54210808d586ed8db7b0e2cf2906948af3fe",
+          "linkedWithoutMetadata": "3bccae5bd473b8ddc0a75f172d1c54210808d586ed8db7b0e2cf2906948af3fe"
+        },
+        "inherit": [
+          "NFTXVaultFactoryUpgradeable",
+          "INFTXVaultFactory",
+          "UpgradeableBeacon",
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable",
+          "IBeacon"
+        ],
+        "libraries": [],
+        "methods": [
+          "twiceNumVaults()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Strings": {
+        "src": "contracts/solidity/testing/Strings.sol:8",
+        "version": {
+          "withMetadata": "17b97d93b56d3e64cd7eb4c8e3fd7feb29c9a353f5f02332d27800e4c2f7e079",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "TestFactoryUpgrade": {
+        "src": "contracts/solidity/testing/TestUpgrade.sol:7",
+        "version": {
+          "withMetadata": "648be3e9e4dfa60ad7fac0362c420380fe408b6f99f02e0c5789ab761f312629",
+          "withoutMetadata": "1e60dc14ae79ad0e0389074e61a4a0a7f92c5dd0084a3fb95e5b3b9352c92e26",
+          "linkedWithoutMetadata": "1e60dc14ae79ad0e0389074e61a4a0a7f92c5dd0084a3fb95e5b3b9352c92e26"
+        },
+        "inherit": [
+          "NFTXVaultFactoryUpgradeable",
+          "INFTXVaultFactory",
+          "UpgradeableBeacon",
+          "PausableUpgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable",
+          "IBeacon"
+        ],
+        "libraries": [],
+        "methods": [
+          "isUpgraded()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "TestVaultUpgrade": {
+        "src": "contracts/solidity/testing/TestVaultUpgrade.sol:7",
+        "version": {
+          "withMetadata": "38f533b563b52c3005a3636f3ce7d3e966e784a2e5af763aa054e5ea75d5e19d",
+          "withoutMetadata": "8b70b5cc9e157ce76c411da3f9247f199f96143e233a6a912f7a24c753854812",
+          "linkedWithoutMetadata": "8b70b5cc9e157ce76c411da3f9247f199f96143e233a6a912f7a24c753854812"
+        },
+        "inherit": [
+          "NFTXVaultUpgradeable",
+          "INFTXVault",
+          "ERC1155SafeHolderUpgradeable",
+          "ERC1155ReceiverUpgradeable",
+          "IERC1155ReceiverUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable",
+          "ERC721SafeHolderUpgradeable",
+          "IERC721ReceiverUpgradeable",
+          "ReentrancyGuardUpgradeable",
+          "ERC20FlashMintUpgradeable",
+          "IERC3156FlashLenderUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20Metadata",
+          "IERC20Upgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "isUpgraded()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC1155HolderUpgradeable": {
+        "src": "contracts/solidity/token/ERC1155HolderUpgradeable.sol:10",
+        "inherit": [
+          "ERC1155ReceiverUpgradeable",
+          "IERC1155ReceiverUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "onERC1155Received(address,address,uint256,uint256,bytes)",
+          "onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC1155ReceiverUpgradeable": {
+        "src": "contracts/solidity/token/ERC1155ReceiverUpgradeable.sol:11",
+        "inherit": [
+          "IERC1155ReceiverUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC1155SafeHolderUpgradeable": {
+        "src": "contracts/solidity/token/ERC1155SafeHolderUpgradeable.sol:10",
+        "inherit": [
+          "ERC1155ReceiverUpgradeable",
+          "IERC1155ReceiverUpgradeable",
+          "ERC165Upgradeable",
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "onERC1155Received(address,address,uint256,uint256,bytes)",
+          "onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20FlashMintUpgradeable": {
+        "src": "contracts/solidity/token/ERC20FlashMintUpgradeable.sol:16",
+        "inherit": [
+          "IERC3156FlashLenderUpgradeable",
+          "ERC20Upgradeable",
+          "IERC20Metadata",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "maxFlashLoan(address)",
+          "flashFee(address,uint256)",
+          "flashLoan(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC20FlashMintUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/solidity/token/ERC20FlashMintUpgradeable.sol:81"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20Upgradeable": {
+        "src": "contracts/solidity/token/ERC20Upgradeable.sol:34",
+        "version": {
+          "withMetadata": "47e95a7ccda8cac84b3ed69ffb56011a30b6d955a9f54030530f05fbb1ca6826",
+          "withoutMetadata": "2274a199048c64d1a1b79e7a3844a862ef1e174a9cc30dc3f7ef106b42e8e55d",
+          "linkedWithoutMetadata": "2274a199048c64d1a1b79e7a3844a862ef1e174a9cc30dc3f7ef106b42e8e55d"
+        },
+        "inherit": [
+          "IERC20Metadata",
+          "IERC20Upgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "increaseAllowance(address,uint256)",
+          "decreaseAllowance(address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/solidity/token/ERC20Upgradeable.sol:35"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_allowances",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "contracts/solidity/token/ERC20Upgradeable.sol:37"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "contracts/solidity/token/ERC20Upgradeable.sol:39"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "contracts/solidity/token/ERC20Upgradeable.sol:41"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "contracts/solidity/token/ERC20Upgradeable.sol:42"
+            },
+            {
+              "contract": "ERC20Upgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)45_storage",
+              "src": "contracts/solidity/token/ERC20Upgradeable.sol:315"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_array(t_uint256)45_storage": {
+              "label": "uint256[45]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC721HolderUpgradeable": {
+        "src": "contracts/solidity/token/ERC721HolderUpgradeable.sol:13",
+        "version": {
+          "withMetadata": "65d1a757b73280484ad56895aba05298db875ee2d6a944802bc4a1aee12b3cf8",
+          "withoutMetadata": "4ce8d4fb03f2efa964a09f6b7a3a9498d6f78c40a86bfdcbdcc4a31d776e40f0",
+          "linkedWithoutMetadata": "4ce8d4fb03f2efa964a09f6b7a3a9498d6f78c40a86bfdcbdcc4a31d776e40f0"
+        },
+        "inherit": [
+          "IERC721ReceiverUpgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "onERC721Received(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC721SafeHolderUpgradeable": {
+        "src": "contracts/solidity/token/ERC721SafeHolderUpgradeable.sol:13",
+        "version": {
+          "withMetadata": "bd5b951ebb31a82e57c8fdcded003bf7aae06ae9fb211b85155907dcb8ad0860",
+          "withoutMetadata": "4ce8d4fb03f2efa964a09f6b7a3a9498d6f78c40a86bfdcbdcc4a31d776e40f0",
+          "linkedWithoutMetadata": "4ce8d4fb03f2efa964a09f6b7a3a9498d6f78c40a86bfdcbdcc4a31d776e40f0"
+        },
+        "inherit": [
+          "IERC721ReceiverUpgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "onERC721Received(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC1155ReceiverUpgradeable": {
+        "src": "contracts/solidity/token/IERC1155ReceiverUpgradeable.sol:10",
+        "inherit": [
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "onERC1155Received(address,address,uint256,uint256,bytes)",
+          "onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC1155Upgradeable": {
+        "src": "contracts/solidity/token/IERC1155Upgradeable.sol:13",
+        "inherit": [
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "balanceOf(address,uint256)",
+          "balanceOfBatch(address[],uint256[])",
+          "setApprovalForAll(address,bool)",
+          "isApprovedForAll(address,address)",
+          "safeTransferFrom(address,address,uint256,uint256,bytes)",
+          "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Metadata": {
+        "src": "contracts/solidity/token/IERC20Metadata.sol:12",
+        "inherit": [
+          "IERC20Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20Upgradeable": {
+        "src": "contracts/solidity/token/IERC20Upgradeable.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721ReceiverUpgradeable": {
+        "src": "contracts/solidity/token/IERC721ReceiverUpgradeable.sol:10",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "onERC721Received(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC721Upgradeable": {
+        "src": "contracts/solidity/token/IERC721Upgradeable.sol:10",
+        "inherit": [
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "balanceOf(address)",
+          "ownerOf(uint256)",
+          "safeTransferFrom(address,address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "approve(address,uint256)",
+          "getApproved(uint256)",
+          "setApprovalForAll(address,bool)",
+          "isApprovedForAll(address,address)",
+          "safeTransferFrom(address,address,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "RewardDistributionTokenUpgradeable": {
+        "src": "contracts/solidity/token/RewardDistributionTokenUpgradeable.sol:19",
+        "version": {
+          "withMetadata": "222b80e46998578525b1c196cc66217c55b94e4d88ab169d44f0fd35ee74c3ed",
+          "withoutMetadata": "51d61c181214ce94484cc3c67ea6350e64938c780df1ddb1f561c216680d5200",
+          "linkedWithoutMetadata": "51d61c181214ce94484cc3c67ea6350e64938c780df1ddb1f561c216680d5200"
+        },
+        "inherit": [
+          "ERC20Upgradeable",
+          "IERC20Metadata",
+          "IERC20Upgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "SafeMathUpgradeable",
+          "SafeMathInt",
+          "SafeERC20Upgradeable"
+        ],
+        "methods": [
+          "__RewardDistributionToken_init(address,string,string)",
+          "transfer(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "mint(address,address,uint256)",
+          "burnFrom(address,uint256)",
+          "distributeRewards(uint256)",
+          "withdrawReward(address)",
+          "dividendOf(address)",
+          "withdrawnRewardOf(address)",
+          "accumulativeRewardOf(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "RewardDistributionTokenUpgradeable",
+              "label": "target",
+              "type": "t_contract(IERC20Upgradeable)21935",
+              "src": "contracts/solidity/token/RewardDistributionTokenUpgradeable.sol:24"
+            },
+            {
+              "contract": "RewardDistributionTokenUpgradeable",
+              "label": "magnifiedRewardPerShare",
+              "type": "t_uint256",
+              "src": "contracts/solidity/token/RewardDistributionTokenUpgradeable.sol:31"
+            },
+            {
+              "contract": "RewardDistributionTokenUpgradeable",
+              "label": "magnifiedRewardCorrections",
+              "type": "t_mapping(t_address,t_int256)",
+              "src": "contracts/solidity/token/RewardDistributionTokenUpgradeable.sol:44"
+            },
+            {
+              "contract": "RewardDistributionTokenUpgradeable",
+              "label": "withdrawnRewards",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/solidity/token/RewardDistributionTokenUpgradeable.sol:45"
+            },
+            {
+              "contract": "RewardDistributionTokenUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)45_storage",
+              "src": "contracts/solidity/token/RewardDistributionTokenUpgradeable.sol:243"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20Upgradeable)21935": {
+              "label": "contract IERC20Upgradeable"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_int256)": {
+              "label": "mapping(address => int256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_int256": {
+              "label": "int256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_array(t_uint256)45_storage": {
+              "label": "uint256[45]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "TimelockRewardDistributionTokenImpl": {
+        "src": "contracts/solidity/token/TimelockRewardDistributionTokenImpl.sol:17",
+        "version": {
+          "withMetadata": "464b507dab25c0008b4bfb16731ccfb61af73d256e6e10d2d69c4248494dbfb9",
+          "withoutMetadata": "9e0af3e737398ec3ab3d26e9149dbc9cc58e9c4193ed1db00b6fe27912faaf53",
+          "linkedWithoutMetadata": "9e0af3e737398ec3ab3d26e9149dbc9cc58e9c4193ed1db00b6fe27912faaf53"
+        },
+        "inherit": [
+          "ERC20Upgradeable",
+          "IERC20Metadata",
+          "IERC20Upgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "SafeMathUpgradeable",
+          "SafeMathInt",
+          "SafeERC20Upgradeable"
+        ],
+        "methods": [
+          "__TimelockRewardDistributionToken_init(address,string,string)",
+          "transfer(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "mint(address,uint256)",
+          "timelockMint(address,uint256,uint256)",
+          "timelockUntil(address)",
+          "burnFrom(address,uint256)",
+          "distributeRewards(uint256)",
+          "withdrawReward(address)",
+          "dividendOf(address)",
+          "withdrawnRewardOf(address)",
+          "accumulativeRewardOf(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "TimelockRewardDistributionTokenImpl",
+              "label": "target",
+              "type": "t_contract(IERC20Upgradeable)21935",
+              "src": "contracts/solidity/token/TimelockRewardDistributionTokenImpl.sol:22"
+            },
+            {
+              "contract": "TimelockRewardDistributionTokenImpl",
+              "label": "magnifiedRewardPerShare",
+              "type": "t_uint256",
+              "src": "contracts/solidity/token/TimelockRewardDistributionTokenImpl.sol:29"
+            },
+            {
+              "contract": "TimelockRewardDistributionTokenImpl",
+              "label": "magnifiedRewardCorrections",
+              "type": "t_mapping(t_address,t_int256)",
+              "src": "contracts/solidity/token/TimelockRewardDistributionTokenImpl.sol:42"
+            },
+            {
+              "contract": "TimelockRewardDistributionTokenImpl",
+              "label": "withdrawnRewards",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/solidity/token/TimelockRewardDistributionTokenImpl.sol:43"
+            },
+            {
+              "contract": "TimelockRewardDistributionTokenImpl",
+              "label": "timelock",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/solidity/token/TimelockRewardDistributionTokenImpl.sol:45"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20Upgradeable)21935": {
+              "label": "contract IERC20Upgradeable"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_int256)": {
+              "label": "mapping(address => int256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_int256": {
+              "label": "int256"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "XTokenUpgradeable": {
+        "src": "contracts/solidity/token/XTokenUpgradeable.sol:17",
+        "version": {
+          "withMetadata": "35c72015ece7543c0cbdc2d98c1a93f9c4752e4d4a4d6b36c03c691d320594ff",
+          "withoutMetadata": "52ce3270b3b334a811bf1f823d93cadc8323c128f25d32329e658450ae11f839",
+          "linkedWithoutMetadata": "52ce3270b3b334a811bf1f823d93cadc8323c128f25d32329e658450ae11f839"
+        },
+        "inherit": [
+          "ERC20Upgradeable",
+          "IERC20Metadata",
+          "IERC20Upgradeable",
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "__XToken_init(address,string,string)",
+          "mintXTokens(address,uint256,uint256)",
+          "burnXTokens(address,uint256)",
+          "timelockAccount(address,uint256)",
+          "timelockUntil(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "XTokenUpgradeable",
+              "label": "baseToken",
+              "type": "t_contract(IERC20Upgradeable)21935",
+              "src": "contracts/solidity/token/XTokenUpgradeable.sol:18"
+            },
+            {
+              "contract": "XTokenUpgradeable",
+              "label": "timelock",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/solidity/token/XTokenUpgradeable.sol:19"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20Upgradeable)21935": {
+              "label": "contract IERC20Upgradeable"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ClaimToken": {
+        "src": "contracts/solidity/tools/NFTXFlashSwipe.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "claim(uint256[])",
+          "accumulated(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "NFTXFlashSwipe": {
+        "src": "contracts/solidity/tools/NFTXFlashSwipe.sol:15",
+        "version": {
+          "withMetadata": "bcbbf880bb0c9160302c2e6e44e0a1e56925a9911952cfbefd0c175d6be2d50a",
+          "withoutMetadata": "1e41c20a2d520201bb6a5c36644d7f7cd454c514893e00c6c0291c6f7f565de5",
+          "linkedWithoutMetadata": "1e41c20a2d520201bb6a5c36644d7f7cd454c514893e00c6c0291c6f7f565de5"
+        },
+        "inherit": [
+          "IERC3156FlashBorrowerUpgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "flashSwipeNCT(address,uint256,uint256[])",
+          "flashSwipeWET(address,uint256,uint256[])",
+          "flashSwipe(address,uint256,uint256,uint256[],uint8)",
+          "onFlashLoan(address,address,uint256,uint256,bytes)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "state-variable-assignment",
+            "name": "NCT",
+            "src": "contracts/solidity/tools/NFTXFlashSwipe.sol:19"
+          },
+          {
+            "kind": "state-variable-assignment",
+            "name": "WET",
+            "src": "contracts/solidity/tools/NFTXFlashSwipe.sol:20"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "NFTXFlashSwipe",
+              "label": "nftxFactory",
+              "type": "t_contract(INFTXVaultFactory)14840",
+              "src": "contracts/solidity/tools/NFTXFlashSwipe.sol:17"
+            },
+            {
+              "contract": "NFTXFlashSwipe",
+              "label": "NCT",
+              "type": "t_contract(ClaimToken)23426",
+              "src": "contracts/solidity/tools/NFTXFlashSwipe.sol:19"
+            },
+            {
+              "contract": "NFTXFlashSwipe",
+              "label": "WET",
+              "type": "t_contract(ClaimToken)23426",
+              "src": "contracts/solidity/tools/NFTXFlashSwipe.sol:20"
+            },
+            {
+              "contract": "NFTXFlashSwipe",
+              "label": "tempLender",
+              "type": "t_address",
+              "src": "contracts/solidity/tools/NFTXFlashSwipe.sol:21"
+            }
+          ],
+          "types": {
+            "t_contract(INFTXVaultFactory)14840": {
+              "label": "contract INFTXVaultFactory"
+            },
+            "t_contract(ClaimToken)23426": {
+              "label": "contract ClaimToken"
+            },
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ContextUpgradeable": {
+        "src": "contracts/solidity/util/ContextUpgradeable.sol:16",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ContextUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "contracts/solidity/util/ContextUpgradeable.sol:31"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Create2": {
+        "src": "contracts/solidity/util/Create2.sol:14",
+        "version": {
+          "withMetadata": "aea6bc0f195a2ee32f141d964797fbaa25548fd97f77f6acda64d2536b80f4f4",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC165Upgradeable": {
+        "src": "contracts/solidity/util/ERC165Upgradeable.sol:21",
+        "inherit": [
+          "IERC165Upgradeable"
+        ],
+        "libraries": [],
+        "methods": [
+          "supportsInterface(bytes4)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "EnumerableSetUpgradeable": {
+        "src": "contracts/solidity/util/EnumerableSetUpgradeable.sol:29",
+        "version": {
+          "withMetadata": "901073ef9ad26110ac6f6197608e47ead10c50b48b56d0574438e8f9a6d59712",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "OwnableUpgradeable": {
+        "src": "contracts/solidity/util/OwnableUpgradeable.sol:19",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "contracts/solidity/util/OwnableUpgradeable.sol:20"
+            },
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "contracts/solidity/util/OwnableUpgradeable.sol:74"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "PausableUpgradeable": {
+        "src": "contracts/solidity/util/PausableUpgradeable.sol:8",
+        "version": {
+          "withMetadata": "987d33cb8c8abd428f0609e17a1e82a37ae7bebc60dfe60db62e2f8ed18f2879",
+          "withoutMetadata": "d23e68bd8ee7a554a672144aec17f1dd90beaf9a22ca35dc331d86ae600613d1",
+          "linkedWithoutMetadata": "d23e68bd8ee7a554a672144aec17f1dd90beaf9a22ca35dc331d86ae600613d1"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "onlyOwnerIfPaused(uint256)",
+          "unpause(uint256)",
+          "pause(uint256)",
+          "setIsGuardian(address,bool)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "isGuardian",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/solidity/util/PausableUpgradeable.sol:17"
+            },
+            {
+              "contract": "PausableUpgradeable",
+              "label": "isPaused",
+              "type": "t_mapping(t_uint256,t_bool)",
+              "src": "contracts/solidity/util/PausableUpgradeable.sol:18"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_uint256,t_bool)": {
+              "label": "mapping(uint256 => bool)"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ReentrancyGuardUpgradeable": {
+        "src": "contracts/solidity/util/ReentrancyGuardUpgradeable.sol:22",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "contracts/solidity/util/ReentrancyGuardUpgradeable.sol:37"
+            },
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "contracts/solidity/util/ReentrancyGuardUpgradeable.sol:67"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20Upgradeable": {
+        "src": "contracts/solidity/util/SafeERC20Upgradeable.sol:17",
+        "version": {
+          "withMetadata": "4925184025ebdbf460163f4e693f1aeba6846708fad2a80f9b8515a2678c4265",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMathInt": {
+        "src": "contracts/solidity/util/SafeMathInt.sol:11",
+        "version": {
+          "withMetadata": "e7cf8a90794fbe9ad2b82752c1847e6360bbb367747ddfe522ecb6ca468d2dfa",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMathUpgradeable": {
+        "src": "contracts/solidity/util/SafeMathUpgradeable.sol:15",
+        "version": {
+          "withMetadata": "816e6576326e128be604c0bdfb002bac374f6935af67fbe078a0bc8c1606bc19",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "console": {
+        "src": "hardhat/console.sol:4",
+        "version": {
+          "withMetadata": "963bae4ddcc8071ce33f045abac2e67cb6e9afbda33d6bfe930c42f4b6f14478",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1032 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract IGaugeController",
+						"name": "_gaugeController",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_vault",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_liquidator",
+						"type": "address"
+					},
+					{
+						"internalType": "uint32",
+						"name": "_stakerCut",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "contract IGaugeController",
+						"name": "gaugeController",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "vault",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "liquidator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint32",
+						"name": "stakerCut",
+						"type": "uint32"
+					}
+				],
+				"name": "Deployed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "gauge",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "contract IERC20",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "RewardTokenPushed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "gauge",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "contract IERC20",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "stakerRewards",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "exchangeRate",
+						"type": "uint256"
+					}
+				],
+				"name": "RewardsAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "gauge",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "contract IERC20",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "exchangeRate",
+						"type": "uint256"
+					}
+				],
+				"name": "RewardsClaimed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "caller",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "contract IERC20",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "RewardsRedeemed",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_gauge",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_oldStakeBalance",
+						"type": "uint256"
+					}
+				],
+				"name": "afterDecreaseGauge",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_gauge",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_oldStakeBalance",
+						"type": "uint256"
+					}
+				],
+				"name": "afterIncreaseGauge",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IPrizePool",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "contract ITicket",
+						"name": "_ticket",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "contract IERC20",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "afterSwap",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_gauge",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "contract IERC20",
+								"name": "token",
+								"type": "address"
+							},
+							{
+								"internalType": "uint64",
+								"name": "timestamp",
+								"type": "uint64"
+							}
+						],
+						"internalType": "struct GaugeReward.RewardToken",
+						"name": "_rewardToken",
+						"type": "tuple"
+					},
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "claim",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_gauge",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "claimAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_gauge",
+						"type": "address"
+					}
+				],
+				"name": "currentRewardToken",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "contract IERC20",
+								"name": "token",
+								"type": "address"
+							},
+							{
+								"internalType": "uint64",
+								"name": "timestamp",
+								"type": "uint64"
+							}
+						],
+						"internalType": "struct GaugeReward.RewardToken",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "gaugeController",
+				"outputs": [
+					{
+						"internalType": "contract IGaugeController",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"name": "gaugeRewardTokenExchangeRates",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "gaugeRewardTokens",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint64",
+						"name": "timestamp",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_gauge",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"internalType": "contract IERC20",
+								"name": "token",
+								"type": "address"
+							},
+							{
+								"internalType": "uint64",
+								"name": "timestamp",
+								"type": "uint64"
+							}
+						],
+						"internalType": "struct GaugeReward.RewardToken",
+						"name": "_rewardToken",
+						"type": "tuple"
+					},
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getRewards",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "liquidator",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes[]",
+						"name": "data",
+						"type": "bytes[]"
+					}
+				],
+				"name": "multicall",
+				"outputs": [
+					{
+						"internalType": "bytes[]",
+						"name": "results",
+						"type": "bytes[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IERC20",
+						"name": "_token",
+						"type": "address"
+					}
+				],
+				"name": "redeem",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stakerCut",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"name": "userGaugeRewardTokenExchangeRates",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "userGaugeRewardTokenLastClaimedTimestamp",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "userRewardTokenBalances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "vault",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "PoolTogether Inc Team",
+			"details": "This contract is only keeping track of the rewards. Reward tokens are actually stored in the TokenVault contract.",
+			"events": {
+				"Deployed(address,address,address,uint32)": {
+					"params": {
+						"gaugeController": "Address of the GaugeController",
+						"liquidator": "Address of the Liquidator",
+						"stakerCut": "Percentage of rewards that goes to stakers",
+						"vault": "Address of the Vault"
+					}
+				},
+				"RewardTokenPushed(address,address,uint256)": {
+					"params": {
+						"gauge": "Address of the gauge for which the reward token is added",
+						"timestamp": "Timestamp at which the reward token was pushed",
+						"token": "Address of the token being pushed"
+					}
+				},
+				"RewardsAdded(address,address,uint256,uint256,uint256)": {
+					"params": {
+						"amount": "Amount of tokens sent to the vault",
+						"exchangeRate": "New exchange rate for this `token` in this `gauge`",
+						"gauge": "Address of the gauge for which tokens were added",
+						"stakerRewards": "Amount of rewards allocated to stakers",
+						"token": "Address of the token sent to the vault"
+					}
+				},
+				"RewardsClaimed(address,address,address,uint256,uint256)": {
+					"params": {
+						"amount": "Total amount of rewards claimed",
+						"exchangeRate": "Exchange rate at which the rewards were claimed",
+						"gauge": "Address of the gauge for which the user claimed rewards",
+						"token": "Address of the token for which the user claimed rewards",
+						"user": "Address of the user for which the rewards were claimed"
+					}
+				},
+				"RewardsRedeemed(address,address,address,uint256)": {
+					"params": {
+						"amount": "Total amount of rewards redeemed",
+						"caller": "Address who called the redeem function",
+						"token": "Address of the token for which the user redeemed rewards",
+						"user": "Address of the user for which the rewards were redeemed"
+					}
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"afterDecreaseGauge(address,address,uint256)": {
+					"params": {
+						"gauge": "Address of the gauge to decrease stake for",
+						"oldStakeBalance": "Old stake balance of the user",
+						"user": "Address of the user to decrease stake for"
+					}
+				},
+				"afterIncreaseGauge(address,address,uint256)": {
+					"params": {
+						"gauge": "Address of the gauge to increase stake for",
+						"oldStakeBalance": "Old stake balance of the user",
+						"user": "Address of the user to increase stake for"
+					}
+				},
+				"afterSwap(address,address,uint256,address,uint256)": {
+					"details": "Called by the liquidator contract anytime tokens are liquidated.Will push `token` to the `gaugeRewardTokens` mapping if different from the current one.",
+					"params": {
+						"_ticket": "Address of the tickets that were sold",
+						"_token": "Address of the token that the tickets were sold for",
+						"_tokenAmount": "Amount of tokens that the tickets were sold for"
+					}
+				},
+				"claim(address,(address,uint64),address)": {
+					"params": {
+						"_gauge": "Address of the gauge to claim rewards for",
+						"_rewardToken": "Reward token to claim rewards for",
+						"_user": "Address of the user to claim rewards for"
+					}
+				},
+				"claimAll(address,address)": {
+					"params": {
+						"_gauge": "Address of the gauge to claim rewards for",
+						"_user": "Address of the user to claim rewards for"
+					}
+				},
+				"constructor": {
+					"params": {
+						"_gaugeController": "Address of the GaugeController",
+						"_liquidator": "Address of the Liquidator",
+						"_stakerCut": "Percentage of rewards that goes to stakers",
+						"_vault": "Address of the Vault"
+					}
+				},
+				"currentRewardToken(address)": {
+					"params": {
+						"_gauge": "Address of the gauge to get current reward token for"
+					},
+					"returns": {
+						"_0": "Current reward token for the given gauge"
+					}
+				},
+				"getRewards(address,(address,uint64),address)": {
+					"params": {
+						"_gauge": "Address of the gauge to get rewards for",
+						"_rewardToken": "Reward token to get rewards for",
+						"_user": "Address of the user to get rewards for"
+					},
+					"returns": {
+						"_0": "Amount of rewards for the given gauge and token"
+					}
+				},
+				"multicall(bytes[])": {
+					"details": "Receives and executes a batch of function calls on this contract."
+				},
+				"redeem(address,address)": {
+					"details": "Rewards can be redeemed on behalf of a user.",
+					"params": {
+						"_token": "Address of the token to redeem rewards for",
+						"_user": "Address of the user to redeem rewards for"
+					},
+					"returns": {
+						"_0": "Amount of rewards redeemed"
+					}
+				}
+			},
+			"stateVariables": {
+				"gaugeRewardTokenExchangeRates": {
+					"details": "gauge => reward token address => reward token timestamp => exchange rate"
+				},
+				"gaugeRewardTokens": {
+					"details": "gauge => reward tokens array"
+				},
+				"userGaugeRewardTokenExchangeRates": {
+					"details": "user => gauge => reward token address => reward token timestamp => exchange rate"
+				},
+				"userGaugeRewardTokenLastClaimedTimestamp": {
+					"details": "user => gauge => reward token address => timestamp"
+				},
+				"userRewardTokenBalances": {
+					"details": "user => reward token address => balance"
+				}
+			},
+			"title": "PoolTogether V4 GaugeReward",
+			"version": 1
+		},
+		"userdoc": {
+			"events": {
+				"Deployed(address,address,address,uint32)": {
+					"notice": "Emitted when the contract is deployed"
+				},
+				"RewardTokenPushed(address,address,uint256)": {
+					"notice": "Emitted when a new reward token is pushed onto the `gaugeRewardTokens` mapping"
+				},
+				"RewardsAdded(address,address,uint256,uint256,uint256)": {
+					"notice": "Emitted when tickets are swapped for tokens"
+				},
+				"RewardsClaimed(address,address,address,uint256,uint256)": {
+					"notice": "Emitted when a user claimed their rewards for a given gauge and token"
+				},
+				"RewardsRedeemed(address,address,address,uint256)": {
+					"notice": "Emitted when a user redeemed their rewards for a given token"
+				}
+			},
+			"kind": "user",
+			"methods": {
+				"afterDecreaseGauge(address,address,uint256)": {
+					"notice": "Callback function to call in GaugeController after a user has decreased his gauge stake."
+				},
+				"afterIncreaseGauge(address,address,uint256)": {
+					"notice": "Fallback function to call in GaugeController after a user has increased their gauge stake.Callback function to call in GaugeController after a user has increased their gauge stake."
+				},
+				"afterSwap(address,address,uint256,address,uint256)": {
+					"notice": "Records exchange rate after swapping an amount of `ticket` for `token`."
+				},
+				"claim(address,(address,uint64),address)": {
+					"notice": "Claim user rewards for a given gauge and reward token."
+				},
+				"claimAll(address,address)": {
+					"notice": "Claim all user rewards for a given gauge."
+				},
+				"constructor": {
+					"notice": "GaugeReward constructor"
+				},
+				"currentRewardToken(address)": {
+					"notice": "Return the current reward token for the given gauge."
+				},
+				"gaugeController()": {
+					"notice": "GaugeController contract address"
+				},
+				"gaugeRewardTokenExchangeRates(address,address,uint64)": {
+					"notice": "Tracks reward token exchange rates per gauge"
+				},
+				"gaugeRewardTokens(address,uint256)": {
+					"notice": "Tracks reward tokens per gauge"
+				},
+				"getRewards(address,(address,uint64),address)": {
+					"notice": "Get user rewards for a given gauge and token."
+				},
+				"liquidator()": {
+					"notice": "Address of the liquidator that this contract is listening to"
+				},
+				"redeem(address,address)": {
+					"notice": "Redeem user rewards for a given token."
+				},
+				"stakerCut()": {
+					"notice": "Percentage of rewards that goes to stakers. Fixed point 9 number that is less than 1."
+				},
+				"userGaugeRewardTokenExchangeRates(address,address,address,uint64)": {
+					"notice": "Tracks reward token exchange rate per user and gauge"
+				},
+				"userGaugeRewardTokenLastClaimedTimestamp(address,address,address)": {
+					"notice": "Tracks user last claimed timestamp per gauge and reward token"
+				},
+				"userRewardTokenBalances(address,address)": {
+					"notice": "Tracks user token reward balances"
+				},
+				"vault()": {
+					"notice": "Vault contract address"
+				}
+			},
+			"notice": "The GaugeReward contract handles rewards for users who staked in one or several gauges on the GaugeController contract.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/GaugeReward.sol": "GaugeReward"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x9750c6b834f7b43000631af5cc30001c5f547b3ceb3635488f140f60e897ea6b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a7d5b1ef5d8d5889ad2ed89d8619c09383b80b72ab226e0fe7bde1636481e34",
+				"dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/extensions/draft-IERC20Permit.sol": {
+			"keccak256": "0xf41ca991f30855bf80ffd11e9347856a517b977f0a6c2d52e6421a99b7840329",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b2717fd2bdac99daa960a6de500754ea1b932093c946388c381da48658234b95",
+				"dweb:/ipfs/QmP6QVMn6UeA3ByahyJbYQr5M6coHKBKsf3ySZSfbyA8R7"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+			"keccak256": "0x032807210d1d7d218963d7355d62e021a84bf1b3339f4f50be2f63b53cccaf29",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://11756f42121f6541a35a8339ea899ee7514cfaa2e6d740625fcc844419296aa6",
+				"dweb:/ipfs/QmekMuk6BY4DAjzeXr4MSbKdgoqqsZnA8JPtuyWc6CwXHf"
+			]
+		},
+		"@openzeppelin/contracts/utils/Address.sol": {
+			"keccak256": "0xd6153ce99bcdcce22b124f755e72553295be6abcd63804cfdffceb188b8bef10",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://35c47bece3c03caaa07fab37dd2bb3413bfbca20db7bd9895024390e0a469487",
+				"dweb:/ipfs/QmPGWT2x3QHcKxqe6gRmAkdakhbaRgx3DLzcakHz5M4eXG"
+			]
+		},
+		"@openzeppelin/contracts/utils/Multicall.sol": {
+			"keccak256": "0x35e30a35e23f856cbcee3558b7efdd83f6017a8f1b419710645143d98e892463",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7dae8b319a276abec4bb2f134251597daddbacd03779c707105a348e53cfd72a",
+				"dweb:/ipfs/QmXPnLLsoWDKSa4NocGr6HonQhHnfxy72gYLgV8oitH1WQ"
+			]
+		},
+		"@openzeppelin/contracts/utils/math/SafeCast.sol": {
+			"keccak256": "0x02686c31ccb9ee77a299fa5f47327af5271f251a707a0e24f321957166ff0434",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cb562d8ae1da31249ca0d8553df9f89ef4c3c110a018c4449dde68ae30e51ec1",
+				"dweb:/ipfs/QmUwxjtTUYB89ymeV46TZPmTsGnYrKNcgTHk7MQA1MG3hj"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/GaugeReward.sol": {
+			"keccak256": "0xf9c9568a796646050beab8dd31981df9da827b2f0afcba70e0a7647232240668",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://52693bd7135c1725af3af41029670374dc50dd305e78b4dc9fecd7c61b32df58",
+				"dweb:/ipfs/QmSNLMeAhwxoKzbTmJt84zFLaLVyhSmACpUK4tS6X1fah1"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/external/compound/ICompLike.sol": {
+			"keccak256": "0x34d2c8a57ca27b9c58ec07c4bd8d263c71a25d194068ad9403f3895dc99a7122",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d15acebd8cb80778b256095d1d57bc202a81dfab38de857799e7391590416fbe",
+				"dweb:/ipfs/QmTRv7iQb5UjTa62kKuUKcZadyKFrRX7JYFnvuJyJTAexx"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/interfaces/IControlledToken.sol": {
+			"keccak256": "0x90dceeec1eea6e49021e8db88b084f3f0c503c60b6f7e0bbecd2529ffde87ef3",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d6fda119bce121e99c834d36e37f760ce16528adc9405a263d66ea83ee083cda",
+				"dweb:/ipfs/QmbPo9QWUB6KQ8jUaka8GC39o9MrB6YoGuc47QQRyyYYBz"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/interfaces/IGaugeController.sol": {
+			"keccak256": "0xd9963bccaa220e4c3527aaa7cb77b5da7900311a5fb94ab3d7eb26f13288abd8",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://922176a0c8e2939dae45f31fa0717300b564adc51cd667ff31dd708e7840d11d",
+				"dweb:/ipfs/QmVyx2PGm8gxrYMBRxt9Zy8rctQ3MU2H1Qg9NMQeSD33yX"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/interfaces/IGaugeReward.sol": {
+			"keccak256": "0x826190a5356dcf82b37edfd14432e297853ec1c5a1923b23d751ef4026cfd9f2",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://169830a721873b1cb552bca0445dcc225ee4057cfd0b0242a3a84cfb53117388",
+				"dweb:/ipfs/QmSs915uCyAVKgNp7fUz4923gn9iNJM196vJsLMDeZ8VaQ"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/interfaces/IPrizePool.sol": {
+			"keccak256": "0xa3cc6bff882d541d6642bbff0988fc592ff513a682dde6888ab55eaec29df7a9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://c9f415ac186d10daebd5c0d6d3a65ad90dd3c6f924f4ea2ffb6f202a155ebd96",
+				"dweb:/ipfs/QmX2w6vucPEy6q7dURRXR7NPm1qjHbamY2D5Jr33QZaa4H"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/interfaces/IPrizePoolLiquidatorListener.sol": {
+			"keccak256": "0x1ef7bba5f9a03825f60713f60eb2c96e58ddd20517046faf4a41d7fc8278e017",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5850c888f4db850ad30fdd016c5b8c35eacdf24fe67d9d1af902f7f64a270f01",
+				"dweb:/ipfs/QmbtvqvLoVA3zipuKawfoe6vWMEfkMH8phe5ZDZTX7Ewsz"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/interfaces/ITicket.sol": {
+			"keccak256": "0xb9f6423a8a9c7394941cb84723b82cc66c5f815d689dc0562e612ae4d9f1cc27",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://baa0a5d2006fa451876f0507f71b0299993d17a4867e2f4cf5079bbc9ca33c0d",
+				"dweb:/ipfs/QmTB8bWNfPK45E9zmKXyLCopDiMd9UWNM1WNVJLPfEMqxC"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/libraries/ExtendedSafeCastLib.sol": {
+			"keccak256": "0x9dae48760b4f78e5418ea8f44abe51fd40570b3159fac80ff17935b6451dcacd",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://c42ee90f5e36b58e049eb582d20250ab83faebec81f4b4664fe5e2a093f04aba",
+				"dweb:/ipfs/QmNmUzXXiR7JYsMRU9qyZNMp6SVmj7UUz8kS2qr5nPTtTM"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/libraries/ObservationLib.sol": {
+			"keccak256": "0x225592b42013fc0af60822e75bc047d53b42a5fcf15f2173cdc3b50bea334b0a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3b2023bfcc8fb346a52c519b3667c8bb1b935d16993d68b651ec2b84f61d8f3c",
+				"dweb:/ipfs/QmYP7kPZefm4SN4kaJwMNrJq3KyYwfvndXY6XQdxeih646"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/libraries/OverflowSafeComparatorLib.sol": {
+			"keccak256": "0x20630cf89e7b92462946defe979fd0e69fa119841d55886121948ad810778c74",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://2dda66ae7137027e803570a61c0aff2aa5bcf9c430ff068ba10529b1c5dd3d6a",
+				"dweb:/ipfs/QmZbWq1fiisXBnj774CTKwZQF3vdgj16EUqGGQPegxLWZq"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/libraries/RingBufferLib.sol": {
+			"keccak256": "0x052e3bf6bfb30f32950e322c853589a8d153cf34f4b1ee292b17eb46f2ae656c",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://587d1e6fd1df4bfe26b78a23503e67f171c68bb44afe6582bbcb5726b9a60808",
+				"dweb:/ipfs/Qmb2F87Lh23o922Qn8Mt2uZBz8qKoEfwMtwQYCT5L5z5wd"
+			]
+		},
+		"Users/pierrickturelier/Documents/00-Work/00-PoolTogether/v4/v4-core/contracts/libraries/TwabLib.sol": {
+			"keccak256": "0x446d8221329601d40464981a50a0e31f3fd48da0ebf0fea646c5a089ccfbdff4",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d6e67f1f69fa796c388eb4733090445cf7bc859e463f1d3be36973e8cd258528",
+				"dweb:/ipfs/QmYA3noFrMP1QwoQEAN3yyXYJvJfTb47uS5hdR6LBxrwjY"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,623 @@
+{
+  "contractName": "IVaderPoolFactory",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "token0",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "token1",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "contract IVaderPool",
+          "name": "pool",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "PoolCreated",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenA",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "createPool",
+      "outputs": [
+        {
+          "internalType": "contract IVaderPool",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "tokenA",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenB",
+          "type": "address"
+        }
+      ],
+      "name": "getPool",
+      "outputs": [
+        {
+          "internalType": "contract IVaderPool",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nativeAsset",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"contract IVaderPool\",\"name\":\"pool\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"PoolCreated\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"}],\"name\":\"createPool\",\"outputs\":[{\"internalType\":\"contract IVaderPool\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenA\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"tokenB\",\"type\":\"address\"}],\"name\":\"getPool\",\"outputs\":[{\"internalType\":\"contract IVaderPool\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"nativeAsset\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/dex/pool/IVaderPoolFactory.sol\":\"IVaderPoolFactory\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x5bce51e11f7d194b79ea59fe00c9e8de9fa2c5530124960f29a24d4c740a3266\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7e66dfde185df46104c11bc89d08fa0760737aa59a2b8546a656473d810a8ea4\",\"dweb:/ipfs/QmXvyqtXPaPss2PD7eqPoSao5Szm2n6UMoiG8TZZDjmChR\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"project:/contracts/interfaces/dex/pool/IBasePool.sol\":{\"keccak256\":\"0x48bab02d4aea01a3727293267c24c10fcd04a49e1ae965f6db8826e81159f67a\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://89968872f8213d7cbb18c8a5addcc0bea6d07be3debafdaafbe379cc05b2fb05\",\"dweb:/ipfs/QmctQn3dgpuXSLJ87KCLGf28r12vSEEzjGVYTmRqiZuCtn\"]},\"project:/contracts/interfaces/dex/pool/IVaderPool.sol\":{\"keccak256\":\"0xef7bff28d0cfbf99f826da940a7440b1a200327a0033e55645c33962f0724bba\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://ec393f33c9a439514643438a465e30614e8bb1e702b29e82341413b106038ecd\",\"dweb:/ipfs/QmQCwBfwiuLuYHUjrGzwbdDg7bvpoP1BAqpkKUhKqXmv69\"]},\"project:/contracts/interfaces/dex/pool/IVaderPoolFactory.sol\":{\"keccak256\":\"0xa2c2fb7e86b470dbc1c92d7a5ad655216330c3f8ee6b2abd1871165c2eed5160\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://a60433d1defe464381e2a851d2005986b121c25f1ff8e33cb23476ccd462476b\",\"dweb:/ipfs/QmZvCcueaNwbm2cEtSuEye6fxzryZp72ReSHJyYxAzwNHd\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: Unlicense\r\n\r\npragma solidity =0.8.9;\r\n\r\nimport \"./IVaderPool.sol\";\r\n\r\ninterface IVaderPoolFactory {\r\n    /* ========== STRUCTS ========== */\r\n\r\n    /* ========== FUNCTIONS ========== */\r\n\r\n    function createPool(address tokenA, address tokenB)\r\n        external\r\n        returns (IVaderPool);\r\n\r\n    function getPool(address tokenA, address tokenB)\r\n        external\r\n        view\r\n        returns (IVaderPool);\r\n\r\n    function nativeAsset() external view returns (address);\r\n\r\n    /* ========== EVENTS ========== */\r\n\r\n    event PoolCreated(\r\n        address token0,\r\n        address token1,\r\n        IVaderPool pool,\r\n        uint256 index\r\n    );\r\n}\r\n",
+  "sourcePath": "/home/mingyue/sub_contract_content/Web3Bugs/contracts/52/contracts/interfaces/dex/pool/IVaderPoolFactory.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/dex/pool/IVaderPoolFactory.sol",
+    "exportedSymbols": {
+      "IBasePool": [
+        20046
+      ],
+      "IERC165": [
+        5523
+      ],
+      "IERC721": [
+        3355
+      ],
+      "IVaderPool": [
+        20097
+      ],
+      "IVaderPoolFactory": [
+        20137
+      ]
+    },
+    "id": 20138,
+    "license": "Unlicense",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20099,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "41:23:75"
+      },
+      {
+        "absolutePath": "project:/contracts/interfaces/dex/pool/IVaderPool.sol",
+        "file": "./IVaderPool.sol",
+        "id": 20100,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 20138,
+        "sourceUnit": 20098,
+        "src": "68:26:75",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IVaderPoolFactory",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 20137,
+        "linearizedBaseContracts": [
+          20137
+        ],
+        "name": "IVaderPoolFactory",
+        "nameLocation": "108:17:75",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "e3433615",
+            "id": 20110,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createPool",
+            "nameLocation": "230:10:75",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20105,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20102,
+                  "mutability": "mutable",
+                  "name": "tokenA",
+                  "nameLocation": "249:6:75",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20110,
+                  "src": "241:14:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20101,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "241:7:75",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20104,
+                  "mutability": "mutable",
+                  "name": "tokenB",
+                  "nameLocation": "265:6:75",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20110,
+                  "src": "257:14:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20103,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "257:7:75",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "240:32:75"
+            },
+            "returnParameters": {
+              "id": 20109,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20108,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20110,
+                  "src": "309:10:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IVaderPool_$20097",
+                    "typeString": "contract IVaderPool"
+                  },
+                  "typeName": {
+                    "id": 20107,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 20106,
+                      "name": "IVaderPool",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 20097,
+                      "src": "309:10:75"
+                    },
+                    "referencedDeclaration": 20097,
+                    "src": "309:10:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IVaderPool_$20097",
+                      "typeString": "contract IVaderPool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "308:12:75"
+            },
+            "scope": 20137,
+            "src": "221:100:75",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "531aa03e",
+            "id": 20120,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getPool",
+            "nameLocation": "338:7:75",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20115,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20112,
+                  "mutability": "mutable",
+                  "name": "tokenA",
+                  "nameLocation": "354:6:75",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20120,
+                  "src": "346:14:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20111,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "346:7:75",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20114,
+                  "mutability": "mutable",
+                  "name": "tokenB",
+                  "nameLocation": "370:6:75",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20120,
+                  "src": "362:14:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20113,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "362:7:75",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "345:32:75"
+            },
+            "returnParameters": {
+              "id": 20119,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20118,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20120,
+                  "src": "428:10:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IVaderPool_$20097",
+                    "typeString": "contract IVaderPool"
+                  },
+                  "typeName": {
+                    "id": 20117,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 20116,
+                      "name": "IVaderPool",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 20097,
+                      "src": "428:10:75"
+                    },
+                    "referencedDeclaration": 20097,
+                    "src": "428:10:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IVaderPool_$20097",
+                      "typeString": "contract IVaderPool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "427:12:75"
+            },
+            "scope": 20137,
+            "src": "329:111:75",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "74d32ad4",
+            "id": 20125,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "nativeAsset",
+            "nameLocation": "457:11:75",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20121,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "468:2:75"
+            },
+            "returnParameters": {
+              "id": 20124,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20123,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20125,
+                  "src": "494:7:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20122,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "494:7:75",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "493:9:75"
+            },
+            "scope": 20137,
+            "src": "448:55:75",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "anonymous": false,
+            "id": 20136,
+            "name": "PoolCreated",
+            "nameLocation": "559:11:75",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 20135,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20127,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "token0",
+                  "nameLocation": "589:6:75",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20136,
+                  "src": "581:14:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20126,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "581:7:75",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20129,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "token1",
+                  "nameLocation": "614:6:75",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20136,
+                  "src": "606:14:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20128,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "606:7:75",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20132,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "pool",
+                  "nameLocation": "642:4:75",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20136,
+                  "src": "631:15:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IVaderPool_$20097",
+                    "typeString": "contract IVaderPool"
+                  },
+                  "typeName": {
+                    "id": 20131,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 20130,
+                      "name": "IVaderPool",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 20097,
+                      "src": "631:10:75"
+                    },
+                    "referencedDeclaration": 20097,
+                    "src": "631:10:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IVaderPool_$20097",
+                      "typeString": "contract IVaderPool"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20134,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "index",
+                  "nameLocation": "665:5:75",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20136,
+                  "src": "657:13:75",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20133,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "657:7:75",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "570:107:75"
+            },
+            "src": "553:125:75"
+          }
+        ],
+        "scope": 20138,
+        "src": "98:583:75",
+        "usedErrors": []
+      }
+    ],
+    "src": "41:642:75"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-03-06T07:23:55.071Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

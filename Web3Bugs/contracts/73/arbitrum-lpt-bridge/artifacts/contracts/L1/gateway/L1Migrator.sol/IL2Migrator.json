@@ -1,0 +1,131 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IL2Migrator",
+  "sourceName": "contracts/L1/gateway/L1Migrator.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "l1Addr",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "l2Addr",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "stake",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "delegatedStake",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "fees",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "delegate",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct IMigrator.MigrateDelegatorParams",
+          "name": "_params",
+          "type": "tuple"
+        }
+      ],
+      "name": "finalizeMigrateDelegator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "l1Addr",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "l2Addr",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "deposit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "reserve",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct IMigrator.MigrateSenderParams",
+          "name": "_params",
+          "type": "tuple"
+        }
+      ],
+      "name": "finalizeMigrateSender",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "l1Addr",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "l2Addr",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "total",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "unbondingLockIds",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "address",
+              "name": "delegate",
+              "type": "address"
+            }
+          ],
+          "internalType": "struct IMigrator.MigrateUnbondingLocksParams",
+          "name": "_params",
+          "type": "tuple"
+        }
+      ],
+      "name": "finalizeMigrateUnbondingLocks",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

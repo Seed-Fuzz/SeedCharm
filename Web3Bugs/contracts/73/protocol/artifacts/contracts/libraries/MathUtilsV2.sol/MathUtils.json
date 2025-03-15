@@ -1,0 +1,26 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "MathUtils",
+  "sourceName": "contracts/libraries/MathUtilsV2.sol",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "PERC_DIVISOR",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608d610024600b82828239805160001a607314601757fe5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361060335760003560e01c8063cce2a078146038575b600080fd5b603e6050565b60408051918252519081900360200190f35b633b9aca008156fea265627a7a723158201a11c50a8ba56b96840df215b49115a8dfff07f9575b72c3ca14cbb18a85de8d64736f6c634300050b0032",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361060335760003560e01c8063cce2a078146038575b600080fd5b603e6050565b60408051918252519081900360200190f35b633b9aca008156fea265627a7a723158201a11c50a8ba56b96840df215b49115a8dfff07f9575b72c3ca14cbb18a85de8d64736f6c634300050b0032",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

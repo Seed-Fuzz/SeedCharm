@@ -1,0 +1,147 @@
+{
+  "contractName": "GasThrottle",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/dex/utils/GasThrottle.sol\":\"GasThrottle\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/dex/utils/GasThrottle.sol\":{\"keccak256\":\"0xdebd28e2534c7bdb7602443079a5c8d3801afabcac1486d33a7f4b91fdbfcadf\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://b296a338c07645f78313a7173437f9b3961b2d34475350531074b88744cc8d73\",\"dweb:/ipfs/Qma1d7fkSmKVirM62oNaduCmaZoXeVdNtVbJ4cPa7YWBk2\"]},\"project:/contracts/interfaces/external/chainlink/IAggregator.sol\":{\"keccak256\":\"0x5205d4a8a69a045249e1ce537f923508d6a225ce90d0cacfcbf719aa5257f536\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://8cdc5058eb22c1c3520f5b458ae29291cd5c49d9b5b2044f094472347c051569\",\"dweb:/ipfs/QmfHhW1ZEeCm65HeYPCTdvKEJThd6LEDQ3SkbYYSNoePhg\"]},\"project:/contracts/shared/ProtocolConstants.sol\":{\"keccak256\":\"0x845b3cdb262b4cc3a2ce4fd0c094c6e6b5e818988cd7c21d4b7b3295b80b7b22\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://763268835823e795ce64059ff8bb147224fb548a4f33b90be4b80b35c59598e2\",\"dweb:/ipfs/QmPbyyps31R4f2PVMpqCbkhWDw8UtG5vfikcNxL6Mg51e5\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220028d4ebf055fcdd4f9764ca5b219d73f873b376d973b47bbd9e65ecb2b857a6c64736f6c63430008090033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220028d4ebf055fcdd4f9764ca5b219d73f873b376d973b47bbd9e65ecb2b857a6c64736f6c63430008090033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "181:400:46:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "181:400:46:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: Unlicense\r\n\r\npragma solidity =0.8.9;\r\n\r\nimport \"../../shared/ProtocolConstants.sol\";\r\n\r\nimport \"../../interfaces/external/chainlink/IAggregator.sol\";\r\n\r\ncontract GasThrottle is ProtocolConstants {\r\n    modifier validateGas() {\r\n        // TODO: Uncomment prior to launch\r\n        // require(\r\n        //     block.basefee <= tx.gasprice &&\r\n        //         tx.gasprice <=\r\n        //         uint256(IAggregator(_FAST_GAS_ORACLE).latestAnswer()),\r\n        //     \"GasThrottle::validateGas: Gas Exceeds Thresholds\"\r\n        // );\r\n        _;\r\n    }\r\n}\r\n",
+  "sourcePath": "/home/mingyue/sub_contract_content/Web3Bugs/contracts/52/contracts/dex/utils/GasThrottle.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/dex/utils/GasThrottle.sol",
+    "exportedSymbols": {
+      "GasThrottle": [
+        13613
+      ],
+      "IAggregator": [
+        20261
+      ],
+      "ProtocolConstants": [
+        21440
+      ]
+    },
+    "id": 13614,
+    "license": "Unlicense",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13604,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "41:23:46"
+      },
+      {
+        "absolutePath": "project:/contracts/shared/ProtocolConstants.sol",
+        "file": "../../shared/ProtocolConstants.sol",
+        "id": 13605,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 13614,
+        "sourceUnit": 21441,
+        "src": "68:44:46",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "project:/contracts/interfaces/external/chainlink/IAggregator.sol",
+        "file": "../../interfaces/external/chainlink/IAggregator.sol",
+        "id": 13606,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 13614,
+        "sourceUnit": 20262,
+        "src": "116:61:46",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 13607,
+              "name": "ProtocolConstants",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 21440,
+              "src": "205:17:46"
+            },
+            "id": 13608,
+            "nodeType": "InheritanceSpecifier",
+            "src": "205:17:46"
+          }
+        ],
+        "canonicalName": "GasThrottle",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 13613,
+        "linearizedBaseContracts": [
+          13613,
+          21440
+        ],
+        "name": "GasThrottle",
+        "nameLocation": "190:11:46",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 13611,
+              "nodeType": "Block",
+              "src": "253:325:46",
+              "statements": [
+                {
+                  "id": 13610,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "569:1:46"
+                }
+              ]
+            },
+            "id": 13612,
+            "name": "validateGas",
+            "nameLocation": "239:11:46",
+            "nodeType": "ModifierDefinition",
+            "parameters": {
+              "id": 13609,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "250:2:46"
+            },
+            "src": "230:348:46",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 13614,
+        "src": "181:400:46",
+        "usedErrors": []
+      }
+    ],
+    "src": "41:542:46"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-03-06T07:23:55.049Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

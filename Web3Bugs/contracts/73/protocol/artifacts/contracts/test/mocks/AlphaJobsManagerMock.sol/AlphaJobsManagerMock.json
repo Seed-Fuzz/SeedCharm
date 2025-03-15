@@ -1,0 +1,62 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "AlphaJobsManagerMock",
+  "sourceName": "contracts/test/mocks/AlphaJobsManagerMock.sol",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_addr",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_deposit",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_withdrawBlock",
+          "type": "uint256"
+        }
+      ],
+      "name": "setBroadcaster",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_addr",
+          "type": "address"
+        }
+      ],
+      "name": "broadcasters",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "deposit",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "withdrawBlock",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061011e806100206000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80631bc4b59e14603757806388cc1093146068575b600080fd5b606660048036036060811015604b57600080fd5b506001600160a01b03813516906020810135906040013560a4565b005b608b60048036036020811015607c57600080fd5b50356001600160a01b031660c6565b6040805192835260208301919091528051918290030190f35b6001600160a01b03909216600090815260208190526040902090815560010155565b6001600160a01b031660009081526020819052604090208054600190910154909156fea265627a7a723158202fda320cecf34946b84b5e019befca2a6b88eeef74c8c02a973f1464da29a5ec64736f6c634300050b0032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80631bc4b59e14603757806388cc1093146068575b600080fd5b606660048036036060811015604b57600080fd5b506001600160a01b03813516906020810135906040013560a4565b005b608b60048036036020811015607c57600080fd5b50356001600160a01b031660c6565b6040805192835260208301919091528051918290030190f35b6001600160a01b03909216600090815260208190526040902090815560010155565b6001600160a01b031660009081526020819052604090208054600190910154909156fea265627a7a723158202fda320cecf34946b84b5e019befca2a6b88eeef74c8c02a973f1464da29a5ec64736f6c634300050b0032",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

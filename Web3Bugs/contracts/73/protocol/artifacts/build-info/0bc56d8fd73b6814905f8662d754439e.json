@@ -1,0 +1,877 @@
+{
+  "id": "0bc56d8fd73b6814905f8662d754439e",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.5.11",
+  "solcLongVersion": "0.5.11+commit.22be8592",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/test/mocks/AlphaJobsManagerMock.sol": {
+        "content": "pragma solidity ^0.5.11;\n\ncontract AlphaJobsManagerMock {\n    struct Broadcaster {\n        uint256 deposit;\n        uint256 withdrawBlock;\n    }\n\n    mapping(address => Broadcaster) internal mockBroadcasters;\n\n    function setBroadcaster(\n        address _addr,\n        uint256 _deposit,\n        uint256 _withdrawBlock\n    ) external {\n        mockBroadcasters[_addr].deposit = _deposit;\n        mockBroadcasters[_addr].withdrawBlock = _withdrawBlock;\n    }\n\n    function broadcasters(address _addr) public view returns (uint256 deposit, uint256 withdrawBlock) {\n        deposit = mockBroadcasters[_addr].deposit;\n        withdrawBlock = mockBroadcasters[_addr].withdrawBlock;\n    }\n}\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata",
+            "devdoc",
+            "userdoc",
+            "storageLayout",
+            "evm.gasEstimates"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      },
+      "metadata": {
+        "useLiteralContent": true
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/test/mocks/AlphaJobsManagerMock.sol": {
+        "AlphaJobsManagerMock": {
+          "abi": [
+            {
+              "constant": false,
+              "inputs": [
+                {
+                  "internalType": "address",
+                  "name": "_addr",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "_deposit",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "_withdrawBlock",
+                  "type": "uint256"
+                }
+              ],
+              "name": "setBroadcaster",
+              "outputs": [],
+              "payable": false,
+              "stateMutability": "nonpayable",
+              "type": "function"
+            },
+            {
+              "constant": true,
+              "inputs": [
+                {
+                  "internalType": "address",
+                  "name": "_addr",
+                  "type": "address"
+                }
+              ],
+              "name": "broadcasters",
+              "outputs": [
+                {
+                  "internalType": "uint256",
+                  "name": "deposit",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "withdrawBlock",
+                  "type": "uint256"
+                }
+              ],
+              "payable": false,
+              "stateMutability": "view",
+              "type": "function"
+            }
+          ],
+          "devdoc": {
+            "methods": {}
+          },
+          "evm": {
+            "bytecode": {
+              "linkReferences": {},
+              "object": "608060405234801561001057600080fd5b5061011e806100206000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80631bc4b59e14603757806388cc1093146068575b600080fd5b606660048036036060811015604b57600080fd5b506001600160a01b03813516906020810135906040013560a4565b005b608b60048036036020811015607c57600080fd5b50356001600160a01b031660c6565b6040805192835260208301919091528051918290030190f35b6001600160a01b03909216600090815260208190526040902090815560010155565b6001600160a01b031660009081526020819052604090208054600190910154909156fea265627a7a723158202fda320cecf34946b84b5e019befca2a6b88eeef74c8c02a973f1464da29a5ec64736f6c634300050b0032",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x11E DUP1 PUSH2 0x20 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x32 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x1BC4B59E EQ PUSH1 0x37 JUMPI DUP1 PUSH4 0x88CC1093 EQ PUSH1 0x68 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x66 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x60 DUP2 LT ISZERO PUSH1 0x4B JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP2 CALLDATALOAD AND SWAP1 PUSH1 0x20 DUP2 ADD CALLDATALOAD SWAP1 PUSH1 0x40 ADD CALLDATALOAD PUSH1 0xA4 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x8B PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH1 0x7C JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLDATALOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH1 0xC6 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP3 DUP4 MSTORE PUSH1 0x20 DUP4 ADD SWAP2 SWAP1 SWAP2 MSTORE DUP1 MLOAD SWAP2 DUP3 SWAP1 SUB ADD SWAP1 RETURN JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP3 AND PUSH1 0x0 SWAP1 DUP2 MSTORE PUSH1 0x20 DUP2 SWAP1 MSTORE PUSH1 0x40 SWAP1 KECCAK256 SWAP1 DUP2 SSTORE PUSH1 0x1 ADD SSTORE JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH1 0x0 SWAP1 DUP2 MSTORE PUSH1 0x20 DUP2 SWAP1 MSTORE PUSH1 0x40 SWAP1 KECCAK256 DUP1 SLOAD PUSH1 0x1 SWAP1 SWAP2 ADD SLOAD SWAP1 SWAP2 JUMP INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 0x2f 0xda ORIGIN 0xc 0xec RETURN 0x49 0x46 0xb8 0x4b 0x5e ADD SWAP12 0xef 0xca 0x2a PUSH12 0x88EEEF74C8C02A973F1464DA 0x29 0xa5 0xec PUSH5 0x736F6C6343 STOP SDIV SIGNEXTEND STOP ORIGIN ",
+              "sourceMap": "26:658:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:658:0;;;;;;;"
+            },
+            "deployedBytecode": {
+              "linkReferences": {},
+              "object": "6080604052348015600f57600080fd5b506004361060325760003560e01c80631bc4b59e14603757806388cc1093146068575b600080fd5b606660048036036060811015604b57600080fd5b506001600160a01b03813516906020810135906040013560a4565b005b608b60048036036020811015607c57600080fd5b50356001600160a01b031660c6565b6040805192835260208301919091528051918290030190f35b6001600160a01b03909216600090815260208190526040902090815560010155565b6001600160a01b031660009081526020819052604090208054600190910154909156fea265627a7a723158202fda320cecf34946b84b5e019befca2a6b88eeef74c8c02a973f1464da29a5ec64736f6c634300050b0032",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x32 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x1BC4B59E EQ PUSH1 0x37 JUMPI DUP1 PUSH4 0x88CC1093 EQ PUSH1 0x68 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x66 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x60 DUP2 LT ISZERO PUSH1 0x4B JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB DUP2 CALLDATALOAD AND SWAP1 PUSH1 0x20 DUP2 ADD CALLDATALOAD SWAP1 PUSH1 0x40 ADD CALLDATALOAD PUSH1 0xA4 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x8B PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH1 0x7C JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLDATALOAD PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH1 0xC6 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP3 DUP4 MSTORE PUSH1 0x20 DUP4 ADD SWAP2 SWAP1 SWAP2 MSTORE DUP1 MLOAD SWAP2 DUP3 SWAP1 SUB ADD SWAP1 RETURN JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB SWAP1 SWAP3 AND PUSH1 0x0 SWAP1 DUP2 MSTORE PUSH1 0x20 DUP2 SWAP1 MSTORE PUSH1 0x40 SWAP1 KECCAK256 SWAP1 DUP2 SSTORE PUSH1 0x1 ADD SSTORE JUMP JUMPDEST PUSH1 0x1 PUSH1 0x1 PUSH1 0xA0 SHL SUB AND PUSH1 0x0 SWAP1 DUP2 MSTORE PUSH1 0x20 DUP2 SWAP1 MSTORE PUSH1 0x40 SWAP1 KECCAK256 DUP1 SLOAD PUSH1 0x1 SWAP1 SWAP2 ADD SLOAD SWAP1 SWAP2 JUMP INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 0x2f 0xda ORIGIN 0xc 0xec RETURN 0x49 0x46 0xb8 0x4b 0x5e ADD SWAP12 0xef 0xca 0x2a PUSH12 0x88EEEF74C8C02A973F1464DA 0x29 0xa5 0xec PUSH5 0x736F6C6343 STOP SDIV SIGNEXTEND STOP ORIGIN ",
+              "sourceMap": "26:658:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:658:0;;;;;;;;;;;;;;;;;;;;;;;;214:243;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;;;;;;214:243:0;;;;;;;;;;;;;:::i;:::-;;463:219;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;463:219:0;-1:-1:-1;;;;;463:219:0;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;214:243;-1:-1:-1;;;;;344:23:0;;;:16;:23;;;;;;;;;;:42;;;396:37;;:54;214:243::o;463:219::-;-1:-1:-1;;;;;581:23:0;521:15;581:23;;;;;;;;;;:31;;638:37;;;;;581:31;;463:219::o"
+            },
+            "gasEstimates": {
+              "creation": {
+                "codeDepositCost": "57200",
+                "executionCost": "105",
+                "totalCost": "57305"
+              },
+              "external": {
+                "broadcasters(address)": "787",
+                "setBroadcaster(address,uint256,uint256)": "40320"
+              }
+            },
+            "methodIdentifiers": {
+              "broadcasters(address)": "88cc1093",
+              "setBroadcaster(address,uint256,uint256)": "1bc4b59e"
+            }
+          },
+          "metadata": "{\"compiler\":{\"version\":\"0.5.11+commit.22be8592\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_addr\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_deposit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_withdrawBlock\",\"type\":\"uint256\"}],\"name\":\"setBroadcaster\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_addr\",\"type\":\"address\"}],\"name\":\"broadcasters\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"deposit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"withdrawBlock\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/test/mocks/AlphaJobsManagerMock.sol\":\"AlphaJobsManagerMock\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"metadata\":{\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/test/mocks/AlphaJobsManagerMock.sol\":{\"content\":\"pragma solidity ^0.5.11;\\n\\ncontract AlphaJobsManagerMock {\\n    struct Broadcaster {\\n        uint256 deposit;\\n        uint256 withdrawBlock;\\n    }\\n\\n    mapping(address => Broadcaster) internal mockBroadcasters;\\n\\n    function setBroadcaster(\\n        address _addr,\\n        uint256 _deposit,\\n        uint256 _withdrawBlock\\n    ) external {\\n        mockBroadcasters[_addr].deposit = _deposit;\\n        mockBroadcasters[_addr].withdrawBlock = _withdrawBlock;\\n    }\\n\\n    function broadcasters(address _addr) public view returns (uint256 deposit, uint256 withdrawBlock) {\\n        deposit = mockBroadcasters[_addr].deposit;\\n        withdrawBlock = mockBroadcasters[_addr].withdrawBlock;\\n    }\\n}\\n\",\"keccak256\":\"0x0b6aa9d5df771ffd4263dcd3a3efe9152a606bb76f63baf8505d4265b2698156\"}},\"version\":1}",
+          "userdoc": {
+            "methods": {}
+          }
+        }
+      }
+    },
+    "sources": {
+      "contracts/test/mocks/AlphaJobsManagerMock.sol": {
+        "ast": {
+          "absolutePath": "contracts/test/mocks/AlphaJobsManagerMock.sol",
+          "exportedSymbols": {
+            "AlphaJobsManagerMock": [
+              59
+            ]
+          },
+          "id": 60,
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                "^",
+                "0.5",
+                ".11"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "0:24:0"
+            },
+            {
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "contract",
+              "documentation": null,
+              "fullyImplemented": true,
+              "id": 59,
+              "linearizedBaseContracts": [
+                59
+              ],
+              "name": "AlphaJobsManagerMock",
+              "nodeType": "ContractDefinition",
+              "nodes": [
+                {
+                  "canonicalName": "AlphaJobsManagerMock.Broadcaster",
+                  "id": 6,
+                  "members": [
+                    {
+                      "constant": false,
+                      "id": 3,
+                      "name": "deposit",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6,
+                      "src": "91:15:0",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 2,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "91:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 5,
+                      "name": "withdrawBlock",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6,
+                      "src": "116:21:0",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 4,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "116:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "name": "Broadcaster",
+                  "nodeType": "StructDefinition",
+                  "scope": 59,
+                  "src": "62:82:0",
+                  "visibility": "public"
+                },
+                {
+                  "constant": false,
+                  "id": 10,
+                  "name": "mockBroadcasters",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 59,
+                  "src": "150:57:0",
+                  "stateVariable": true,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Broadcaster_$6_storage_$",
+                    "typeString": "mapping(address => struct AlphaJobsManagerMock.Broadcaster)"
+                  },
+                  "typeName": {
+                    "id": 9,
+                    "keyType": {
+                      "id": 7,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "158:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Mapping",
+                    "src": "150:31:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Broadcaster_$6_storage_$",
+                      "typeString": "mapping(address => struct AlphaJobsManagerMock.Broadcaster)"
+                    },
+                    "valueType": {
+                      "contractScope": null,
+                      "id": 8,
+                      "name": "Broadcaster",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 6,
+                      "src": "169:11:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Broadcaster_$6_storage_ptr",
+                        "typeString": "struct AlphaJobsManagerMock.Broadcaster"
+                      }
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "body": {
+                    "id": 33,
+                    "nodeType": "Block",
+                    "src": "334:123:0",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 24,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "baseExpression": {
+                                "argumentTypes": null,
+                                "id": 19,
+                                "name": "mockBroadcasters",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 10,
+                                "src": "344:16:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Broadcaster_$6_storage_$",
+                                  "typeString": "mapping(address => struct AlphaJobsManagerMock.Broadcaster storage ref)"
+                                }
+                              },
+                              "id": 21,
+                              "indexExpression": {
+                                "argumentTypes": null,
+                                "id": 20,
+                                "name": "_addr",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 12,
+                                "src": "361:5:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "344:23:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Broadcaster_$6_storage",
+                                "typeString": "struct AlphaJobsManagerMock.Broadcaster storage ref"
+                              }
+                            },
+                            "id": 22,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "memberName": "deposit",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 3,
+                            "src": "344:31:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "id": 23,
+                            "name": "_deposit",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 14,
+                            "src": "378:8:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "344:42:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 25,
+                        "nodeType": "ExpressionStatement",
+                        "src": "344:42:0"
+                      },
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 31,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "baseExpression": {
+                                "argumentTypes": null,
+                                "id": 26,
+                                "name": "mockBroadcasters",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 10,
+                                "src": "396:16:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Broadcaster_$6_storage_$",
+                                  "typeString": "mapping(address => struct AlphaJobsManagerMock.Broadcaster storage ref)"
+                                }
+                              },
+                              "id": 28,
+                              "indexExpression": {
+                                "argumentTypes": null,
+                                "id": 27,
+                                "name": "_addr",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 12,
+                                "src": "413:5:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "396:23:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Broadcaster_$6_storage",
+                                "typeString": "struct AlphaJobsManagerMock.Broadcaster storage ref"
+                              }
+                            },
+                            "id": 29,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "memberName": "withdrawBlock",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 5,
+                            "src": "396:37:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "id": 30,
+                            "name": "_withdrawBlock",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 16,
+                            "src": "436:14:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "396:54:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 32,
+                        "nodeType": "ExpressionStatement",
+                        "src": "396:54:0"
+                      }
+                    ]
+                  },
+                  "documentation": null,
+                  "id": 34,
+                  "implemented": true,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "setBroadcaster",
+                  "nodeType": "FunctionDefinition",
+                  "parameters": {
+                    "id": 17,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 12,
+                        "name": "_addr",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 34,
+                        "src": "247:13:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "typeName": {
+                          "id": 11,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "247:7:0",
+                          "stateMutability": "nonpayable",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      },
+                      {
+                        "constant": false,
+                        "id": 14,
+                        "name": "_deposit",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 34,
+                        "src": "270:16:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 13,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "270:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      },
+                      {
+                        "constant": false,
+                        "id": 16,
+                        "name": "_withdrawBlock",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 34,
+                        "src": "296:22:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 15,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "296:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "237:87:0"
+                  },
+                  "returnParameters": {
+                    "id": 18,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "334:0:0"
+                  },
+                  "scope": 59,
+                  "src": "214:243:0",
+                  "stateMutability": "nonpayable",
+                  "superFunction": null,
+                  "visibility": "external"
+                },
+                {
+                  "body": {
+                    "id": 57,
+                    "nodeType": "Block",
+                    "src": "561:121:0",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 48,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 43,
+                            "name": "deposit",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 39,
+                            "src": "571:7:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "baseExpression": {
+                                "argumentTypes": null,
+                                "id": 44,
+                                "name": "mockBroadcasters",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 10,
+                                "src": "581:16:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Broadcaster_$6_storage_$",
+                                  "typeString": "mapping(address => struct AlphaJobsManagerMock.Broadcaster storage ref)"
+                                }
+                              },
+                              "id": 46,
+                              "indexExpression": {
+                                "argumentTypes": null,
+                                "id": 45,
+                                "name": "_addr",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 36,
+                                "src": "598:5:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "581:23:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Broadcaster_$6_storage",
+                                "typeString": "struct AlphaJobsManagerMock.Broadcaster storage ref"
+                              }
+                            },
+                            "id": 47,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "deposit",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 3,
+                            "src": "581:31:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "571:41:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 49,
+                        "nodeType": "ExpressionStatement",
+                        "src": "571:41:0"
+                      },
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 55,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "id": 50,
+                            "name": "withdrawBlock",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 41,
+                            "src": "622:13:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "expression": {
+                              "argumentTypes": null,
+                              "baseExpression": {
+                                "argumentTypes": null,
+                                "id": 51,
+                                "name": "mockBroadcasters",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 10,
+                                "src": "638:16:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Broadcaster_$6_storage_$",
+                                  "typeString": "mapping(address => struct AlphaJobsManagerMock.Broadcaster storage ref)"
+                                }
+                              },
+                              "id": 53,
+                              "indexExpression": {
+                                "argumentTypes": null,
+                                "id": 52,
+                                "name": "_addr",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 36,
+                                "src": "655:5:0",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "638:23:0",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_Broadcaster_$6_storage",
+                                "typeString": "struct AlphaJobsManagerMock.Broadcaster storage ref"
+                              }
+                            },
+                            "id": 54,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "withdrawBlock",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 5,
+                            "src": "638:37:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "src": "622:53:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "id": 56,
+                        "nodeType": "ExpressionStatement",
+                        "src": "622:53:0"
+                      }
+                    ]
+                  },
+                  "documentation": null,
+                  "id": 58,
+                  "implemented": true,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "broadcasters",
+                  "nodeType": "FunctionDefinition",
+                  "parameters": {
+                    "id": 37,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 36,
+                        "name": "_addr",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 58,
+                        "src": "485:13:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "typeName": {
+                          "id": 35,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "485:7:0",
+                          "stateMutability": "nonpayable",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "484:15:0"
+                  },
+                  "returnParameters": {
+                    "id": 42,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 39,
+                        "name": "deposit",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 58,
+                        "src": "521:15:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 38,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "521:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      },
+                      {
+                        "constant": false,
+                        "id": 41,
+                        "name": "withdrawBlock",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 58,
+                        "src": "538:21:0",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 40,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "538:7:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "520:40:0"
+                  },
+                  "scope": 59,
+                  "src": "463:219:0",
+                  "stateMutability": "view",
+                  "superFunction": null,
+                  "visibility": "public"
+                }
+              ],
+              "scope": 60,
+              "src": "26:658:0"
+            }
+          ],
+          "src": "0:685:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}

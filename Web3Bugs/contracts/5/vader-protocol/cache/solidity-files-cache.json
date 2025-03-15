@@ -1,0 +1,903 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/Attack.sol": {
+      "lastModificationDate": 1740638028424,
+      "contentHash": "15ea012ebf854a37c99f88b98f0b4bb2",
+      "sourceName": "contracts/Attack.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iUSDV.sol",
+        "./interfaces/iROUTER.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Attack"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/interfaces/iERC20.sol": {
+      "lastModificationDate": 1740638028530,
+      "contentHash": "b7ef74b142cb88ab3cb4acd4b920261e",
+      "sourceName": "contracts/interfaces/iERC20.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iERC20"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/interfaces/iVADER.sol": {
+      "lastModificationDate": 1740638028546,
+      "contentHash": "485c24df1d50e2c426cf67a7211b29e5",
+      "sourceName": "contracts/interfaces/iVADER.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iVADER"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/interfaces/iUSDV.sol": {
+      "lastModificationDate": 1740638028546,
+      "contentHash": "1aa9786e79baf6bbacd720cf410f6495",
+      "sourceName": "contracts/interfaces/iUSDV.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iUSDV"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/interfaces/iROUTER.sol": {
+      "lastModificationDate": 1740638028545,
+      "contentHash": "c4c8de73c7306d691bfec003ffef7df1",
+      "sourceName": "contracts/interfaces/iROUTER.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iROUTER"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/Vault.sol": {
+      "lastModificationDate": 1740638028529,
+      "contentHash": "7d0ecbf838435f70ee428e77853e84fc",
+      "sourceName": "contracts/Vault.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol",
+        "./interfaces/iUTILS.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iROUTER.sol",
+        "./interfaces/iPOOLS.sol",
+        "./interfaces/iFACTORY.sol",
+        "./interfaces/iSYNTH.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.3"
+      ],
+      "artifacts": [
+        "Vault"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/interfaces/iUTILS.sol": {
+      "lastModificationDate": 1740638028546,
+      "contentHash": "1cd90713e5c40d87d7baf248245ffd1b",
+      "sourceName": "contracts/interfaces/iUTILS.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iUTILS"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/interfaces/iPOOLS.sol": {
+      "lastModificationDate": 1740638028530,
+      "contentHash": "ce343484ed7e73354ff441c39fa951a4",
+      "sourceName": "contracts/interfaces/iPOOLS.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iPOOLS"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/interfaces/iFACTORY.sol": {
+      "lastModificationDate": 1740638028530,
+      "contentHash": "ec7e527b030825a35bd916c028c9104f",
+      "sourceName": "contracts/interfaces/iFACTORY.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iFACTORY"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/interfaces/iSYNTH.sol": {
+      "lastModificationDate": 1740638028545,
+      "contentHash": "545de8522ee24eca0d00784a420ba53c",
+      "sourceName": "contracts/interfaces/iSYNTH.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iSYNTH"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/Utils.sol": {
+      "lastModificationDate": 1740638028528,
+      "contentHash": "4615c2692dd00ea80962d9d4a1e8e149",
+      "sourceName": "contracts/Utils.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iROUTER.sol",
+        "./interfaces/iPOOLS.sol",
+        "./interfaces/iFACTORY.sol",
+        "./interfaces/iSYNTH.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Utils"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1741250051640,
+      "contentHash": "681c532e816169606d13a5fe8b475074",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/Router.sol": {
+      "lastModificationDate": 1740638028425,
+      "contentHash": "e4eb2b942a488b0084cf1c3533ac329e",
+      "sourceName": "contracts/Router.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol",
+        "./interfaces/iUTILS.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iPOOLS.sol",
+        "./interfaces/iSYNTH.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Router"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/USDV.sol": {
+      "lastModificationDate": 1740638028528,
+      "contentHash": "14a260910f8551b7caa7053c2e908f0c",
+      "sourceName": "contracts/USDV.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iROUTER.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "USDV"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/Vader.sol": {
+      "lastModificationDate": 1740638028529,
+      "contentHash": "731f02cdb8f62e94251f9fd7f5931cb2",
+      "sourceName": "contracts/Vader.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol",
+        "./interfaces/iUTILS.sol",
+        "./interfaces/iUSDV.sol",
+        "./interfaces/iROUTER.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Vader"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/Pools.sol": {
+      "lastModificationDate": 1740638028425,
+      "contentHash": "16a43a076e8a2c61c11d730a53cfb3d8",
+      "sourceName": "contracts/Pools.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol",
+        "./interfaces/iUTILS.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iFACTORY.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Pools"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/DAO.sol": {
+      "lastModificationDate": 1740638028425,
+      "contentHash": "38a4e3aa41f742f0e726c565c240af0b",
+      "sourceName": "contracts/DAO.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol",
+        "./interfaces/iUTILS.sol",
+        "./interfaces/iVADER.sol",
+        "./interfaces/iVAULT.sol",
+        "./interfaces/iROUTER.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "DAO"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/interfaces/iVAULT.sol": {
+      "lastModificationDate": 1740638028546,
+      "contentHash": "8fb74801ff447e4b57d02632656ccb3d",
+      "sourceName": "contracts/interfaces/iVAULT.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iVAULT"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/Token2.sol": {
+      "lastModificationDate": 1740638028527,
+      "contentHash": "1b874a229ee4f06a2901a7dbef6658f8",
+      "sourceName": "contracts/Token2.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Token2"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/Token1.sol": {
+      "lastModificationDate": 1740638028463,
+      "contentHash": "9910a6aaf712855fd7380a5850d66bf8",
+      "sourceName": "contracts/Token1.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Token1"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/Synth.sol": {
+      "lastModificationDate": 1740638028426,
+      "contentHash": "9dd9c764f0bd346a0ba740184e116151",
+      "sourceName": "contracts/Synth.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Synth"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/Factory.sol": {
+      "lastModificationDate": 1740638028425,
+      "contentHash": "ba5f4d94b28955301c06ff0f67b43eff",
+      "sourceName": "contracts/Factory.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Synth.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Factory"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/Vether.sol": {
+      "lastModificationDate": 1740638028529,
+      "contentHash": "6c1c158482ab20b648d08bf0f9b26e40",
+      "sourceName": "contracts/Vether.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/iVETHER.sol"
+      ],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "Vether"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/5/vader-protocol/contracts/interfaces/iVETHER.sol": {
+      "lastModificationDate": 1740638028546,
+      "contentHash": "04432e71fad78f03c99be7950d6f933f",
+      "sourceName": "contracts/interfaces/iVETHER.sol",
+      "solcConfig": {
+        "version": "0.8.3",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.3"
+      ],
+      "artifacts": [
+        "iVETHER"
+      ]
+    }
+  }
+}

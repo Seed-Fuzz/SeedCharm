@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "CallProtection",
+  "sourceName": "contracts/facets/shared/Access/CallProtection.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220850d4b7140c43d07c78b5d18a4adb9d7850980397fbfde20334eb2410b5a59b264736f6c63430007050033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220850d4b7140c43d07c78b5d18a4adb9d7850980397fbfde20334eb2410b5a59b264736f6c63430007050033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

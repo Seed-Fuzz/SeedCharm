@@ -1,0 +1,19 @@
+{
+  "name": "staked-note",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.2.0",
+    "hardhat": "^2.7.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

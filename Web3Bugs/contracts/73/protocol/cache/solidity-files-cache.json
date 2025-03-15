@@ -1,0 +1,4051 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/bonding/BondingManager.sol": {
+      "lastModificationDate": 1740638538582,
+      "contentHash": "33c934890a8a3922a8269a09c5f091a9",
+      "sourceName": "contracts/bonding/BondingManager.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ManagerProxyTarget.sol",
+        "./IBondingManager.sol",
+        "../libraries/SortedDoublyLL.sol",
+        "../libraries/MathUtils.sol",
+        "../libraries/PreciseMathUtils.sol",
+        "./libraries/EarningsPool.sol",
+        "./libraries/EarningsPoolLIP36.sol",
+        "../token/ILivepeerToken.sol",
+        "../token/IMinter.sol",
+        "../rounds/IRoundsManager.sol",
+        "../snapshots/IMerkleSnapshot.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.5.11"
+      ],
+      "artifacts": [
+        "BondingManager"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/ManagerProxyTarget.sol": {
+      "lastModificationDate": 1740638538581,
+      "contentHash": "3e6b3f8ef99c25486a772326005b2e81",
+      "sourceName": "contracts/ManagerProxyTarget.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Manager.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "ManagerProxyTarget"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/bonding/IBondingManager.sol": {
+      "lastModificationDate": 1740638538582,
+      "contentHash": "54b555e8e73abc6e312a2025a5b45837",
+      "sourceName": "contracts/bonding/IBondingManager.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "IBondingManager"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/libraries/SortedDoublyLL.sol": {
+      "lastModificationDate": 1740638538632,
+      "contentHash": "277ac9099be09e0a4a148ced1e224d26",
+      "sourceName": "contracts/libraries/SortedDoublyLL.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "SortedDoublyLL"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/libraries/MathUtils.sol": {
+      "lastModificationDate": 1740638538631,
+      "contentHash": "4c0c213618917a1c4f5fc4700b15983e",
+      "sourceName": "contracts/libraries/MathUtils.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MathUtils"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/libraries/PreciseMathUtils.sol": {
+      "lastModificationDate": 1740638538631,
+      "contentHash": "91b32d142c66bba88218d55cc6f82f07",
+      "sourceName": "contracts/libraries/PreciseMathUtils.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "PreciseMathUtils"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/bonding/libraries/EarningsPool.sol": {
+      "lastModificationDate": 1740638538583,
+      "contentHash": "335ee54d34050773bc90ebb6440bebf2",
+      "sourceName": "contracts/bonding/libraries/EarningsPool.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../libraries/MathUtils.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "EarningsPool"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/bonding/libraries/EarningsPoolLIP36.sol": {
+      "lastModificationDate": 1740638538583,
+      "contentHash": "83934cc809ef2f1260e86e61bbd0083b",
+      "sourceName": "contracts/bonding/libraries/EarningsPoolLIP36.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./EarningsPool.sol",
+        "../../libraries/PreciseMathUtils.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "EarningsPoolLIP36"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/token/ILivepeerToken.sol": {
+      "lastModificationDate": 1740638539045,
+      "contentHash": "f9c9470bc7b7b02373d2864ca288cc45",
+      "sourceName": "contracts/token/ILivepeerToken.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+        "../zeppelin/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "ILivepeerToken"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/token/IMinter.sol": {
+      "lastModificationDate": 1740638539045,
+      "contentHash": "7e7b814abb32af9ae90a34e50058cc07",
+      "sourceName": "contracts/token/IMinter.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IController.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "IMinter"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/rounds/IRoundsManager.sol": {
+      "lastModificationDate": 1740638538652,
+      "contentHash": "ca9f6412869a19dbfa70d9e9da163387",
+      "sourceName": "contracts/rounds/IRoundsManager.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "IRoundsManager"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/snapshots/IMerkleSnapshot.sol": {
+      "lastModificationDate": 1740638538653,
+      "contentHash": "3f2a4a83cb013002ab91416afb3bbe9e",
+      "sourceName": "contracts/snapshots/IMerkleSnapshot.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "IMerkleSnapshot"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/node_modules/openzeppelin-solidity/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1741247063323,
+      "contentHash": "cf13b2e67c9912b96f0126c5bc56ff43",
+      "sourceName": "openzeppelin-solidity/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/Manager.sol": {
+      "lastModificationDate": 1740638538557,
+      "contentHash": "565650de8d91d13e74e2c0f0c0190bf9",
+      "sourceName": "contracts/Manager.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IManager.sol",
+        "./IController.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "Manager"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/IManager.sol": {
+      "lastModificationDate": 1740638538557,
+      "contentHash": "0303439dc4bcfe45ed02b19e3e09a18f",
+      "sourceName": "contracts/IManager.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "IManager"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/IController.sol": {
+      "lastModificationDate": 1740638538557,
+      "contentHash": "cc71b9fbae6202a8848401aeb205f6b4",
+      "sourceName": "contracts/IController.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./zeppelin/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "IController"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/zeppelin/Pausable.sol": {
+      "lastModificationDate": 1740638539120,
+      "contentHash": "9ce659cb806883181f20029685edeff4",
+      "sourceName": "contracts/zeppelin/Pausable.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/zeppelin/Ownable.sol": {
+      "lastModificationDate": 1740638539120,
+      "contentHash": "5bdbe38fd2bafa357e4a5ae718d9f8ca",
+      "sourceName": "contracts/zeppelin/Ownable.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1741247063328,
+      "contentHash": "a1393ea080302aa00810c43d65b189f0",
+      "sourceName": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/node_modules/openzeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1741247063329,
+      "contentHash": "235c86fd7b8b56863c0a83947451d78b",
+      "sourceName": "openzeppelin-solidity/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/token/Minter.sol": {
+      "lastModificationDate": 1740638539119,
+      "contentHash": "c313fbbbc2f5eae2d1eebecc34111dff",
+      "sourceName": "contracts/token/Minter.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../Manager.sol",
+        "./IMinter.sol",
+        "./ILivepeerToken.sol",
+        "../rounds/IRoundsManager.sol",
+        "../bonding/IBondingManager.sol",
+        "../libraries/MathUtilsV2.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "Minter"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/libraries/MathUtilsV2.sol": {
+      "lastModificationDate": 1740638538631,
+      "contentHash": "82eff6a5c6e7ebc6c21b344c63cdb9f8",
+      "sourceName": "contracts/libraries/MathUtilsV2.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MathUtils"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/TestMathUtilsV2.sol": {
+      "lastModificationDate": 1740638538764,
+      "contentHash": "e1d35ebcb3a7ed5357bebb7794e7046d",
+      "sourceName": "contracts/test/TestMathUtilsV2.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/MathUtilsV2.sol",
+        "./helpers/truffle/Assert.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TestMathUtilsV2"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/Assert.sol": {
+      "lastModificationDate": 1740638538881,
+      "contentHash": "8d02fdf1dbce2f00b47e720ba99566a1",
+      "sourceName": "contracts/test/helpers/truffle/Assert.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AssertString.sol",
+        "./AssertBytes32.sol",
+        "./AssertAddress.sol",
+        "./AssertBool.sol",
+        "./AssertUint.sol",
+        "./AssertInt.sol",
+        "./AssertUintArray.sol",
+        "./AssertIntArray.sol",
+        "./AssertAddressArray.sol",
+        "./AssertBytes32Array.sol",
+        "./AssertBalance.sol",
+        "./AssertGeneral.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "Assert"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertString.sol": {
+      "lastModificationDate": 1740638538889,
+      "contentHash": "f952f6f709f49b2b5240ba1b62eec715",
+      "sourceName": "contracts/test/helpers/truffle/AssertString.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "AssertString"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertBytes32.sol": {
+      "lastModificationDate": 1740638538882,
+      "contentHash": "54061202c1321d7ca2a91e90b38d05c1",
+      "sourceName": "contracts/test/helpers/truffle/AssertBytes32.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "AssertBytes32"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertAddress.sol": {
+      "lastModificationDate": 1740638538882,
+      "contentHash": "9b519852c4ad9e081f69143cd02c86d4",
+      "sourceName": "contracts/test/helpers/truffle/AssertAddress.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "AssertAddress"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertBool.sol": {
+      "lastModificationDate": 1740638538882,
+      "contentHash": "a6befdc371c8f0530f7ff65722e04f8f",
+      "sourceName": "contracts/test/helpers/truffle/AssertBool.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "AssertBool"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertUint.sol": {
+      "lastModificationDate": 1740638538890,
+      "contentHash": "b6df43a61770f66f2c019596e709ff58",
+      "sourceName": "contracts/test/helpers/truffle/AssertUint.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "AssertUint"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertInt.sol": {
+      "lastModificationDate": 1740638538883,
+      "contentHash": "cb805fad9217de3abb722352c924b0bd",
+      "sourceName": "contracts/test/helpers/truffle/AssertInt.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "AssertInt"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertUintArray.sol": {
+      "lastModificationDate": 1740638538890,
+      "contentHash": "cfd8728d05565d9eb81eec1e578c869c",
+      "sourceName": "contracts/test/helpers/truffle/AssertUintArray.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "AssertUintArray"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertIntArray.sol": {
+      "lastModificationDate": 1740638538883,
+      "contentHash": "3f941896376816f7dc314f3682970993",
+      "sourceName": "contracts/test/helpers/truffle/AssertIntArray.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "AssertIntArray"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertAddressArray.sol": {
+      "lastModificationDate": 1740638538882,
+      "contentHash": "8ee8ec75168128c31a1b91aa12eaabe3",
+      "sourceName": "contracts/test/helpers/truffle/AssertAddressArray.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "AssertAddressArray"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertBytes32Array.sol": {
+      "lastModificationDate": 1740638538882,
+      "contentHash": "5ad305d359880366f8f960b28436b488",
+      "sourceName": "contracts/test/helpers/truffle/AssertBytes32Array.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "AssertBytes32Array"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertBalance.sol": {
+      "lastModificationDate": 1740638538882,
+      "contentHash": "ea57382f45d52a6cd4d53e690583e587",
+      "sourceName": "contracts/test/helpers/truffle/AssertBalance.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "AssertBalance"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertGeneral.sol": {
+      "lastModificationDate": 1740638538883,
+      "contentHash": "556bc88fc9521f6f4958ecf3cecd012a",
+      "sourceName": "contracts/test/helpers/truffle/AssertGeneral.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.15 <0.6.0"
+      ],
+      "artifacts": [
+        "AssertGeneral"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/TestSortedDoublyLLUpdateKey.sol": {
+      "lastModificationDate": 1740638538879,
+      "contentHash": "009496b9a9bf3144784d82deb570e7ee",
+      "sourceName": "contracts/test/TestSortedDoublyLLUpdateKey.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./mocks/SortedDoublyLLFixture.sol",
+        "./helpers/RevertProxy.sol",
+        "./helpers/truffle/Assert.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TestSortedDoublyLLUpdateKey"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/mocks/SortedDoublyLLFixture.sol": {
+      "lastModificationDate": 1740638539044,
+      "contentHash": "153243b5c531768d5ad86553e0b2d043",
+      "sourceName": "contracts/test/mocks/SortedDoublyLLFixture.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../libraries/SortedDoublyLL.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "SortedDoublyLLFixture"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/RevertProxy.sol": {
+      "lastModificationDate": 1740638538880,
+      "contentHash": "04a51c8e3b7b1139ef727888ed7e2437",
+      "sourceName": "contracts/test/helpers/RevertProxy.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "RevertProxy"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/TestSortedDoublyLLRemove.sol": {
+      "lastModificationDate": 1740638538879,
+      "contentHash": "b2395fa942ddc28a17473ea4872a7bcb",
+      "sourceName": "contracts/test/TestSortedDoublyLLRemove.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./mocks/SortedDoublyLLFixture.sol",
+        "./helpers/RevertProxy.sol",
+        "./helpers/truffle/Assert.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TestSortedDoublyLLRemove"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/TestSortedDoublyLLInsert.sol": {
+      "lastModificationDate": 1740638538879,
+      "contentHash": "b13e9ccf6c53f2c6f0bee4152b9805a7",
+      "sourceName": "contracts/test/TestSortedDoublyLLInsert.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./mocks/SortedDoublyLLFixture.sol",
+        "./helpers/RevertProxy.sol",
+        "./helpers/truffle/Assert.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TestSortedDoublyLLInsert"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/TestSortedDoublyLLFindWithHints2.sol": {
+      "lastModificationDate": 1740638538845,
+      "contentHash": "d6d84683679aaa1c92e04d1c39531ba5",
+      "sourceName": "contracts/test/TestSortedDoublyLLFindWithHints2.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./mocks/SortedDoublyLLFixture.sol",
+        "./helpers/truffle/Assert.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TestSortedDoublyLLFindWithHints2"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/TestSortedDoublyLLFindWithHints.sol": {
+      "lastModificationDate": 1740638538845,
+      "contentHash": "a97a422931dd89a864028096bca89129",
+      "sourceName": "contracts/test/TestSortedDoublyLLFindWithHints.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./mocks/SortedDoublyLLFixture.sol",
+        "./helpers/truffle/Assert.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TestSortedDoublyLLFindWithHints"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/bonding/deprecated/BondingManagerZeroStartFactorsBug.sol": {
+      "lastModificationDate": 1740638538582,
+      "contentHash": "1120ba854f6e6fe577244dd6b6c4aac8",
+      "sourceName": "contracts/bonding/deprecated/BondingManagerZeroStartFactorsBug.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../ManagerProxyTarget.sol",
+        "../IBondingManager.sol",
+        "../../libraries/SortedDoublyLL.sol",
+        "../../libraries/MathUtils.sol",
+        "../libraries/EarningsPool.sol",
+        "../libraries/EarningsPoolLIP36.sol",
+        "../../token/ILivepeerToken.sol",
+        "../../token/IMinter.sol",
+        "../../rounds/IRoundsManager.sol",
+        "../../snapshots/IMerkleSnapshot.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.5.11"
+      ],
+      "artifacts": [
+        "BondingManagerZeroStartFactorsBug"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/rounds/RoundsManager.sol": {
+      "lastModificationDate": 1740638538652,
+      "contentHash": "c701cfac2a2a9394136a877d8eaef484",
+      "sourceName": "contracts/rounds/RoundsManager.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ManagerProxyTarget.sol",
+        "./IRoundsManager.sol",
+        "../bonding/IBondingManager.sol",
+        "../token/IMinter.sol",
+        "../libraries/MathUtils.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.5.11"
+      ],
+      "artifacts": [
+        "RoundsManager"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/TestMathUtils.sol": {
+      "lastModificationDate": 1740638538744,
+      "contentHash": "9384e4d826c12bdc42b2e166d80c2397",
+      "sourceName": "contracts/test/TestMathUtils.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/MathUtils.sol",
+        "./helpers/truffle/Assert.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TestMathUtils"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/mocks/EarningsPoolFixture.sol": {
+      "lastModificationDate": 1740638538890,
+      "contentHash": "c49e128e29cfde9cdf7e2f0b1043cc6a",
+      "sourceName": "contracts/test/mocks/EarningsPoolFixture.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../libraries/MathUtils.sol",
+        "../../bonding/libraries/EarningsPool.sol",
+        "../../bonding/libraries/EarningsPoolLIP36.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "EarningsPoolFixture"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/TestEarningsPoolNoTranscoderRewardFeePool.sol": {
+      "lastModificationDate": 1740638538735,
+      "contentHash": "c3e983ec1507673e7ae90b62a54f9353",
+      "sourceName": "contracts/test/TestEarningsPoolNoTranscoderRewardFeePool.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./mocks/EarningsPoolFixture.sol",
+        "./helpers/truffle/Assert.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TestEarningsPoolNoTranscoderRewardFeePool"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/TestEarningsPoolLIP36.sol": {
+      "lastModificationDate": 1740638538734,
+      "contentHash": "00f3fca585ca182e1e5046ce6d35ea75",
+      "sourceName": "contracts/test/TestEarningsPoolLIP36.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./mocks/EarningsPoolFixture.sol",
+        "./helpers/truffle/Assert.sol",
+        "../libraries/PreciseMathUtils.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TestEarningsPoolLIP36"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/TestPreciseMathUtils.sol": {
+      "lastModificationDate": 1740638538844,
+      "contentHash": "86ac04acfd5708133d10d62c1f776271",
+      "sourceName": "contracts/test/TestPreciseMathUtils.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../libraries/PreciseMathUtils.sol",
+        "./helpers/truffle/Assert.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TestPreciseMathUtils"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/TestEarningsPool2.sol": {
+      "lastModificationDate": 1740638538734,
+      "contentHash": "566be6334289402d0251ff057138fe8b",
+      "sourceName": "contracts/test/TestEarningsPool2.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./mocks/EarningsPoolFixture.sol",
+        "./helpers/truffle/Assert.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TestEarningsPool2"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/TestEarningsPool.sol": {
+      "lastModificationDate": 1740638538733,
+      "contentHash": "dad6f1d2fddcfc3d85ca4f6dc22923cd",
+      "sourceName": "contracts/test/TestEarningsPool.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./mocks/EarningsPoolFixture.sol",
+        "./helpers/truffle/Assert.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TestEarningsPool"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/bonding/deprecated/EarningsPoolPreLIP36.sol": {
+      "lastModificationDate": 1740638538583,
+      "contentHash": "81aae4893aca18647bd2b736b28eacdf",
+      "sourceName": "contracts/bonding/deprecated/EarningsPoolPreLIP36.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../libraries/MathUtils.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "EarningsPool"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/bonding/deprecated/BondingManagerPreLIP36.sol": {
+      "lastModificationDate": 1740638538582,
+      "contentHash": "590eab0956a4ff3f250233b59b53e705",
+      "sourceName": "contracts/bonding/deprecated/BondingManagerPreLIP36.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../ManagerProxyTarget.sol",
+        "../IBondingManager.sol",
+        "../../libraries/SortedDoublyLL.sol",
+        "../../libraries/MathUtils.sol",
+        "./EarningsPoolPreLIP36.sol",
+        "../../token/ILivepeerToken.sol",
+        "../../token/IMinter.sol",
+        "../../rounds/IRoundsManager.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "BondingManagerPreLIP36"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/pm/mixins/interfaces/MContractRegistry.sol": {
+      "lastModificationDate": 1740638538633,
+      "contentHash": "7f9c6398461af0ef78213ea47185b4e3",
+      "sourceName": "contracts/pm/mixins/interfaces/MContractRegistry.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../../bonding/IBondingManager.sol",
+        "../../../token/IMinter.sol",
+        "../../../rounds/IRoundsManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MContractRegistry"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/pm/mixins/MixinWrappers.sol": {
+      "lastModificationDate": 1740638538633,
+      "contentHash": "32f66039db30e3098774c3e479f5336a",
+      "sourceName": "contracts/pm/mixins/MixinWrappers.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/MTicketBrokerCore.sol",
+        "./interfaces/MContractRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MixinWrappers"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/pm/mixins/interfaces/MTicketBrokerCore.sol": {
+      "lastModificationDate": 1740638538634,
+      "contentHash": "11299ea9addba3a6c3c24f45bdd81bee",
+      "sourceName": "contracts/pm/mixins/interfaces/MTicketBrokerCore.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MTicketBrokerCore"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/pm/TicketBroker.sol": {
+      "lastModificationDate": 1740638538632,
+      "contentHash": "e2e58e743faafc7a89be1ff4bbc0d46d",
+      "sourceName": "contracts/pm/TicketBroker.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./mixins/MixinContractRegistry.sol",
+        "./mixins/MixinReserve.sol",
+        "./mixins/MixinTicketBrokerCore.sol",
+        "./mixins/MixinTicketProcessor.sol",
+        "./mixins/MixinWrappers.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "TicketBroker"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/pm/mixins/MixinContractRegistry.sol": {
+      "lastModificationDate": 1740638538632,
+      "contentHash": "73795ed39c27fe0727ec141536c0cfd3",
+      "sourceName": "contracts/pm/mixins/MixinContractRegistry.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../ManagerProxyTarget.sol",
+        "./interfaces/MContractRegistry.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MixinContractRegistry"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/pm/mixins/MixinReserve.sol": {
+      "lastModificationDate": 1740638538632,
+      "contentHash": "deb0fa06673df05de81ec380464b4a2f",
+      "sourceName": "contracts/pm/mixins/MixinReserve.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/MReserve.sol",
+        "./interfaces/MContractRegistry.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MixinReserve"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/pm/mixins/MixinTicketBrokerCore.sol": {
+      "lastModificationDate": 1740638538633,
+      "contentHash": "57e26070ee482f44de5b232c43cba172",
+      "sourceName": "contracts/pm/mixins/MixinTicketBrokerCore.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/MReserve.sol",
+        "./interfaces/MTicketProcessor.sol",
+        "./interfaces/MTicketBrokerCore.sol",
+        "./interfaces/MContractRegistry.sol",
+        "openzeppelin-solidity/contracts/cryptography/ECDSA.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MixinTicketBrokerCore"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/pm/mixins/MixinTicketProcessor.sol": {
+      "lastModificationDate": 1740638538633,
+      "contentHash": "402ed9821ac7273492bea030bfd53698",
+      "sourceName": "contracts/pm/mixins/MixinTicketProcessor.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/MTicketProcessor.sol",
+        "./interfaces/MContractRegistry.sol",
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MixinTicketProcessor"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/pm/mixins/interfaces/MReserve.sol": {
+      "lastModificationDate": 1740638538633,
+      "contentHash": "9cfa6874d80e2f2520ad059e86e1a296",
+      "sourceName": "contracts/pm/mixins/interfaces/MReserve.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MReserve"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/pm/mixins/interfaces/MTicketProcessor.sol": {
+      "lastModificationDate": 1740638538634,
+      "contentHash": "2b9bd542ae218b42fb64be9d31dbdc79",
+      "sourceName": "contracts/pm/mixins/interfaces/MTicketProcessor.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MTicketProcessor"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/node_modules/openzeppelin-solidity/contracts/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1741247063316,
+      "contentHash": "8ba79136eb93ffe2392b862516d46aa7",
+      "sourceName": "openzeppelin-solidity/contracts/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/mocks/ManagerProxyTargetMockV3.sol": {
+      "lastModificationDate": 1740638539043,
+      "contentHash": "cac3b4ec0f7c1887b8f7a4963f2c008f",
+      "sourceName": "contracts/test/mocks/ManagerProxyTargetMockV3.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../ManagerProxyTarget.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "ManagerProxyTargetMockV3"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/mocks/ManagerProxyTargetMockV2.sol": {
+      "lastModificationDate": 1740638539043,
+      "contentHash": "45090ba056fe7504f296824956a873f1",
+      "sourceName": "contracts/test/mocks/ManagerProxyTargetMockV2.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../ManagerProxyTarget.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "ManagerProxyTargetMockV2"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/mocks/ManagerProxyTargetMockV1.sol": {
+      "lastModificationDate": 1740638539042,
+      "contentHash": "405e36a060a169de517429252bf30e1f",
+      "sourceName": "contracts/test/mocks/ManagerProxyTargetMockV1.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../../ManagerProxyTarget.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "ManagerProxyTargetMockV1"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/ServiceRegistry.sol": {
+      "lastModificationDate": 1740638538581,
+      "contentHash": "53d72ef52347ef52f72fd73146c22d90",
+      "sourceName": "contracts/ServiceRegistry.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ManagerProxyTarget.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "ServiceRegistry"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/ManagerProxy.sol": {
+      "lastModificationDate": 1740638538581,
+      "contentHash": "ae7fabc5e240bbdb99fc6e932709e3e3",
+      "sourceName": "contracts/ManagerProxy.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ManagerProxyTarget.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "ManagerProxy"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/token/BridgeMinter.sol": {
+      "lastModificationDate": 1740638539045,
+      "contentHash": "7083165364ae26cd1343c0fef6172aa4",
+      "sourceName": "contracts/token/BridgeMinter.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../Manager.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "BridgeMinter",
+        "IBridgeMinterToken"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/snapshots/MerkleSnapshot.sol": {
+      "lastModificationDate": 1740638538653,
+      "contentHash": "e0c1e3bebba61516807a5d4dc631f188",
+      "sourceName": "contracts/snapshots/MerkleSnapshot.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../zeppelin/MerkleProof.sol",
+        "../Manager.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MerkleSnapshot"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/zeppelin/MerkleProof.sol": {
+      "lastModificationDate": 1740638539119,
+      "contentHash": "747a464b8102358121be0b0d904b1bc4",
+      "sourceName": "contracts/zeppelin/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/Controller.sol": {
+      "lastModificationDate": 1740638538557,
+      "contentHash": "60715a8867a704133cc1cfd158b9878f",
+      "sourceName": "contracts/Controller.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IController.sol",
+        "./IManager.sol",
+        "./zeppelin/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "Controller"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/token/LivepeerTokenFaucet.sol": {
+      "lastModificationDate": 1740638539118,
+      "contentHash": "21b0e9dd0cd40a9ba3f8d52ecddfbf28",
+      "sourceName": "contracts/token/LivepeerTokenFaucet.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ILivepeerToken.sol",
+        "../zeppelin/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "LivepeerTokenFaucet"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/token/LivepeerToken.sol": {
+      "lastModificationDate": 1740638539118,
+      "contentHash": "8126878fee6638a6e36243beb79d80fa",
+      "sourceName": "contracts/token/LivepeerToken.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./ILivepeerToken.sol",
+        "./VariableSupplyToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "LivepeerToken"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/token/VariableSupplyToken.sol": {
+      "lastModificationDate": 1740638539119,
+      "contentHash": "3e4d46cd88fdf9e34790b2b9c85b6216",
+      "sourceName": "contracts/token/VariableSupplyToken.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../zeppelin/MintableToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "VariableSupplyToken"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/zeppelin/MintableToken.sol": {
+      "lastModificationDate": 1740638539119,
+      "contentHash": "544457809baba6b4d83cd68657de7b4b",
+      "sourceName": "contracts/zeppelin/MintableToken.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+        "./Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MintableToken"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/token/ArbitrumLivepeerToken.sol": {
+      "lastModificationDate": 1740638539045,
+      "contentHash": "d91d566713652c7eed91a43a415cee73",
+      "sourceName": "contracts/token/ArbitrumLivepeerToken.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./LivepeerToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "ArbitrumLivepeerToken",
+        "IL1GatewayRouter"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/polling/PollCreator.sol": {
+      "lastModificationDate": 1740638538649,
+      "contentHash": "0b0323948f089f86a1f12232dc71cbff",
+      "sourceName": "contracts/polling/PollCreator.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Poll.sol",
+        "../token/ILivepeerToken.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "PollCreator"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/polling/Poll.sol": {
+      "lastModificationDate": 1740638538634,
+      "contentHash": "6367edbc7db595d9e8d021702983c864",
+      "sourceName": "contracts/polling/Poll.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "Poll"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/rounds/AdjustableRoundsManager.sol": {
+      "lastModificationDate": 1740638538651,
+      "contentHash": "8f918220e481155d1169813439ede116",
+      "sourceName": "contracts/rounds/AdjustableRoundsManager.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./RoundsManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "AdjustableRoundsManager"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/governance/Governor.sol": {
+      "lastModificationDate": 1740638538630,
+      "contentHash": "c7519204e7a81e2b0b90ffaf955dc8f0",
+      "sourceName": "contracts/governance/Governor.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "openzeppelin-solidity/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.5.11"
+      ],
+      "artifacts": [
+        "Governor"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/refund/IAlphaJobsManager.sol": {
+      "lastModificationDate": 1740638538650,
+      "contentHash": "3114e5c471bbf05f90268df6ff741cb9",
+      "sourceName": "contracts/refund/IAlphaJobsManager.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "IAlphaJobsManager"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/refund/Refunder.sol": {
+      "lastModificationDate": 1740638538650,
+      "contentHash": "6e87593a56a7965dc9ed513dd57be25f",
+      "sourceName": "contracts/refund/Refunder.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IAlphaJobsManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "Refunder"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/helpers/truffle/AssertAddressPayableArray.sol": {
+      "lastModificationDate": 1740638538882,
+      "contentHash": "e6faba85490936e2805ecfa2275ab3f4",
+      "sourceName": "contracts/test/helpers/truffle/AssertAddressPayableArray.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "AssertAddressPayableArray"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/mocks/AlphaJobsManagerMock.sol": {
+      "lastModificationDate": 1740638538890,
+      "contentHash": "0b2186eb8236acfe1013636c56caa0e9",
+      "sourceName": "contracts/test/mocks/AlphaJobsManagerMock.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "AlphaJobsManagerMock"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/mocks/BondingManagerMock.sol": {
+      "lastModificationDate": 1740638538890,
+      "contentHash": "06d5f4f514ec8f51259783e83320996c",
+      "sourceName": "contracts/test/mocks/BondingManagerMock.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./GenericMock.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "BondingManagerMock"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/mocks/GenericMock.sol": {
+      "lastModificationDate": 1740638538902,
+      "contentHash": "a4f204217d13a163182baa18a1fe5600",
+      "sourceName": "contracts/test/mocks/GenericMock.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "GenericMock"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/mocks/MinterMock.sol": {
+      "lastModificationDate": 1740638539043,
+      "contentHash": "03fff49d892ce0bc229d77951a23bbd1",
+      "sourceName": "contracts/test/mocks/MinterMock.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./GenericMock.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "MinterMock"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/73/protocol/contracts/test/mocks/SetUint256.sol": {
+      "lastModificationDate": 1740638539044,
+      "contentHash": "40e147215f9a4a5f481e76fffb0ae77b",
+      "sourceName": "contracts/test/mocks/SetUint256.sol",
+      "solcConfig": {
+        "version": "0.5.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.11"
+      ],
+      "artifacts": [
+        "SetUint256"
+      ]
+    }
+  }
+}

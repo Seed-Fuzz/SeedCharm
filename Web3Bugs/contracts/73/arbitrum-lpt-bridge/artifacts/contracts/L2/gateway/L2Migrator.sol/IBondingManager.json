@@ -1,0 +1,54 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IBondingManager",
+  "sourceName": "contracts/L2/gateway/L2Migrator.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_oldDelegateNewPosPrev",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_oldDelegateNewPosNext",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_newDelegateNewPosPrev",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_newDelegateNewPosNext",
+          "type": "address"
+        }
+      ],
+      "name": "bondForWithHint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

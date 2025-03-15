@@ -1,0 +1,75 @@
+{
+  "contractName": "IGasQueue",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/dex/queue/IGasQueue.sol\":\"IGasQueue\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/dex/queue/IGasQueue.sol\":{\"keccak256\":\"0xf1ca298bbe9de8e036a8e93b7fdb9248ad19a8311462e619a1eec47a8417b5bd\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://cf52df0e99562f76bff922e2a36da7af549740c3711fa270dc656134c033c6ce\",\"dweb:/ipfs/Qmb61VW2Ln39PxqeLstgxD7LdqHsbBFiGyzJkqajDvwXdq\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: Unlicense\r\n\r\npragma solidity =0.8.9;\r\n\r\ninterface IGasQueue {\r\n    /* ========== STRUCTS ========== */\r\n    /* ========== FUNCTIONS ========== */\r\n    /* ========== EVENTS ========== */\r\n}\r\n",
+  "sourcePath": "/home/mingyue/sub_contract_content/Web3Bugs/contracts/52/contracts/interfaces/dex/queue/IGasQueue.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/dex/queue/IGasQueue.sol",
+    "exportedSymbols": {
+      "IGasQueue": [
+        20140
+      ]
+    },
+    "id": 20141,
+    "license": "Unlicense",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20139,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "41:23:76"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IGasQueue",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": true,
+        "id": 20140,
+        "linearizedBaseContracts": [
+          20140
+        ],
+        "name": "IGasQueue",
+        "nameLocation": "78:9:76",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 20141,
+        "src": "68:148:76",
+        "usedErrors": []
+      }
+    ],
+    "src": "41:177:76"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-03-06T07:23:55.071Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

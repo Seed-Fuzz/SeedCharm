@@ -1,0 +1,345 @@
+{
+  "contractName": "IConverter",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "vetherAmount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "vaderAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Conversion",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32[]",
+          "name": "proof",
+          "type": "bytes32[]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "convert",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "vaderReceived",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"vetherAmount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"vaderAmount\",\"type\":\"uint256\"}],\"name\":\"Conversion\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes32[]\",\"name\":\"proof\",\"type\":\"bytes32[]\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"convert\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"vaderReceived\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/tokens/converter/IConverter.sol\":\"IConverter\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/tokens/converter/IConverter.sol\":{\"keccak256\":\"0x983e6e67767a8a031a2ff2cbfe122a20aacf29d9e5f1e293ff1ada5255af3c4e\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://abe7ea21658fb75c1ee140ce555ca218f49bf7ae10c2f98e2d9d5f10e625ec78\",\"dweb:/ipfs/QmeBj2WZ1hMgt81o4Uosg17Q5EoVuKG2J4YRR3oVqNCyUy\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: Unlicense\r\n\r\npragma solidity =0.8.9;\r\n\r\ninterface IConverter {\r\n    /* ========== FUNCTIONS ========== */\r\n\r\n    function convert(bytes32[] calldata proof, uint256 amount)\r\n        external\r\n        returns (uint256 vaderReceived);\r\n\r\n    /* ========== EVENTS ========== */\r\n\r\n    event Conversion(\r\n        address indexed user,\r\n        uint256 vetherAmount,\r\n        uint256 vaderAmount\r\n    );\r\n}\r\n",
+  "sourcePath": "/home/mingyue/sub_contract_content/Web3Bugs/contracts/52/contracts/interfaces/tokens/converter/IConverter.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/tokens/converter/IConverter.sol",
+    "exportedSymbols": {
+      "IConverter": [
+        20479
+      ]
+    },
+    "id": 20480,
+    "license": "Unlicense",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20460,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "41:23:85"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IConverter",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 20479,
+        "linearizedBaseContracts": [
+          20479
+        ],
+        "name": "IConverter",
+        "nameLocation": "78:10:85",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "416d7632",
+            "id": 20470,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "convert",
+            "nameLocation": "150:7:85",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20466,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20463,
+                  "mutability": "mutable",
+                  "name": "proof",
+                  "nameLocation": "177:5:85",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20470,
+                  "src": "158:24:85",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_bytes32_$dyn_calldata_ptr",
+                    "typeString": "bytes32[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 20461,
+                      "name": "bytes32",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "158:7:85",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "id": 20462,
+                    "nodeType": "ArrayTypeName",
+                    "src": "158:9:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_bytes32_$dyn_storage_ptr",
+                      "typeString": "bytes32[]"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20465,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "192:6:85",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20470,
+                  "src": "184:14:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20464,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "184:7:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "157:42:85"
+            },
+            "returnParameters": {
+              "id": 20469,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20468,
+                  "mutability": "mutable",
+                  "name": "vaderReceived",
+                  "nameLocation": "244:13:85",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20470,
+                  "src": "236:21:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20467,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "236:7:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "235:23:85"
+            },
+            "scope": 20479,
+            "src": "141:118:85",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "anonymous": false,
+            "id": 20478,
+            "name": "Conversion",
+            "nameLocation": "315:10:85",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 20477,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20472,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "352:4:85",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20478,
+                  "src": "336:20:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20471,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "336:7:85",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20474,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "vetherAmount",
+                  "nameLocation": "375:12:85",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20478,
+                  "src": "367:20:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20473,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "367:7:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20476,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "vaderAmount",
+                  "nameLocation": "406:11:85",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20478,
+                  "src": "398:19:85",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20475,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "398:7:85",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "325:99:85"
+            },
+            "src": "309:116:85"
+          }
+        ],
+        "scope": 20480,
+        "src": "68:360:85",
+        "usedErrors": []
+      }
+    ],
+    "src": "41:389:85"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-03-06T07:23:55.072Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

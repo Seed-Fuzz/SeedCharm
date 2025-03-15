@@ -1,0 +1,264 @@
+{
+  "contractName": "ILPToken",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "burn",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/dex-v2/wrapper/ILPToken.sol\":\"ILPToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5\",\"dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53\"]},\"project:/contracts/interfaces/dex-v2/wrapper/ILPToken.sol\":{\"keccak256\":\"0xcdee369d7b98d067646d9a2329174805f1781628af636bcce6a6ff0db5d985d6\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://6b7abb413937523650c7cb3eff8e760ea94a56389fa68c4d0a9e4f4d642586e9\",\"dweb:/ipfs/QmSPhTttc21ymVq5J2mtVHa2hcaaCmfRM8uaEz9iRD4hPc\"]},\"project:/contracts/interfaces/shared/IERC20Extended.sol\":{\"keccak256\":\"0xe4820549025e254ec014e46e4f10f61a02b98876b54c71aa004cfb714900b88b\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://29e0e0802dff7e8d91fee3e0e50e740b406240fbea3288778bffb91818e8bc4c\",\"dweb:/ipfs/QmNniaobupcZZCiooSiD9qSjwDvhHNqXQjGhL35w3DLcjj\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: Unlicense\r\n\r\npragma solidity =0.8.9;\r\n\r\nimport \"../../shared/IERC20Extended.sol\";\r\n\r\ninterface ILPToken {\r\n    function mint(address to, uint256 amount) external;\r\n\r\n    function burn(uint256 amount) external;\r\n}\r\n",
+  "sourcePath": "/home/mingyue/sub_contract_content/Web3Bugs/contracts/52/contracts/interfaces/dex-v2/wrapper/ILPToken.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/dex-v2/wrapper/ILPToken.sol",
+    "exportedSymbols": {
+      "IERC20": [
+        969
+      ],
+      "IERC20Extended": [
+        20391
+      ],
+      "ILPToken": [
+        19917
+      ]
+    },
+    "id": 19918,
+    "license": "Unlicense",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 19903,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "41:23:70"
+      },
+      {
+        "absolutePath": "project:/contracts/interfaces/shared/IERC20Extended.sol",
+        "file": "../../shared/IERC20Extended.sol",
+        "id": 19904,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 19918,
+        "sourceUnit": 20392,
+        "src": "68:41:70",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ILPToken",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 19917,
+        "linearizedBaseContracts": [
+          19917
+        ],
+        "name": "ILPToken",
+        "nameLocation": "123:8:70",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "40c10f19",
+            "id": 19911,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mint",
+            "nameLocation": "148:4:70",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19909,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19906,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "161:2:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19911,
+                  "src": "153:10:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 19905,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "153:7:70",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 19908,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "173:6:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19911,
+                  "src": "165:14:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19907,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "165:7:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "152:28:70"
+            },
+            "returnParameters": {
+              "id": 19910,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "189:0:70"
+            },
+            "scope": 19917,
+            "src": "139:51:70",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "42966c68",
+            "id": 19916,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burn",
+            "nameLocation": "207:4:70",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 19914,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 19913,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "220:6:70",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 19916,
+                  "src": "212:14:70",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 19912,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "212:7:70",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "211:16:70"
+            },
+            "returnParameters": {
+              "id": 19915,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "236:0:70"
+            },
+            "scope": 19917,
+            "src": "198:39:70",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 19918,
+        "src": "113:127:70",
+        "usedErrors": []
+      }
+    ],
+    "src": "41:201:70"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-03-06T07:23:55.070Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
