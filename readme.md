@@ -21,7 +21,8 @@
         $ git clone https://github.com/SoftSec-KAIST/Smartian-Artifact.git
     ```  
 ## 🏃‍♀️‍➡️Verifying the instruction/branch coverage or the vulnerability:
-### 🎀Method1: mainControl.py offer the procedure about how llm generate seed.
+### 🎀Method1: mainControl.py offer the procedure about how llm generate seed. 
+#### 💡tips: You must make sure that you execute the command in the project path, or the relative seed directory in the `Smartian` will be wrong. To avoid exception/error, just follow the command below.
     ```bash
         $ mkdir output
         $ python3 ./mainControl.py \
@@ -71,3 +72,4 @@
 
 ## 👉Result :
 #### We have also provide the example result which the llm generates in the directory `examples`.
+ 

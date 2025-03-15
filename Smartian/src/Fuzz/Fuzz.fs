@@ -285,7 +285,7 @@ let run args =
   printfn "Extracted name: %s" name // 输出: Extracted name: AW
   // let baseDir = "/home/test/tools/GPTSmart/B3/seed" 
   // let baseDir = "./B3/seed"
-  let baseDir = "/home/test/tools/SeedCharm/dataset_project/seed"
+  let baseDir = "./dataset_project/seed"
   let filename = baseDir + "/" + name + "_seed.txt"
       //parseTransactions json
   printfn "filename %s" filename
