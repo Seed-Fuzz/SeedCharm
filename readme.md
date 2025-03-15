@@ -1,6 +1,6 @@
 # 🎯SeedCharm: Intelligent LLM-driven Seed Generation for Smart Contract Fuzzing 
 ## 👋Introduction
-#### Hi! Welcome to this place! This repository provides the code and the data which will be used in our paper. It contains  
+#### Hi! Welcome to this place! This repository provides the code and the data used in our paper. It contains  
     1. chars verifying
     2. reduction verifying
     3. LSeedSmartian's coverage/bugs count 
