@@ -3,7 +3,10 @@ import sys
 from openai import OpenAI
 import asyncio
 
-key = "sk-a73fde8a79da4dabb6dff23c634d8383"
+## you should add your key here:
+key = "${YOUR-KEY}"
+## you can apply the key here:
+## https://platform.deepseek.com/usage
 
 
 
