@@ -33,6 +33,9 @@
 #### In order to avoid the randomness, we provide the seed of `D1` that the llm generated, which has already be transferred into the Smartian seed format.The seeds are in the directory `seed`. And the `seed_withoutR` in the `dataset_project` is the `seed` of `D2` without reduction, the `seed_withR` is the `seed` of `D2` with reduction. NOTICE: When you want to use seed we provide, you should put the directory in the `dataset_project`, and rename it to `seed`.
 #### If you want to generate the seed for your own dataset, you should first generate the `normalFuncs` in the Smartian format. You can referance the `normals.py` in the `Smartian` directory and then put the files in the `dataset_roject/normalFuncs` directory.
 
+### 🍉Method3: use the result we provide
+#### We have provided the bug-count log and the coverage/instruction plot python file in the result directory.
+
 ## ⛄Verifying the chars or lines of our dataset 
     ```bash
         $ cd calc_chars_lines
