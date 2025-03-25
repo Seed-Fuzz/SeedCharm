@@ -1,0 +1,563 @@
+{
+  "contractName": "IVaderReserve",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "GrantDistributed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "actualAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "LossCovered",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "reimburseImpermanentLoss",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "grant",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "reserve",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"GrantDistributed\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"actualAmount\",\"type\":\"uint256\"}],\"name\":\"LossCovered\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"grant\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"reimburseImpermanentLoss\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"reserve\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/reserve/IVaderReserve.sol\":\"IVaderReserve\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/reserve/IVaderReserve.sol\":{\"keccak256\":\"0x22e87625930d4ada2ccbd85e6b71d53432cb12d90087f400c24086fdc46ab2ee\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://3b26e702df016430df2084a36b3f975e51958bfae285e368903c02b6f3547c0d\",\"dweb:/ipfs/QmcZh1CVTjC2pGwnApoFHyTgamwkztFAM8DLFe5v4pe6q6\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: Unlicense\r\n\r\npragma solidity =0.8.9;\r\n\r\ninterface IVaderReserve {\r\n    /* ========== STRUCTS ========== */\r\n    /* ========== FUNCTIONS ========== */\r\n\r\n    function reimburseImpermanentLoss(address recipient, uint256 amount)\r\n        external;\r\n\r\n    function grant(address recipient, uint256 amount) external;\r\n\r\n    function reserve() external view returns (uint256);\r\n\r\n    /* ========== EVENTS ========== */\r\n\r\n    event GrantDistributed(address recipient, uint256 amount);\r\n    event LossCovered(address recipient, uint256 amount, uint256 actualAmount);\r\n}\r\n",
+  "sourcePath": "/home/mingyue/sub_contract_content/Web3Bugs/contracts/52/contracts/interfaces/reserve/IVaderReserve.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/reserve/IVaderReserve.sol",
+    "exportedSymbols": {
+      "IVaderReserve": [
+        20363
+      ]
+    },
+    "id": 20364,
+    "license": "Unlicense",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20329,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "41:23:81"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IVaderReserve",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 20363,
+        "linearizedBaseContracts": [
+          20363
+        ],
+        "name": "IVaderReserve",
+        "nameLocation": "78:13:81",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "b99573a3",
+            "id": 20336,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "reimburseImpermanentLoss",
+            "nameLocation": "194:24:81",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20334,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20331,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "227:9:81",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20336,
+                  "src": "219:17:81",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20330,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "219:7:81",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20333,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "246:6:81",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20336,
+                  "src": "238:14:81",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20332,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "238:7:81",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "218:35:81"
+            },
+            "returnParameters": {
+              "id": 20335,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "271:0:81"
+            },
+            "scope": 20363,
+            "src": "185:87:81",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "6370920e",
+            "id": 20343,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "grant",
+            "nameLocation": "289:5:81",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20341,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20338,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "303:9:81",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20343,
+                  "src": "295:17:81",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20337,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "295:7:81",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20340,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "322:6:81",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20343,
+                  "src": "314:14:81",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20339,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "314:7:81",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "294:35:81"
+            },
+            "returnParameters": {
+              "id": 20342,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "338:0:81"
+            },
+            "scope": 20363,
+            "src": "280:59:81",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "cd3293de",
+            "id": 20348,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "reserve",
+            "nameLocation": "356:7:81",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20344,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "363:2:81"
+            },
+            "returnParameters": {
+              "id": 20347,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20346,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20348,
+                  "src": "389:7:81",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20345,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "389:7:81",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "388:9:81"
+            },
+            "scope": 20363,
+            "src": "347:51:81",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "anonymous": false,
+            "id": 20354,
+            "name": "GrantDistributed",
+            "nameLocation": "454:16:81",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 20353,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20350,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "479:9:81",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20354,
+                  "src": "471:17:81",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20349,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "471:7:81",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20352,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "498:6:81",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20354,
+                  "src": "490:14:81",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20351,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "490:7:81",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "470:35:81"
+            },
+            "src": "448:58:81"
+          },
+          {
+            "anonymous": false,
+            "id": 20362,
+            "name": "LossCovered",
+            "nameLocation": "518:11:81",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 20361,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20356,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "recipient",
+                  "nameLocation": "538:9:81",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20362,
+                  "src": "530:17:81",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20355,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "530:7:81",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20358,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "557:6:81",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20362,
+                  "src": "549:14:81",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20357,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "549:7:81",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20360,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "actualAmount",
+                  "nameLocation": "573:12:81",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20362,
+                  "src": "565:20:81",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20359,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "565:7:81",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "529:57:81"
+            },
+            "src": "512:75:81"
+          }
+        ],
+        "scope": 20364,
+        "src": "68:522:81",
+        "usedErrors": []
+      }
+    ],
+    "src": "41:551:81"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-03-06T07:23:55.072Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

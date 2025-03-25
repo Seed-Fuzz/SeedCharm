@@ -1,0 +1,770 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "UserManagerMock",
+  "sourceName": "contracts/tests/UserManagerMock.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "MAX_STAKE_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MAX_TRUST_LIMIT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "__UserManager_init",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "addMember",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        },
+        {
+          "internalType": "bool[]",
+          "name": "",
+          "type": "bool[]"
+        }
+      ],
+      "name": "batchUpdateTotalFrozen",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "borrower",
+          "type": "address"
+        }
+      ],
+      "name": "cancelVouch",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "checkIsMember",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "borrower",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "debtWriteOff",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getBorrowerAddresses",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "borrower",
+          "type": "address"
+        }
+      ],
+      "name": "getBorrowerAsset",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "trustAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "vouchingAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lockedStake",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "getCreditLimit",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "pastBlocks",
+          "type": "uint256"
+        }
+      ],
+      "name": "getFrozenCoinAge",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "borrower",
+          "type": "address"
+        }
+      ],
+      "name": "getLockedStake",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        }
+      ],
+      "name": "getStakerAddresses",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        }
+      ],
+      "name": "getStakerAsset",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "trustAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "vouchingAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lockedStake",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "getStakerBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "getTotalFrozenAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "getTotalLockedStake",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "borrower",
+          "type": "address"
+        }
+      ],
+      "name": "getVouchingAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isMember",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "limit",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "newMemberFee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newMember",
+          "type": "address"
+        }
+      ],
+      "name": "registerMember",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newMember",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "registerMemberWithPermit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lastRepay",
+          "type": "uint256"
+        }
+      ],
+      "name": "repayLoanOverdue",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "limit_",
+          "type": "int256"
+        }
+      ],
+      "name": "setCreditLimit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "isMember_",
+          "type": "bool"
+        }
+      ],
+      "name": "setIsMember",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "setNewMemberFee",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "stakerBalance_",
+          "type": "uint256"
+        }
+      ],
+      "name": "setStakerBalance",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "totalFrozenAmount_",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTotalFrozenAmount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "totalLockedStake_",
+          "type": "uint256"
+        }
+      ],
+      "name": "setTotalLockedStake",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "stake",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "nonce",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "expiry",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        }
+      ],
+      "name": "stakeWithPermit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "stakerBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalFrozen",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalFrozenAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalLockedStake",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalStaked",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "unstake",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "borrower",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "isBorrow",
+          "type": "bool"
+        }
+      ],
+      "name": "updateLockedData",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "name": "updateTotalFrozen",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "borrower_",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "trustAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "updateTrust",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "withdrawRewards",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610861806100206000396000f3fe608060405234801561001057600080fd5b50600436106102695760003560e01c806366f22b3311610151578063c7b8981c116100c3578063e819061211610087578063e8190612146104c5578063eab2039e146104e6578063eb1484591461047b578063f26e930e146104ee578063fa84a8a314610501578063fcb4888e1461049c57600080fd5b8063c7b8981c1461027f578063ca6d56dc1461049c578063d02982cf146104aa578063dd2368c914610402578063dd63f762146104b757600080fd5b8063a694fc3a11610115578063a694fc3a14610315578063ab4ffaa914610438578063b157bf0314610446578063b40d57fd14610446578063b6a93faf1461047b578063b8845f751461036a57600080fd5b806366f22b33146103ef5780637223325d14610402578063817b1cd21461041857806385bde8f214610421578063a4d66daf1461042f57600080fd5b80633feaf532116101ea5780635668b02e116101ae5780635668b02e14610398578063574dadba146103a6578063591d637d146103bb5780635a72991f146103c95780635d40db1e146103d2578063644214f6146103e657600080fd5b80633feaf5321461034b57806343a03bbc1461036157806343fbb8f51461036a57806354b6c41a1461037c57806355ab96ba1461038f57600080fd5b8063293d9df911610231578063293d9df9146102ed5780632c333e25146103005780632e17de78146103155780632f92f1f21461032657806337262d381461033657600080fd5b806316d8525a1461026e5780631e7f87bc1461028157806321d2a5731461029d5780632640d9db146102c5578063293512c5146102da575b600080fd5b61027f670de0b6b3a7640000600055565b005b61028a60025481565b6040519081526020015b60405180910390f35b6102b56102ab36600461059b565b5060035460ff1690565b6040519015158152602001610294565b61028a6102d336600461059b565b5060055490565b61027f6102e83660046105ee565b505050565b61027f6102fb366004610790565b600555565b61028a61030e36600461059b565b5060045490565b61027f610323366004610790565b50565b61028a683635c9adc5dea0000081565b61028a61034436600461059b565b5060075490565b61027f6103593660046106b6565b505050505050565b61028a60065481565b61027f610378366004610652565b5050565b61027f61038a366004610790565b600755565b61028a60055481565b61027f6103593660046107a8565b61028a6103b436600461059b565b5060065490565b61027f610378366004610629565b61028a60075481565b61027f6103e036600461070d565b50505050565b61028a60005481565b61027f6103fd366004610790565b600655565b61028a6104103660046105bc565b600092915050565b61028a60015481565b61027f6103783660046105bc565b61028a60045481565b61027f6102e836600461067b565b6104606104543660046105bc565b60008060009250925092565b60408051938452602084019290925290820152606001610294565b61048f61048936600461059b565b50606090565b60405161029491906107de565b61027f61032336600461059b565b6003546102b59060ff1681565b61028a610410366004610652565b61027f6104d3366004610776565b6003805460ff1916911515919091179055565b61028a606481565b61027f6104fc366004610790565b600455565b61027f61050f366004610790565b600055565b80356001600160a01b038116811461052b57600080fd5b919050565b60008083601f840112610541578182fd5b50813567ffffffffffffffff811115610558578182fd5b6020830191508360208260051b850101111561057357600080fd5b9250929050565b8035801515811461052b57600080fd5b803560ff8116811461052b57600080fd5b6000602082840312156105ac578081fd5b6105b582610514565b9392505050565b600080604083850312156105ce578081fd5b6105d783610514565b91506105e560208401610514565b90509250929050565b600080600060608486031215610602578081fd5b61060b84610514565b925061061960208501610514565b9150604084013590509250925092565b6000806040838503121561063b578182fd5b61064483610514565b91506105e56020840161057a565b60008060408385031215610664578182fd5b61066d83610514565b946020939093013593505050565b60008060006060848603121561068f578283fd5b61069884610514565b9250602084013591506106ad6040850161057a565b90509250925092565b60008060008060008060c087890312156106ce578182fd5b6106d787610514565b955060208701359450604087013593506106f36060880161058a565b92506080870135915060a087013590509295509295509295565b60008060008060408587031215610722578384fd5b843567ffffffffffffffff80821115610739578586fd5b61074588838901610530565b9096509450602087013591508082111561075d578384fd5b5061076a87828801610530565b95989497509550505050565b600060208284031215610787578081fd5b6105b58261057a565b6000602082840312156107a1578081fd5b5035919050565b60008060008060008060c087890312156107c0578182fd5b8635955060208701359450604087013593506106f36060880161058a565b6020808252825182820181905260009190848201906040850190845b8181101561081f5783516001600160a01b0316835292840192918401916001016107fa565b5090969550505050505056fea2646970667358221220940ad83a33b404b1949405ee7dc7784df0c24917071b19d2791ef4046a1ba63e64736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106102695760003560e01c806366f22b3311610151578063c7b8981c116100c3578063e819061211610087578063e8190612146104c5578063eab2039e146104e6578063eb1484591461047b578063f26e930e146104ee578063fa84a8a314610501578063fcb4888e1461049c57600080fd5b8063c7b8981c1461027f578063ca6d56dc1461049c578063d02982cf146104aa578063dd2368c914610402578063dd63f762146104b757600080fd5b8063a694fc3a11610115578063a694fc3a14610315578063ab4ffaa914610438578063b157bf0314610446578063b40d57fd14610446578063b6a93faf1461047b578063b8845f751461036a57600080fd5b806366f22b33146103ef5780637223325d14610402578063817b1cd21461041857806385bde8f214610421578063a4d66daf1461042f57600080fd5b80633feaf532116101ea5780635668b02e116101ae5780635668b02e14610398578063574dadba146103a6578063591d637d146103bb5780635a72991f146103c95780635d40db1e146103d2578063644214f6146103e657600080fd5b80633feaf5321461034b57806343a03bbc1461036157806343fbb8f51461036a57806354b6c41a1461037c57806355ab96ba1461038f57600080fd5b8063293d9df911610231578063293d9df9146102ed5780632c333e25146103005780632e17de78146103155780632f92f1f21461032657806337262d381461033657600080fd5b806316d8525a1461026e5780631e7f87bc1461028157806321d2a5731461029d5780632640d9db146102c5578063293512c5146102da575b600080fd5b61027f670de0b6b3a7640000600055565b005b61028a60025481565b6040519081526020015b60405180910390f35b6102b56102ab36600461059b565b5060035460ff1690565b6040519015158152602001610294565b61028a6102d336600461059b565b5060055490565b61027f6102e83660046105ee565b505050565b61027f6102fb366004610790565b600555565b61028a61030e36600461059b565b5060045490565b61027f610323366004610790565b50565b61028a683635c9adc5dea0000081565b61028a61034436600461059b565b5060075490565b61027f6103593660046106b6565b505050505050565b61028a60065481565b61027f610378366004610652565b5050565b61027f61038a366004610790565b600755565b61028a60055481565b61027f6103593660046107a8565b61028a6103b436600461059b565b5060065490565b61027f610378366004610629565b61028a60075481565b61027f6103e036600461070d565b50505050565b61028a60005481565b61027f6103fd366004610790565b600655565b61028a6104103660046105bc565b600092915050565b61028a60015481565b61027f6103783660046105bc565b61028a60045481565b61027f6102e836600461067b565b6104606104543660046105bc565b60008060009250925092565b60408051938452602084019290925290820152606001610294565b61048f61048936600461059b565b50606090565b60405161029491906107de565b61027f61032336600461059b565b6003546102b59060ff1681565b61028a610410366004610652565b61027f6104d3366004610776565b6003805460ff1916911515919091179055565b61028a606481565b61027f6104fc366004610790565b600455565b61027f61050f366004610790565b600055565b80356001600160a01b038116811461052b57600080fd5b919050565b60008083601f840112610541578182fd5b50813567ffffffffffffffff811115610558578182fd5b6020830191508360208260051b850101111561057357600080fd5b9250929050565b8035801515811461052b57600080fd5b803560ff8116811461052b57600080fd5b6000602082840312156105ac578081fd5b6105b582610514565b9392505050565b600080604083850312156105ce578081fd5b6105d783610514565b91506105e560208401610514565b90509250929050565b600080600060608486031215610602578081fd5b61060b84610514565b925061061960208501610514565b9150604084013590509250925092565b6000806040838503121561063b578182fd5b61064483610514565b91506105e56020840161057a565b60008060408385031215610664578182fd5b61066d83610514565b946020939093013593505050565b60008060006060848603121561068f578283fd5b61069884610514565b9250602084013591506106ad6040850161057a565b90509250925092565b60008060008060008060c087890312156106ce578182fd5b6106d787610514565b955060208701359450604087013593506106f36060880161058a565b92506080870135915060a087013590509295509295509295565b60008060008060408587031215610722578384fd5b843567ffffffffffffffff80821115610739578586fd5b61074588838901610530565b9096509450602087013591508082111561075d578384fd5b5061076a87828801610530565b95989497509550505050565b600060208284031215610787578081fd5b6105b58261057a565b6000602082840312156107a1578081fd5b5035919050565b60008060008060008060c087890312156107c0578182fd5b8635955060208701359450604087013593506106f36060880161058a565b6020808252825182820181905260009190848201906040850190845b8181101561081f5783516001600160a01b0316835292840192918401916001016107fa565b5090969550505050505056fea2646970667358221220940ad83a33b404b1949405ee7dc7784df0c24917071b19d2791ef4046a1ba63e64736f6c63430008040033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

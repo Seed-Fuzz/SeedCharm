@@ -1,0 +1,145 @@
+{
+  "contractName": "IAggregator",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "latestAnswer",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"latestAnswer\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/external/chainlink/IAggregator.sol\":\"IAggregator\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/external/chainlink/IAggregator.sol\":{\"keccak256\":\"0x5205d4a8a69a045249e1ce537f923508d6a225ce90d0cacfcbf719aa5257f536\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://8cdc5058eb22c1c3520f5b458ae29291cd5c49d9b5b2044f094472347c051569\",\"dweb:/ipfs/QmfHhW1ZEeCm65HeYPCTdvKEJThd6LEDQ3SkbYYSNoePhg\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: Unlicense\r\n\r\npragma solidity =0.8.9;\r\n\r\ninterface IAggregator {\r\n    function latestAnswer() external view returns (int256);\r\n}\r\n",
+  "sourcePath": "/home/mingyue/sub_contract_content/Web3Bugs/contracts/52/contracts/interfaces/external/chainlink/IAggregator.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/external/chainlink/IAggregator.sol",
+    "exportedSymbols": {
+      "IAggregator": [
+        20261
+      ]
+    },
+    "id": 20262,
+    "license": "Unlicense",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20255,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "41:23:79"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IAggregator",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 20261,
+        "linearizedBaseContracts": [
+          20261
+        ],
+        "name": "IAggregator",
+        "nameLocation": "78:11:79",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "50d25bcd",
+            "id": 20260,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "latestAnswer",
+            "nameLocation": "106:12:79",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20256,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "118:2:79"
+            },
+            "returnParameters": {
+              "id": 20259,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20258,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20260,
+                  "src": "144:6:79",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 20257,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "144:6:79",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "143:8:79"
+            },
+            "scope": 20261,
+            "src": "97:55:79",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 20262,
+        "src": "68:87:79",
+        "usedErrors": []
+      }
+    ],
+    "src": "41:116:79"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-03-06T07:23:55.071Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

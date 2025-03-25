@@ -1,0 +1,106 @@
+{
+  "id": "d35dc17a14fc7890a6ffab7e257e0d64",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.5.17",
+  "solcLongVersion": "0.5.17+commit.d19bba13",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/test-artifacts/TestNoop.sol": {
+        "content": "pragma solidity 0.5.17;\n\n\n/**\n * This is an empty contract to be used in tests to see what happens\n * when an external contract does not have an API we expect.\n *\n * This contract should not be used in production.\n */\n// solium-disable-next-line no-empty-blocks\ncontract TestNoop\n{}\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "storageLayout",
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/test-artifacts/TestNoop.sol": {
+        "TestNoop": {
+          "abi": [],
+          "evm": {
+            "bytecode": {
+              "linkReferences": {},
+              "object": "6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a7231582059896ee5fa82131dbeaa6cabf7b8498c43b74ddf7903c84831eccd47499e2b0864736f6c63430005110032",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3E DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 MSIZE DUP10 PUSH15 0xE5FA82131DBEAA6CABF7B8498C43B7 0x4D 0xDF PUSH26 0x3C84831ECCD47499E2B0864736F6C6343000511003200000000 ",
+              "sourceMap": "262:20:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;262:20:0;;;;;;;"
+            },
+            "deployedBytecode": {
+              "linkReferences": {},
+              "object": "6080604052600080fdfea265627a7a7231582059896ee5fa82131dbeaa6cabf7b8498c43b74ddf7903c84831eccd47499e2b0864736f6c63430005110032",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 MSIZE DUP10 PUSH15 0xE5FA82131DBEAA6CABF7B8498C43B7 0x4D 0xDF PUSH26 0x3C84831ECCD47499E2B0864736F6C6343000511003200000000 ",
+              "sourceMap": "262:20:0:-;;;;;"
+            },
+            "methodIdentifiers": {}
+          },
+          "storageLayout": {
+            "storage": [],
+            "types": null
+          }
+        }
+      }
+    },
+    "sources": {
+      "contracts/test-artifacts/TestNoop.sol": {
+        "ast": {
+          "absolutePath": "contracts/test-artifacts/TestNoop.sol",
+          "exportedSymbols": {
+            "TestNoop": [
+              2
+            ]
+          },
+          "id": 3,
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                "0.5",
+                ".17"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "0:23:0"
+            },
+            {
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "contract",
+              "documentation": "This is an empty contract to be used in tests to see what happens\nwhen an external contract does not have an API we expect.\n * This contract should not be used in production.",
+              "fullyImplemented": true,
+              "id": 2,
+              "linearizedBaseContracts": [
+                2
+              ],
+              "name": "TestNoop",
+              "nodeType": "ContractDefinition",
+              "nodes": [],
+              "scope": 3,
+              "src": "262:20:0"
+            }
+          ],
+          "src": "0:283:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "FixedInterestRateModelMock",
+  "sourceName": "contracts/tests/FixedInterestRateModelMock.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "interestRatePerBlock_",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "getBorrowRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "reserveFactorMantissa",
+          "type": "uint256"
+        }
+      ],
+      "name": "getSupplyRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "interestRatePerBlock",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isInterestRateModel",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "interestRatePerBlock_",
+          "type": "uint256"
+        }
+      ],
+      "name": "setInterestRate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161021238038061021283398101604081905261002f91610037565b60005561004f565b600060208284031215610048578081fd5b5051919050565b6101b48061005e6000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80632191f92a1461005c5780632ff7709e146100795780635f84f30214610090578063ba1c5e80146100a5578063d955759d146100ad575b600080fd5b610064600181565b60405190151581526020015b60405180910390f35b61008260005481565b604051908152602001610070565b6100a361009e3660046100fa565b600055565b005b600054610082565b6100826100bb3660046100fa565b6000806100d083670de0b6b3a7640000610151565b9050670de0b6b3a7640000816000546100e99190610132565b6100f39190610112565b9392505050565b60006020828403121561010b578081fd5b5035919050565b60008261012d57634e487b7160e01b81526012600452602481fd5b500490565b600081600019048311821515161561014c5761014c610168565b500290565b60008282101561016357610163610168565b500390565b634e487b7160e01b600052601160045260246000fdfea2646970667358221220d54a5d17dee7dc75f2fcd2f47118d4ac56c2a686e9573a4a3dc19c8734966df464736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80632191f92a1461005c5780632ff7709e146100795780635f84f30214610090578063ba1c5e80146100a5578063d955759d146100ad575b600080fd5b610064600181565b60405190151581526020015b60405180910390f35b61008260005481565b604051908152602001610070565b6100a361009e3660046100fa565b600055565b005b600054610082565b6100826100bb3660046100fa565b6000806100d083670de0b6b3a7640000610151565b9050670de0b6b3a7640000816000546100e99190610132565b6100f39190610112565b9392505050565b60006020828403121561010b578081fd5b5035919050565b60008261012d57634e487b7160e01b81526012600452602481fd5b500490565b600081600019048311821515161561014c5761014c610168565b500290565b60008282101561016357610163610168565b500390565b634e487b7160e01b600052601160045260246000fdfea2646970667358221220d54a5d17dee7dc75f2fcd2f47118d4ac56c2a686e9573a4a3dc19c8734966df464736f6c63430008040033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

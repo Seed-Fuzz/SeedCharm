@@ -1,0 +1,3071 @@
+[
+    {
+        "Transactions": [
+            {
+                "FuncSpec": {
+                    "Name": "constructor",
+                    "Signature": "",
+                    "Kind": {
+                        "Case": "Constructor"
+                    },
+                    "Payable": false,
+                    "OnlyOwner": false,
+                    "Entry": 0,
+                    "ArgSpecs": [
+                        {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        },
+                        {
+                            "TypeStr": "uint16",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "TypeStr": "uint16",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    2
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Args": [
+                    {
+                        "Spec": {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        32
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 32,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "Address"
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 20,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "uint16",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    2
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        2
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 2,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "uint16",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    2
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        2
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 2,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    }
+                ],
+                "ArgCursor": 0,
+                "Sender": {
+                    "Case": "TargetOwner"
+                },
+                "UseAgent": "false",
+                "Timestamp": 10000000,
+                "Blocknum": 20000000
+            },
+            {
+                "FuncSpec": {
+                    "Name": "createPair",
+                    "Signature": "ycZTlg==",
+                    "Kind": {
+                        "Case": "Normal"
+                    },
+                    "Payable": false,
+                    "OnlyOwner": false,
+                    "Entry": 268,
+                    "ArgSpecs": [
+                        {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        },
+                        {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        }
+                    ]
+                },
+                "Args": [
+                    {
+                        "Spec": {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        32
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 32,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "Address"
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 20,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "Address"
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 20,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    }
+                ],
+                "ArgCursor": 0,
+                "Sender": {
+                    "Case": "TargetOwner"
+                },
+                "UseAgent": "false",
+                "Timestamp": 10000000,
+                "Blocknum": 20000000
+            }
+        ],
+        "TXCursor": 0
+    },
+    {
+        "Transactions": [
+            {
+                "FuncSpec": {
+                    "Name": "constructor",
+                    "Signature": "",
+                    "Kind": {
+                        "Case": "Constructor"
+                    },
+                    "Payable": false,
+                    "OnlyOwner": false,
+                    "Entry": 0,
+                    "ArgSpecs": [
+                        {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        },
+                        {
+                            "TypeStr": "uint16",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "TypeStr": "uint16",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    2
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Args": [
+                    {
+                        "Spec": {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        32
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 32,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "Address"
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 20,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "uint16",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    2
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        2
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 2,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "uint16",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    2
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        2
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 2,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    }
+                ],
+                "ArgCursor": 0,
+                "Sender": {
+                    "Case": "TargetOwner"
+                },
+                "UseAgent": "false",
+                "Timestamp": 10000000,
+                "Blocknum": 20000000
+            },
+            {
+                "FuncSpec": {
+                    "Name": "setOwner",
+                    "Signature": "E69ANQ==",
+                    "Kind": {
+                        "Case": "Normal"
+                    },
+                    "Payable": false,
+                    "OnlyOwner": true,
+                    "Entry": 141,
+                    "ArgSpecs": [
+                        {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        }
+                    ]
+                },
+                "Args": [
+                    {
+                        "Spec": {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        32
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 32,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "Address"
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 20,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    }
+                ],
+                "ArgCursor": 0,
+                "Sender": {
+                    "Case": "TargetOwner"
+                },
+                "UseAgent": "false",
+                "Timestamp": 10000000,
+                "Blocknum": 20000000
+            }
+        ],
+        "TXCursor": 0
+    },
+    {
+        "Transactions": [
+            {
+                "FuncSpec": {
+                    "Name": "constructor",
+                    "Signature": "",
+                    "Kind": {
+                        "Case": "Constructor"
+                    },
+                    "Payable": false,
+                    "OnlyOwner": false,
+                    "Entry": 0,
+                    "ArgSpecs": [
+                        {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        },
+                        {
+                            "TypeStr": "uint16",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    2
+                                ]
+                            }
+                        },
+                        {
+                            "TypeStr": "uint16",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    2
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Args": [
+                    {
+                        "Spec": {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        32
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 32,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "Address"
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 20,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "uint16",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    2
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        2
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 2,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "uint16",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    2
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        2
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 2,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    }
+                ],
+                "ArgCursor": 0,
+                "Sender": {
+                    "Case": "TargetOwner"
+                },
+                "UseAgent": "false",
+                "Timestamp": 10000000,
+                "Blocknum": 20000000
+            },
+            {
+                "FuncSpec": {
+                    "Name": "setOwner",
+                    "Signature": "E69ANQ==",
+                    "Kind": {
+                        "Case": "Normal"
+                    },
+                    "Payable": false,
+                    "OnlyOwner": true,
+                    "Entry": 141,
+                    "ArgSpecs": [
+                        {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        }
+                    ]
+                },
+                "Args": [
+                    {
+                        "Spec": {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        32
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 32,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    },
+                    {
+                        "Spec": {
+                            "TypeStr": "address",
+                            "Kind": {
+                                "Case": "Address"
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "Address"
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 20,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    }
+                ],
+                "ArgCursor": 0,
+                "Sender": {
+                    "Case": "TargetOwner"
+                },
+                "UseAgent": "false",
+                "Timestamp": 10000000,
+                "Blocknum": 20000000
+            },
+            {
+                "FuncSpec": {
+                    "Name": "acceptOwner",
+                    "Signature": "67xJZQ==",
+                    "Kind": {
+                        "Case": "Normal"
+                    },
+                    "Payable": false,
+                    "OnlyOwner": false,
+                    "Entry": 397,
+                    "ArgSpecs": [
+                        {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "Args": [
+                    {
+                        "Spec": {
+                            "TypeStr": "uint256",
+                            "Kind": {
+                                "Case": "UInt",
+                                "Fields": [
+                                    32
+                                ]
+                            }
+                        },
+                        "Elems": [
+                            {
+                                "ElemType": {
+                                    "Case": "UInt",
+                                    "Fields": [
+                                        32
+                                    ]
+                                },
+                                "ByteVals": [
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    },
+                                    {
+                                        "Case": "Untouched",
+                                        "Fields": [
+                                            0
+                                        ]
+                                    }
+                                ],
+                                "MaxLength": 32,
+                                "ByteCursor": 0
+                            }
+                        ],
+                        "ElemCursor": 0
+                    }
+                ],
+                "ArgCursor": 0,
+                "Sender": {
+                    "Case": "NormalUser1"
+                },
+                "UseAgent": "false",
+                "Timestamp": 10000000,
+                "Blocknum": 20000000
+            }
+        ],
+        "TXCursor": 0
+    }
+]

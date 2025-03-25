@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ReentryProtection",
+  "sourceName": "contracts/facets/shared/Reentry/ReentryProtection.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220a2a9cbe8fcac512524bbcacb3f80a0b2d8a391c8d06258d348446a111192658964736f6c63430007050033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220a2a9cbe8fcac512524bbcacb3f80a0b2d8a391c8d06258d348446a111192658964736f6c63430007050033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

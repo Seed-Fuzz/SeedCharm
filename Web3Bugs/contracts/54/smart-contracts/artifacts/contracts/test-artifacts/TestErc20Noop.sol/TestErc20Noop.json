@@ -1,0 +1,141 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "TestErc20Noop",
+  "sourceName": "contracts/test-artifacts/TestErc20Noop.sol",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferFrom",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061016a806100206000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c8063095ea7b31461005c57806323b872dd1461009c57806340c10f191461005c57806370a08231146100d2578063a9059cbb1461005c575b600080fd5b6100886004803603604081101561007257600080fd5b506001600160a01b03813516906020013561010a565b604080519115158252519081900360200190f35b610088600480360360608110156100b257600080fd5b506001600160a01b0381358116916020810135909116906040013561011b565b6100f8600480360360208110156100e857600080fd5b50356001600160a01b031661012e565b60408051918252519081900360200190f35b505060008054600190810190915590565b6000805460019081019091559392505050565b506000199056fea265627a7a72315820ebdcd8a32a25d75cd69ab892ab5ce8cd1fb7686a1fa2cc367beebc0fbcd5abf764736f6c63430005110032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c8063095ea7b31461005c57806323b872dd1461009c57806340c10f191461005c57806370a08231146100d2578063a9059cbb1461005c575b600080fd5b6100886004803603604081101561007257600080fd5b506001600160a01b03813516906020013561010a565b604080519115158252519081900360200190f35b610088600480360360608110156100b257600080fd5b506001600160a01b0381358116916020810135909116906040013561011b565b6100f8600480360360208110156100e857600080fd5b50356001600160a01b031661012e565b60408051918252519081900360200190f35b505060008054600190810190915590565b6000805460019081019091559392505050565b506000199056fea265627a7a72315820ebdcd8a32a25d75cd69ab892ab5ce8cd1fb7686a1fa2cc367beebc0fbcd5abf764736f6c63430005110032",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

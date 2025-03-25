@@ -1,0 +1,683 @@
+{
+  "contractName": "ILinearVesting",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Vested",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "duration",
+          "type": "uint256"
+        }
+      ],
+      "name": "VestingInitialized",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "getClaim",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "vestedAmount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "claim",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "vestedAmount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "claimConverted",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "vestedAmount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "begin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "vestFor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Vested\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"duration\",\"type\":\"uint256\"}],\"name\":\"VestingInitialized\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"begin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"claim\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"vestedAmount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"claimConverted\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"vestedAmount\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getClaim\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"vestedAmount\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"vestFor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/tokens/vesting/ILinearVesting.sol\":\"ILinearVesting\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/tokens/vesting/ILinearVesting.sol\":{\"keccak256\":\"0xb1c4ca2744c93e92af0a05bfd602797de082f96610f6ba56ea377a49e5aefe0e\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://4f68ba73c41560e0543a205bbf6e98dfd04b751811f025ed13585335b048bf77\",\"dweb:/ipfs/QmaA6jdFJzbmhHJPZauQbCnQYWkC5E7xbPT9Sy84TYzxAb\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: Unlicense\r\n\r\npragma solidity =0.8.9;\r\n\r\ninterface ILinearVesting {\r\n    /* ========== STRUCTS ========== */\r\n\r\n    // Struct of a vesting member, tight-packed to 256-bits\r\n    struct Vester {\r\n        uint192 amount;\r\n        uint64 lastClaim;\r\n        uint128 start;\r\n        uint128 end;\r\n    }\r\n\r\n    /* ========== FUNCTIONS ========== */\r\n\r\n    function getClaim() external view returns (uint256 vestedAmount);\r\n\r\n    function claim() external returns (uint256 vestedAmount);\r\n\r\n    function claimConverted() external returns (uint256 vestedAmount);\r\n\r\n    function begin() external;\r\n\r\n    function vestFor(address user, uint256 amount) external;\r\n\r\n    /* ========== EVENTS ========== */\r\n\r\n    event VestingInitialized(uint256 duration);\r\n\r\n    event Vested(address indexed from, uint256 amount);\r\n}\r\n",
+  "sourcePath": "/home/mingyue/sub_contract_content/Web3Bugs/contracts/52/contracts/interfaces/tokens/vesting/ILinearVesting.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/tokens/vesting/ILinearVesting.sol",
+    "exportedSymbols": {
+      "ILinearVesting": [
+        20526
+      ]
+    },
+    "id": 20527,
+    "license": "Unlicense",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20481,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "41:23:86"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ILinearVesting",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 20526,
+        "linearizedBaseContracts": [
+          20526
+        ],
+        "name": "ILinearVesting",
+        "nameLocation": "78:14:86",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "ILinearVesting.Vester",
+            "id": 20490,
+            "members": [
+              {
+                "constant": false,
+                "id": 20483,
+                "mutability": "mutable",
+                "name": "amount",
+                "nameLocation": "237:6:86",
+                "nodeType": "VariableDeclaration",
+                "scope": 20490,
+                "src": "229:14:86",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint192",
+                  "typeString": "uint192"
+                },
+                "typeName": {
+                  "id": 20482,
+                  "name": "uint192",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "229:7:86",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint192",
+                    "typeString": "uint192"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 20485,
+                "mutability": "mutable",
+                "name": "lastClaim",
+                "nameLocation": "261:9:86",
+                "nodeType": "VariableDeclaration",
+                "scope": 20490,
+                "src": "254:16:86",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint64",
+                  "typeString": "uint64"
+                },
+                "typeName": {
+                  "id": 20484,
+                  "name": "uint64",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "254:6:86",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 20487,
+                "mutability": "mutable",
+                "name": "start",
+                "nameLocation": "289:5:86",
+                "nodeType": "VariableDeclaration",
+                "scope": 20490,
+                "src": "281:13:86",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 20486,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "281:7:86",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 20489,
+                "mutability": "mutable",
+                "name": "end",
+                "nameLocation": "313:3:86",
+                "nodeType": "VariableDeclaration",
+                "scope": 20490,
+                "src": "305:11:86",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 20488,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "305:7:86",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Vester",
+            "nameLocation": "211:6:86",
+            "nodeType": "StructDefinition",
+            "scope": 20526,
+            "src": "204:120:86",
+            "visibility": "public"
+          },
+          {
+            "functionSelector": "844a8c69",
+            "id": 20495,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getClaim",
+            "nameLocation": "386:8:86",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20491,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "394:2:86"
+            },
+            "returnParameters": {
+              "id": 20494,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20493,
+                  "mutability": "mutable",
+                  "name": "vestedAmount",
+                  "nameLocation": "428:12:86",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20495,
+                  "src": "420:20:86",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20492,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "420:7:86",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "419:22:86"
+            },
+            "scope": 20526,
+            "src": "377:65:86",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "4e71d92d",
+            "id": 20500,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "claim",
+            "nameLocation": "459:5:86",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20496,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "464:2:86"
+            },
+            "returnParameters": {
+              "id": 20499,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20498,
+                  "mutability": "mutable",
+                  "name": "vestedAmount",
+                  "nameLocation": "493:12:86",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20500,
+                  "src": "485:20:86",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20497,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "485:7:86",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "484:22:86"
+            },
+            "scope": 20526,
+            "src": "450:57:86",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "01e8ef2a",
+            "id": 20505,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "claimConverted",
+            "nameLocation": "524:14:86",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20501,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "538:2:86"
+            },
+            "returnParameters": {
+              "id": 20504,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20503,
+                  "mutability": "mutable",
+                  "name": "vestedAmount",
+                  "nameLocation": "567:12:86",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20505,
+                  "src": "559:20:86",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20502,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "559:7:86",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "558:22:86"
+            },
+            "scope": 20526,
+            "src": "515:66:86",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "1bce6ff3",
+            "id": 20508,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "begin",
+            "nameLocation": "598:5:86",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20506,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "603:2:86"
+            },
+            "returnParameters": {
+              "id": 20507,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "614:0:86"
+            },
+            "scope": 20526,
+            "src": "589:26:86",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "94e35169",
+            "id": 20515,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "vestFor",
+            "nameLocation": "632:7:86",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20513,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20510,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "648:4:86",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20515,
+                  "src": "640:12:86",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20509,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "640:7:86",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20512,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "662:6:86",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20515,
+                  "src": "654:14:86",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20511,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "654:7:86",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "639:30:86"
+            },
+            "returnParameters": {
+              "id": 20514,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "678:0:86"
+            },
+            "scope": 20526,
+            "src": "623:56:86",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "anonymous": false,
+            "id": 20519,
+            "name": "VestingInitialized",
+            "nameLocation": "735:18:86",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 20518,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20517,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "duration",
+                  "nameLocation": "762:8:86",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20519,
+                  "src": "754:16:86",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20516,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "754:7:86",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "753:18:86"
+            },
+            "src": "729:43:86"
+          },
+          {
+            "anonymous": false,
+            "id": 20525,
+            "name": "Vested",
+            "nameLocation": "786:6:86",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 20524,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 20521,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "from",
+                  "nameLocation": "809:4:86",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20525,
+                  "src": "793:20:86",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 20520,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "793:7:86",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 20523,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "823:6:86",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 20525,
+                  "src": "815:14:86",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 20522,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "815:7:86",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "792:38:86"
+            },
+            "src": "780:51:86"
+          }
+        ],
+        "scope": 20527,
+        "src": "68:766:86",
+        "usedErrors": []
+      }
+    ],
+    "src": "41:795:86"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-03-06T07:23:55.072Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "TestEventHooks",
+  "sourceName": "contracts/test-artifacts/TestEventHooks.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "lock",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "refund",
+          "type": "uint256"
+        }
+      ],
+      "name": "OnKeyCancel",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "lock",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "referrer",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "minKeyPrice",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "pricePaid",
+          "type": "uint256"
+        }
+      ],
+      "name": "OnKeyPurchase",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "_isPurchaseSupported",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_discount",
+          "type": "uint256"
+        }
+      ],
+      "name": "configure",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "discount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isPurchaseSupported",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "keyPurchasePrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "minKeyPrice",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_refund",
+          "type": "uint256"
+        }
+      ],
+      "name": "onKeyCancel",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_recipient",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_referrer",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_minKeyPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_pricePaid",
+          "type": "uint256"
+        }
+      ],
+      "name": "onKeyPurchase",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061041d806100206000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c8063221c1fd11461006757806346935d721461010a5780636b6f4a9d146101315780639849965714610139578063b499b6c5146101d0578063f790362914610206575b600080fd5b6100f86004803603608081101561007d57600080fd5b6001600160a01b03823581169260208101358216926040820135909216918101906080810160608201356401000000008111156100b957600080fd5b8201836020820111156100cb57600080fd5b803590602001918460018302840111640100000000831117156100ed57600080fd5b509092509050610222565b60408051918252519081900360200190f35b61012f6004803603604081101561012057600080fd5b50803515159060200135610305565b005b6100f861031c565b61012f600480360360c081101561014f57600080fd5b6001600160a01b038235811692602081013582169260408201359092169181019060808101606082013564010000000081111561018b57600080fd5b82018360208201111561019d57600080fd5b803590602001918460018302840111640100000000831117156101bf57600080fd5b919350915080359060200135610322565b61012f600480360360608110156101e657600080fd5b506001600160a01b0381358116916020810135909116906040013561038a565b61020e6103df565b604080519115158252519081900360200190f35b60015460009060ff1661027c576040805162461bcd60e51b815260206004820152601860248201527f50555243484153455f424c4f434b45445f42595f484f4f4b0000000000000000604482015290519081900360640190fd5b336001600160a01b03166310e569736040518163ffffffff1660e01b815260040160206040518083038186803b1580156102b557600080fd5b505afa1580156102c9573d6000803e3d6000fd5b505050506040513d60208110156102df57600080fd5b50516000549091508111156102f85760005490036102fc565b5060005b95945050505050565b6001805460ff191692151592909217909155600055565b60005481565b604080513381526001600160a01b03808a16602083015280891682840152871660608201526080810184905260a0810183905290517f819e2066adcc8132c796f844d9c8c3b7bbebc1a3bdce7d7300f06d806e447be69181900360c00190a150505050505050565b604080513381526001600160a01b0380861660208301528416818301526060810183905290517f109446e1159bd70066664d19d237b561631fcfe9932c5f5c9fef0430396c450c9181900360800190a1505050565b60015460ff168156fea265627a7a72315820ad8f51cbf75bd3f54fdce8e3109040e1173ee18e410b26460c176c44bdca86b264736f6c63430005110032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c8063221c1fd11461006757806346935d721461010a5780636b6f4a9d146101315780639849965714610139578063b499b6c5146101d0578063f790362914610206575b600080fd5b6100f86004803603608081101561007d57600080fd5b6001600160a01b03823581169260208101358216926040820135909216918101906080810160608201356401000000008111156100b957600080fd5b8201836020820111156100cb57600080fd5b803590602001918460018302840111640100000000831117156100ed57600080fd5b509092509050610222565b60408051918252519081900360200190f35b61012f6004803603604081101561012057600080fd5b50803515159060200135610305565b005b6100f861031c565b61012f600480360360c081101561014f57600080fd5b6001600160a01b038235811692602081013582169260408201359092169181019060808101606082013564010000000081111561018b57600080fd5b82018360208201111561019d57600080fd5b803590602001918460018302840111640100000000831117156101bf57600080fd5b919350915080359060200135610322565b61012f600480360360608110156101e657600080fd5b506001600160a01b0381358116916020810135909116906040013561038a565b61020e6103df565b604080519115158252519081900360200190f35b60015460009060ff1661027c576040805162461bcd60e51b815260206004820152601860248201527f50555243484153455f424c4f434b45445f42595f484f4f4b0000000000000000604482015290519081900360640190fd5b336001600160a01b03166310e569736040518163ffffffff1660e01b815260040160206040518083038186803b1580156102b557600080fd5b505afa1580156102c9573d6000803e3d6000fd5b505050506040513d60208110156102df57600080fd5b50516000549091508111156102f85760005490036102fc565b5060005b95945050505050565b6001805460ff191692151592909217909155600055565b60005481565b604080513381526001600160a01b03808a16602083015280891682840152871660608201526080810184905260a0810183905290517f819e2066adcc8132c796f844d9c8c3b7bbebc1a3bdce7d7300f06d806e447be69181900360c00190a150505050505050565b604080513381526001600160a01b0380861660208301528416818301526060810183905290517f109446e1159bd70066664d19d237b561631fcfe9932c5f5c9fef0430396c450c9181900360800190a1505050565b60015460ff168156fea265627a7a72315820ad8f51cbf75bd3f54fdce8e3109040e1173ee18e410b26460c176c44bdca86b264736f6c63430005110032",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,111 @@
+{
+  "contractName": "IUSDV",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "distributeEmission",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"distributeEmission\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/tokens/IUSDV.sol\":\"IUSDV\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/tokens/IUSDV.sol\":{\"keccak256\":\"0xe2385226c76595cc2aee584310e67dbe802a78c006f3e1f076efc2c1ac5dcd36\",\"license\":\"Unlicense\",\"urls\":[\"bzz-raw://c9faba744a1667360f6202523c0bcf42ecaa8cb5cbb01a671f42a39b6c27ce60\",\"dweb:/ipfs/QmbjdKGUJVTbqteq99mwko47YNd1ytLkCTnxa5UXr6LAEn\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: Unlicense\r\n\r\npragma solidity =0.8.9;\r\n\r\ninterface IUSDV {\r\n    /* ========== STRUCTS ========== */\r\n\r\n    /* ========== FUNCTIONS ========== */\r\n\r\n    function distributeEmission() external;\r\n\r\n    /* ========== EVENTS ========== */\r\n}\r\n",
+  "sourcePath": "/home/mingyue/sub_contract_content/Web3Bugs/contracts/52/contracts/interfaces/tokens/IUSDV.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/tokens/IUSDV.sol",
+    "exportedSymbols": {
+      "IUSDV": [
+        20397
+      ]
+    },
+    "id": 20398,
+    "license": "Unlicense",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 20393,
+        "literals": [
+          "solidity",
+          "=",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "41:23:83"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IUSDV",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 20397,
+        "linearizedBaseContracts": [
+          20397
+        ],
+        "name": "IUSDV",
+        "nameLocation": "78:5:83",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "6bfa1dba",
+            "id": 20396,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "distributeEmission",
+            "nameLocation": "188:18:83",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 20394,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "206:2:83"
+            },
+            "returnParameters": {
+              "id": 20395,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "217:0:83"
+            },
+            "scope": 20397,
+            "src": "179:39:83",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 20398,
+        "src": "68:195:83",
+        "usedErrors": []
+      }
+    ],
+    "src": "41:224:83"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-03-06T07:23:55.072Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

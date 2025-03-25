@@ -1,0 +1,4225 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXAvastarRank60Eligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "46247b4d1c67f020a047e244ff08acd2",
+      "sourceName": "contracts/solidity/eligibility/NFTXAvastarRank60Eligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./NFTXEligibility.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Avastar",
+        "NFTXAvastarRank60Eligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "b9c6353cdbb33cd9902f872b697b3151",
+      "sourceName": "contracts/solidity/eligibility/NFTXEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Initializable.sol",
+        "../interface/INFTXEligibility.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/proxy/Initializable.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "76309b022d76aa52bb1830b7bf515e9e",
+      "sourceName": "contracts/solidity/proxy/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/INFTXEligibility.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "f81ad98717bfcec0ec270303b03b49e3",
+      "sourceName": "contracts/solidity/interface/INFTXEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "INFTXEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/UniswapV3SparkleEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "6c1622e12a0a81f10f2a09918774da5e",
+      "sourceName": "contracts/solidity/eligibility/UniswapV3SparkleEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./NFTXEligibility.sol",
+        "../util/OwnableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BitMath",
+        "INonfungiblePositionManager",
+        "UniswapV3SparkleEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/OwnableUpgradeable.sol": {
+      "lastModificationDate": 1740638367295,
+      "contentHash": "d2d3d95a8f9241e8ce8b4feb1d921e71",
+      "sourceName": "contracts/solidity/util/OwnableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ContextUpgradeable.sol",
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OwnableUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/ContextUpgradeable.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "a74d37ae0f65659ab44878998edaeb82",
+      "sourceName": "contracts/solidity/util/ContextUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ContextUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/RewardDistributionTokenUpgradeable.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "ea94404ab9ae6857b80ed5aea08d224d",
+      "sourceName": "contracts/solidity/token/RewardDistributionTokenUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20Upgradeable.sol",
+        "./IERC20Upgradeable.sol",
+        "../interface/IRewardDistributionToken.sol",
+        "../util/OwnableUpgradeable.sol",
+        "../util/SafeERC20Upgradeable.sol",
+        "../util/SafeMathUpgradeable.sol",
+        "../util/SafeMathInt.sol",
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "RewardDistributionTokenUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/ERC20Upgradeable.sol": {
+      "lastModificationDate": 1740638367293,
+      "contentHash": "9fe6e5716c0d85fb30ae5a842bd868b2",
+      "sourceName": "contracts/solidity/token/ERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20Upgradeable.sol",
+        "./IERC20Metadata.sol",
+        "../util/ContextUpgradeable.sol",
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Upgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/IERC20Upgradeable.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "ef26cabe448ad1a07091ad97534e320a",
+      "sourceName": "contracts/solidity/token/IERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Upgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/IRewardDistributionToken.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "28e26bfce3049c93b1773a1a37f50ffc",
+      "sourceName": "contracts/solidity/interface/IRewardDistributionToken.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/IERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IRewardDistributionToken"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/SafeERC20Upgradeable.sol": {
+      "lastModificationDate": 1740638367295,
+      "contentHash": "ffc571578c9b44b234dc725a31b9f0c8",
+      "sourceName": "contracts/solidity/util/SafeERC20Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/IERC20Upgradeable.sol",
+        "./Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20Upgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/SafeMathUpgradeable.sol": {
+      "lastModificationDate": 1740638367295,
+      "contentHash": "8bbad186fe5696533f2112ba71ec6226",
+      "sourceName": "contracts/solidity/util/SafeMathUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMathUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/SafeMathInt.sol": {
+      "lastModificationDate": 1740638367295,
+      "contentHash": "03445f992d403ceb62e87aa7e9e4e568",
+      "sourceName": "contracts/solidity/util/SafeMathInt.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMathInt"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1741246715926,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/IERC20Metadata.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "63374a316780ca7b940b90b4613c8c63",
+      "sourceName": "contracts/solidity/token/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/Address.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "814be9319f446615e8525705ee270db5",
+      "sourceName": "contracts/solidity/util/Address.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/TimelockRewardDistributionTokenImpl.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "2271b382f84458739b37f45499a0202e",
+      "sourceName": "contracts/solidity/token/TimelockRewardDistributionTokenImpl.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20Upgradeable.sol",
+        "./IERC20Upgradeable.sol",
+        "../interface/IRewardDistributionToken.sol",
+        "../util/OwnableUpgradeable.sol",
+        "../util/SafeERC20Upgradeable.sol",
+        "../util/SafeMathUpgradeable.sol",
+        "../util/SafeMathInt.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TimelockRewardDistributionTokenImpl"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/NFTXSimpleFeeDistributor.sol": {
+      "lastModificationDate": 1740638367288,
+      "contentHash": "2b60cdaa91650b94a04b41d95a6b4360",
+      "sourceName": "contracts/solidity/NFTXSimpleFeeDistributor.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/INFTXLPStaking.sol",
+        "./interface/INFTXSimpleFeeDistributor.sol",
+        "./interface/INFTXInventoryStaking.sol",
+        "./interface/INFTXVaultFactory.sol",
+        "./token/IERC20Upgradeable.sol",
+        "./util/SafeERC20Upgradeable.sol",
+        "./util/SafeMathUpgradeable.sol",
+        "./util/PausableUpgradeable.sol",
+        "./util/ReentrancyGuardUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXSimpleFeeDistributor"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/INFTXLPStaking.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "8abac9f637813433fa9f9f136bd31856",
+      "sourceName": "contracts/solidity/interface/INFTXLPStaking.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "INFTXLPStaking"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/INFTXSimpleFeeDistributor.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "4b2dd88124b178672d36dee5d3603f07",
+      "sourceName": "contracts/solidity/interface/INFTXSimpleFeeDistributor.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "INFTXSimpleFeeDistributor"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/INFTXInventoryStaking.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "17bd2c46718540bbd99765f68feda3a9",
+      "sourceName": "contracts/solidity/interface/INFTXInventoryStaking.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./INFTXVaultFactory.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "INFTXInventoryStaking"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/INFTXVaultFactory.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "210c723af44b95e841b764cc93a7a657",
+      "sourceName": "contracts/solidity/interface/INFTXVaultFactory.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/IBeacon.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "INFTXVaultFactory"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/PausableUpgradeable.sol": {
+      "lastModificationDate": 1740638367295,
+      "contentHash": "05960abcf429a3ed61312dbbdff17e66",
+      "sourceName": "contracts/solidity/util/PausableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OwnableUpgradeable.sol",
+        "./SafeMathUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "PausableUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/ReentrancyGuardUpgradeable.sol": {
+      "lastModificationDate": 1740638367295,
+      "contentHash": "8d447cebb8d8e90f237b8d6fbe778afd",
+      "sourceName": "contracts/solidity/util/ReentrancyGuardUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuardUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/proxy/IBeacon.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "5cfdf1a03d502aa7e3101f991475d10c",
+      "sourceName": "contracts/solidity/proxy/IBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IBeacon"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/NFTXVaultUpgradeable.sol": {
+      "lastModificationDate": 1740638367288,
+      "contentHash": "43488e1cefb5f144cf128db43f749315",
+      "sourceName": "contracts/solidity/NFTXVaultUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/INFTXVault.sol",
+        "./interface/INFTXVaultFactory.sol",
+        "./interface/INFTXEligibility.sol",
+        "./interface/INFTXEligibilityManager.sol",
+        "./interface/INFTXLPStaking.sol",
+        "./interface/INFTXFeeDistributor.sol",
+        "./interface/IERC165Upgradeable.sol",
+        "./token/ERC20FlashMintUpgradeable.sol",
+        "./token/ERC721SafeHolderUpgradeable.sol",
+        "./token/ERC1155SafeHolderUpgradeable.sol",
+        "./token/IERC721Upgradeable.sol",
+        "./token/IERC1155Upgradeable.sol",
+        "./util/OwnableUpgradeable.sol",
+        "./util/ReentrancyGuardUpgradeable.sol",
+        "./util/EnumerableSetUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXVaultUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/INFTXVault.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "d474601ea8b38cde20a2eff9629b1bb0",
+      "sourceName": "contracts/solidity/interface/INFTXVault.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/INFTXEligibility.sol",
+        "../token/IERC20Upgradeable.sol",
+        "../interface/INFTXVaultFactory.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "INFTXVault"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/INFTXEligibilityManager.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "e49b34b1e3b4eca674762a2a60a2b260",
+      "sourceName": "contracts/solidity/interface/INFTXEligibilityManager.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "INFTXEligibilityManager"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/INFTXFeeDistributor.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "6407001f17fc0534a91152a91b530131",
+      "sourceName": "contracts/solidity/interface/INFTXFeeDistributor.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "INFTXFeeDistributor"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/IERC165Upgradeable.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "4db71815975139b4bcedb3b615131302",
+      "sourceName": "contracts/solidity/interface/IERC165Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165Upgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/ERC20FlashMintUpgradeable.sol": {
+      "lastModificationDate": 1740638367293,
+      "contentHash": "6d6e4e0f32253cbfa63633089f941f42",
+      "sourceName": "contracts/solidity/token/ERC20FlashMintUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/IERC3156Upgradeable.sol",
+        "./ERC20Upgradeable.sol",
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20FlashMintUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/ERC721SafeHolderUpgradeable.sol": {
+      "lastModificationDate": 1740638367293,
+      "contentHash": "d7294002cbed169f4a1cb012533b2a99",
+      "sourceName": "contracts/solidity/token/ERC721SafeHolderUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721ReceiverUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721SafeHolderUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/ERC1155SafeHolderUpgradeable.sol": {
+      "lastModificationDate": 1740638367293,
+      "contentHash": "ac624166b4f50f18c37bd0a0a0cc5692",
+      "sourceName": "contracts/solidity/token/ERC1155SafeHolderUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155ReceiverUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155SafeHolderUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/IERC721Upgradeable.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "2359f67972d894ce6d6e4ce420a91905",
+      "sourceName": "contracts/solidity/token/IERC721Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/IERC165Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Upgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/IERC1155Upgradeable.sol": {
+      "lastModificationDate": 1740638367293,
+      "contentHash": "dd9fa7297e3a0b5f49f3c4b6e44e1b82",
+      "sourceName": "contracts/solidity/token/IERC1155Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/IERC165Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155Upgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/EnumerableSetUpgradeable.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "3f0718dff36a2b2a508b7df4ea8148ea",
+      "sourceName": "contracts/solidity/util/EnumerableSetUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSetUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/IERC3156Upgradeable.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "3975fd3f2717baa973585916ff31f8bc",
+      "sourceName": "contracts/solidity/interface/IERC3156Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC3156FlashBorrowerUpgradeable",
+        "IERC3156FlashLenderUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/IERC721ReceiverUpgradeable.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "b4a348a0181901670cd12e18c0d3efa9",
+      "sourceName": "contracts/solidity/token/IERC721ReceiverUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721ReceiverUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/ERC1155ReceiverUpgradeable.sol": {
+      "lastModificationDate": 1740638367293,
+      "contentHash": "63c90b0c0a84652d3bab14443f2ecd33",
+      "sourceName": "contracts/solidity/token/ERC1155ReceiverUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155ReceiverUpgradeable.sol",
+        "../util/ERC165Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155ReceiverUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/IERC1155ReceiverUpgradeable.sol": {
+      "lastModificationDate": 1740638367293,
+      "contentHash": "bdf8e54e46b315b90302f2cc9050fab2",
+      "sourceName": "contracts/solidity/token/IERC1155ReceiverUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/IERC165Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155ReceiverUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/ERC165Upgradeable.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "9d85d784d34d24ae7ac2eabbc82fa88f",
+      "sourceName": "contracts/solidity/util/ERC165Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/IERC165Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Upgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/TestVaultUpgrade.sol": {
+      "lastModificationDate": 1740638367293,
+      "contentHash": "90ab89f88c8e842286b6759966026130",
+      "sourceName": "contracts/solidity/testing/TestVaultUpgrade.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../NFTXVaultUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TestVaultUpgrade"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/other/PalmNFTXStakingZap.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "77db2c189563ff8edff3cbf338cd3b1f",
+      "sourceName": "contracts/solidity/other/PalmNFTXStakingZap.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/INFTXVault.sol",
+        "../interface/INFTXVaultFactory.sol",
+        "../interface/INFTXFeeDistributor.sol",
+        "../interface/INFTXLPStaking.sol",
+        "../interface/ITimelockRewardDistributionToken.sol",
+        "../interface/IUniswapV2Router01.sol",
+        "../testing/IERC721.sol",
+        "../token/IERC1155Upgradeable.sol",
+        "../token/IERC20Upgradeable.sol",
+        "../token/ERC721HolderUpgradeable.sol",
+        "../token/ERC1155HolderUpgradeable.sol",
+        "../util/OwnableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWETH",
+        "Ownable",
+        "PalmNFTXStakingZap",
+        "ReentrancyGuard"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/ITimelockRewardDistributionToken.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "038375e525cab442279d693071c43ad4",
+      "sourceName": "contracts/solidity/interface/ITimelockRewardDistributionToken.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/IERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ITimelockRewardDistributionToken"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/IUniswapV2Router01.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "50f182c1ba9f5400e243bbc3349412ec",
+      "sourceName": "contracts/solidity/interface/IUniswapV2Router01.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Router01"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/IERC721.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "4982be3f7714c081acb988a1d9ee8217",
+      "sourceName": "contracts/solidity/testing/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/ERC721HolderUpgradeable.sol": {
+      "lastModificationDate": 1740638367293,
+      "contentHash": "f7a933472f9e3c4e4a2c078150c1c76b",
+      "sourceName": "contracts/solidity/token/ERC721HolderUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721ReceiverUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721HolderUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/ERC1155HolderUpgradeable.sol": {
+      "lastModificationDate": 1740638367293,
+      "contentHash": "f6e81c9da0900ace1b53e49658485d68",
+      "sourceName": "contracts/solidity/token/ERC1155HolderUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155ReceiverUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155HolderUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/IERC165.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "9a04322bb8f6b8f2767d8358d1d2537b",
+      "sourceName": "contracts/solidity/testing/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/NFTXStakingZap.sol": {
+      "lastModificationDate": 1740638367288,
+      "contentHash": "fc8c7aaf6f0f37c6a22b916ede12e1a2",
+      "sourceName": "contracts/solidity/NFTXStakingZap.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/INFTXVault.sol",
+        "./interface/INFTXVaultFactory.sol",
+        "./interface/INFTXSimpleFeeDistributor.sol",
+        "./interface/INFTXLPStaking.sol",
+        "./interface/INFTXInventoryStaking.sol",
+        "./interface/ITimelockRewardDistributionToken.sol",
+        "./interface/IUniswapV2Router01.sol",
+        "./testing/IERC721.sol",
+        "./token/IERC1155Upgradeable.sol",
+        "./token/IERC20Upgradeable.sol",
+        "./token/ERC721HolderUpgradeable.sol",
+        "./token/ERC1155HolderUpgradeable.sol",
+        "./util/OwnableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWETH",
+        "NFTXStakingZap",
+        "Ownable",
+        "ReentrancyGuard"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/MockVault.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "ab636e81f3b388305c2f9e78a1546341",
+      "sourceName": "contracts/solidity/testing/MockVault.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC721HolderUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockVault"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/NFTXMarketplaceZap.sol": {
+      "lastModificationDate": 1740638367288,
+      "contentHash": "ef5a7e8e5f1d492c4e547404842fa7be",
+      "sourceName": "contracts/solidity/NFTXMarketplaceZap.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/INFTXVault.sol",
+        "./interface/INFTXVaultFactory.sol",
+        "./interface/INFTXFeeDistributor.sol",
+        "./interface/INFTXLPStaking.sol",
+        "./interface/ITimelockRewardDistributionToken.sol",
+        "./interface/IUniswapV2Router01.sol",
+        "./testing/IERC721.sol",
+        "./token/IERC1155Upgradeable.sol",
+        "./token/IERC20Upgradeable.sol",
+        "./token/ERC721HolderUpgradeable.sol",
+        "./token/ERC1155HolderUpgradeable.sol",
+        "./util/OwnableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IWETH",
+        "NFTXMarketplaceZap",
+        "Ownable",
+        "ReentrancyGuard"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/MockDistributor.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "6aeb4d5d460c546662b016266bf93741",
+      "sourceName": "contracts/solidity/testing/MockDistributor.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/IERC20Upgradeable.sol",
+        "../util/OwnableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockDistributor"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/FlashBorrower.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "d3344d82b96b5e376c7124ad7d06a4c9",
+      "sourceName": "contracts/solidity/testing/FlashBorrower.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/IERC20Upgradeable.sol",
+        "../interface/IERC3156Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FlashBorrower"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/tools/NFTXFlashSwipe.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "54d06de6496a5da4847df0fd27f00f14",
+      "sourceName": "contracts/solidity/tools/NFTXFlashSwipe.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/INFTXVault.sol",
+        "../interface/INFTXVaultFactory.sol",
+        "../interface/IERC3156Upgradeable.sol",
+        "../token/ERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ClaimToken",
+        "NFTXFlashSwipe"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/DummyXToken.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "dce13ccaab6700b309bb84e87270bc08",
+      "sourceName": "contracts/solidity/testing/DummyXToken.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DummyXToken"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/NFTXLPStaking.sol": {
+      "lastModificationDate": 1740638367288,
+      "contentHash": "d47e2f7b64c900163e4ed3f7712af888",
+      "sourceName": "contracts/solidity/NFTXLPStaking.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/INFTXVaultFactory.sol",
+        "./interface/INFTXFeeDistributor.sol",
+        "./interface/IRewardDistributionToken.sol",
+        "./token/IERC20Upgradeable.sol",
+        "./util/SafeERC20Upgradeable.sol",
+        "./util/PausableUpgradeable.sol",
+        "./util/Address.sol",
+        "./proxy/ClonesUpgradeable.sol",
+        "./proxy/Initializable.sol",
+        "./StakingTokenProvider.sol",
+        "./token/TimelockRewardDistributionTokenImpl.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXLPStaking"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/proxy/ClonesUpgradeable.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "c2e535358c5acb94d57d3bf8d3f1a050",
+      "sourceName": "contracts/solidity/proxy/ClonesUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ClonesUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/StakingTokenProvider.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "adfe567b5256016732db9011bed13ed4",
+      "sourceName": "contracts/solidity/StakingTokenProvider.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./util/OwnableUpgradeable.sol",
+        "./token/IERC20Upgradeable.sol",
+        "./token/IERC20Metadata.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StakingTokenProvider"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/NFTXLPStaking2.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "65394b5eacb52532671e78250e8a3aa5",
+      "sourceName": "contracts/solidity/testing/NFTXLPStaking2.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../NFTXLPStaking.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXLPStaking2"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/MockStakingProvider.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "a112575066163238b5c15e48f0de57e2",
+      "sourceName": "contracts/solidity/testing/MockStakingProvider.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/IERC20Metadata.sol",
+        "../util/OwnableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockStakingProvider"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/NFTXInventoryStaking.sol": {
+      "lastModificationDate": 1740638367288,
+      "contentHash": "a835770164569c58d828af05da761dac",
+      "sourceName": "contracts/solidity/NFTXInventoryStaking.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/INFTXVaultFactory.sol",
+        "./interface/INFTXVault.sol",
+        "./interface/INFTXFeeDistributor.sol",
+        "./interface/INFTXInventoryStaking.sol",
+        "./token/IERC20Upgradeable.sol",
+        "./token/IERC20Metadata.sol",
+        "./util/SafeERC20Upgradeable.sol",
+        "./util/PausableUpgradeable.sol",
+        "./util/Address.sol",
+        "./util/Create2.sol",
+        "./proxy/Initializable.sol",
+        "./proxy/UpgradeableBeacon.sol",
+        "./proxy/Create2BeaconProxy.sol",
+        "./token/XTokenUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXInventoryStaking"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/Create2.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "c0fb52a76c5679fd2ac37403b82b97f4",
+      "sourceName": "contracts/solidity/util/Create2.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Create2"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/proxy/UpgradeableBeacon.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "4ec963a712e95451f4b78e60fe0fde2e",
+      "sourceName": "contracts/solidity/proxy/UpgradeableBeacon.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBeacon.sol",
+        "../util/OwnableUpgradeable.sol",
+        "../util/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UpgradeableBeacon"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/proxy/Create2BeaconProxy.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "f72cc3da6dc56f8b820b44c2a221758c",
+      "sourceName": "contracts/solidity/proxy/Create2BeaconProxy.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBeacon.sol",
+        "./Proxy.sol",
+        "../util/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Create2BeaconProxy"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/XTokenUpgradeable.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "c729ea874917a19bd45a402142350068",
+      "sourceName": "contracts/solidity/token/XTokenUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20Upgradeable.sol",
+        "./ERC20Upgradeable.sol",
+        "../util/OwnableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "XTokenUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/proxy/Proxy.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "024b43a2eb98268c6f73bc2cf35c5cca",
+      "sourceName": "contracts/solidity/proxy/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/proxy/BeaconProxy.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "5529e62eef20831e07cad601bda42ea2",
+      "sourceName": "contracts/solidity/proxy/BeaconProxy.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBeacon.sol",
+        "./Proxy.sol",
+        "../util/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BeaconProxy"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/NFTXVaultFactoryUpgradeable.sol": {
+      "lastModificationDate": 1740638367288,
+      "contentHash": "3c62dbaaedc94c87a41d4223bec96457",
+      "sourceName": "contracts/solidity/NFTXVaultFactoryUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/INFTXVaultFactory.sol",
+        "./interface/INFTXLPStaking.sol",
+        "./interface/INFTXFeeDistributor.sol",
+        "./proxy/ClonesUpgradeable.sol",
+        "./proxy/BeaconProxy.sol",
+        "./proxy/UpgradeableBeacon.sol",
+        "./util/PausableUpgradeable.sol",
+        "./NFTXVaultUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXVaultFactoryUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/TestUpgrade.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "d7f944fae6a7db6643b7fa59e79f8e1f",
+      "sourceName": "contracts/solidity/testing/TestUpgrade.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../NFTXVaultFactoryUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TestFactoryUpgrade"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/NFTXVaultFactoryUpgradeable2.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "e83824e7036d50e4a981abc0b1320f92",
+      "sourceName": "contracts/solidity/testing/NFTXVaultFactoryUpgradeable2.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../NFTXVaultFactoryUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXVaultFactoryUpgradeable2"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/NFTXV1Buyout.sol": {
+      "lastModificationDate": 1740638367288,
+      "contentHash": "19b1ece983c2c6b05718162bdaa543c2",
+      "sourceName": "contracts/solidity/NFTXV1Buyout.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./token/IERC20Upgradeable.sol",
+        "./util/ReentrancyGuardUpgradeable.sol",
+        "./util/PausableUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IV1Token",
+        "NFTXV1Buyout"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXMintRequestEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "b7ddde96aebb06bb66ff79e1bc1beca0",
+      "sourceName": "contracts/solidity/eligibility/NFTXMintRequestEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/INFTXVault.sol",
+        "../testing/IERC721.sol",
+        "../token/IERC1155Upgradeable.sol",
+        "../token/ERC721HolderUpgradeable.sol",
+        "../token/ERC1155HolderUpgradeable.sol",
+        "../util/PausableUpgradeable.sol",
+        "../util/SafeMathUpgradeable.sol",
+        "./UniqueEligibility.sol",
+        "./NFTXEligibility.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXMintRequestEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/UniqueEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "18170b444771ce85ae09165fc4e9cf1c",
+      "sourceName": "contracts/solidity/eligibility/UniqueEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UniqueEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXRangeExtendedEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "c3d44f91bd17dd505d5cc9030351db2d",
+      "sourceName": "contracts/solidity/eligibility/NFTXRangeExtendedEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../util/OwnableUpgradeable.sol",
+        "./UniqueEligibility.sol",
+        "./NFTXEligibility.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXRangeExtendedEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXListEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "05e871ca8a954d1204b27e4b7f8936f5",
+      "sourceName": "contracts/solidity/eligibility/NFTXListEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./UniqueEligibility.sol",
+        "./NFTXEligibility.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXListEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXUniqueEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "2d09ece5e0a85aa386147b2782860af7",
+      "sourceName": "contracts/solidity/eligibility/NFTXUniqueEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../util/OwnableUpgradeable.sol",
+        "./UniqueEligibility.sol",
+        "./NFTXEligibility.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXUniqueEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXDenyEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "f8c1080e7675aa6ed443547adda1a983",
+      "sourceName": "contracts/solidity/eligibility/NFTXDenyEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./NFTXUniqueEligibility.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXDenyEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/IERC721Enumerable.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "f24460c6c08657cac5fbefc1f1d68682",
+      "sourceName": "contracts/solidity/testing/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/ERC721.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "e785882b701255f2c6bb7f8105a6f900",
+      "sourceName": "contracts/solidity/testing/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Address.sol",
+        "./Context.sol",
+        "./IERC721.sol",
+        "./IERC721Metadata.sol",
+        "./IERC721Enumerable.sol",
+        "./IERC721Receiver.sol",
+        "./IERC721Metadata.sol",
+        "./Strings.sol",
+        "./ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/Address.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "37103cdc416efc2601c6f6734044b559",
+      "sourceName": "contracts/solidity/testing/Address.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/Context.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "bc047f55d4e6dcc5a9c7ee096f530312",
+      "sourceName": "contracts/solidity/testing/Context.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/IERC721Metadata.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "6a9220a67c5fd3bb7d4dcedcd01f9dcc",
+      "sourceName": "contracts/solidity/testing/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/IERC721Receiver.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "e6d69a0b5b95ac1112eb4746a2d66f3e",
+      "sourceName": "contracts/solidity/testing/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/Strings.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "8671c9777b8f360cf853d34e3f4268ef",
+      "sourceName": "contracts/solidity/testing/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/ERC165.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "a2796e9be25f882de2225bc0de429acc",
+      "sourceName": "contracts/solidity/testing/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/ERC1155Receiver.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "b795942cb4dad9c5f6fa0fb3c6c0da69",
+      "sourceName": "contracts/solidity/testing/ERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155Receiver.sol",
+        "./ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Receiver"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/IERC1155Receiver.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "671cfcf7017e3002c37ece0c4b357708",
+      "sourceName": "contracts/solidity/testing/IERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155Receiver"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/IERC1155.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "58829ab7017362bd1cc1951acc3e79a6",
+      "sourceName": "contracts/solidity/testing/IERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/IERC1155MetadataURI.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "0f8c2297305ec3388cc770324cbcd3e2",
+      "sourceName": "contracts/solidity/testing/IERC1155MetadataURI.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155MetadataURI"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/ERC1155.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "e26135e4a1f60bfdf2b49cf4ccb7650d",
+      "sourceName": "contracts/solidity/testing/ERC1155.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155.sol",
+        "./IERC1155Receiver.sol",
+        "./IERC1155MetadataURI.sol",
+        "./IERC1155Receiver.sol",
+        "./Context.sol",
+        "./ERC165.sol",
+        "./Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/Ownable.sol": {
+      "lastModificationDate": 1740638367295,
+      "contentHash": "ee5e32bed9c6ea0faaa9600d6a67a672",
+      "sourceName": "contracts/solidity/util/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../testing/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/proxy/ProxyControllerSimple.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "1b862c7d1fa54c0a1441bed71e85e950",
+      "sourceName": "contracts/solidity/proxy/ProxyControllerSimple.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../util/Ownable.sol",
+        "../interface/IAdminUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProxyControllerSimple"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/IAdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "657313e63ab114cbd5e3660411b633ff",
+      "sourceName": "contracts/solidity/interface/IAdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAdminUpgradeabilityProxy"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/proxy/ProxyController.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "fb026ecde141b3fd482a66ff8afe013d",
+      "sourceName": "contracts/solidity/proxy/ProxyController.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../util/Ownable.sol",
+        "../interface/IAdminUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProxyController"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/NFTXEligibilityManager.sol": {
+      "lastModificationDate": 1740638367288,
+      "contentHash": "1c7b8401f75d0d46b8b43db3a5f0da29",
+      "sourceName": "contracts/solidity/NFTXEligibilityManager.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interface/INFTXVaultFactory.sol",
+        "./interface/INFTXEligibility.sol",
+        "./util/OwnableUpgradeable.sol",
+        "./proxy/ClonesUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXEligibilityManager"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/NFTXEligibilityManager2.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "a79f622b69dbf299689f69a717fea140",
+      "sourceName": "contracts/solidity/testing/NFTXEligibilityManager2.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../NFTXEligibilityManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXEligibilityManager2"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/IVaultTokenUpgradeable.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "4b3399e3483852765335c456b14b41b3",
+      "sourceName": "contracts/solidity/interface/IVaultTokenUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/IERC20Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IVaultTokenUpgradeable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/token/IERC721Enumerable.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "fd8cc83ed5d637db3d1e5f631d9435d2",
+      "sourceName": "contracts/solidity/token/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/IPrevNftxContract.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "b497f9a187f4c1ea8035f1f853b1e00e",
+      "sourceName": "contracts/solidity/interface/IPrevNftxContract.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IPrevNftxContract"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXDeferEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "649cc0a4eaa2dcd3bdd6467a1905ef22",
+      "sourceName": "contracts/solidity/eligibility/NFTXDeferEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./NFTXEligibility.sol",
+        "../interface/IPrevNftxContract.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXDeferEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXUglyEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "e82e61d2e6eca95c740dfe0298827d39",
+      "sourceName": "contracts/solidity/eligibility/NFTXUglyEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./NFTXEligibility.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IPolymorph",
+        "NFTXUglyEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXRangeEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "a52f3ba3417265641e20ecdbd49f05bc",
+      "sourceName": "contracts/solidity/eligibility/NFTXRangeEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./NFTXEligibility.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXRangeEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXOpenseaEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "8f6041fdafe0ab37d54f370410f2b97f",
+      "sourceName": "contracts/solidity/eligibility/NFTXOpenseaEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./NFTXEligibility.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "NFTXOpenseaEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXGen0FastEligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "a19326cdd32b607c007004d040faefc8",
+      "sourceName": "contracts/solidity/eligibility/NFTXGen0FastEligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./NFTXEligibility.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "KittyCore",
+        "NFTXGen0FastKittyEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/eligibility/NFTXGen0Eligibility.sol": {
+      "lastModificationDate": 1740638367289,
+      "contentHash": "3a526b6cebf13296afa0f864e6cace77",
+      "sourceName": "contracts/solidity/eligibility/NFTXGen0Eligibility.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./NFTXEligibility.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "KittyCore",
+        "NFTXGen0KittyEligibility"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/interface/IUniswapV2Pair.sol": {
+      "lastModificationDate": 1740638367290,
+      "contentHash": "15668f73221c9398048fdf25b96d13c4",
+      "sourceName": "contracts/solidity/interface/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Pair"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/CryptoPunks.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "a1e00b2b258f9595d12b93471bc1cf68",
+      "sourceName": "contracts/solidity/testing/CryptoPunks.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "CryptoPunksMarket"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/DummyToken.sol": {
+      "lastModificationDate": 1740638367291,
+      "contentHash": "700babef1389c7c6a3aebc35eb650341",
+      "sourceName": "contracts/solidity/testing/DummyToken.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "DummyToken"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/EnumerableMap.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "c0b43f8a087acc75648a660da90f6b03",
+      "sourceName": "contracts/solidity/testing/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./EnumerableSet.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/EnumerableSet.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "7496b450611f88f3d6c93020b3822e51",
+      "sourceName": "contracts/solidity/testing/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/testing/SafeMath.sol": {
+      "lastModificationDate": 1740638367292,
+      "contentHash": "3d9132469d0042bf0322eb9ceee5a61e",
+      "sourceName": "contracts/solidity/testing/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/mingyue/sub_contract_content/Web3Bugs/contracts/69/nftx-protocol-v2/contracts/solidity/util/EnumerableMapUpgradeable.sol": {
+      "lastModificationDate": 1740638367294,
+      "contentHash": "3f0718dff36a2b2a508b7df4ea8148ea",
+      "sourceName": "contracts/solidity/util/EnumerableMapUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSetUpgradeable"
+      ]
+    }
+  }
+}

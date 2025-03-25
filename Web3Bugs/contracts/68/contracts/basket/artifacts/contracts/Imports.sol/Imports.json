@@ -1,0 +1,50 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Imports",
+  "sourceName": "contracts/Imports.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "diamondCutFacet",
+      "outputs": [
+        {
+          "internalType": "contract DiamondCutFacet",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "diamondLoupeFacet",
+      "outputs": [
+        {
+          "internalType": "contract DiamondLoupeFacet",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ownershipFacet",
+      "outputs": [
+        {
+          "internalType": "contract OwnershipFacet",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060d28061001f6000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c80630c53b2bd146041578063a051e9b3146063578063befddd1c146069575b600080fd5b6047606f565b604080516001600160a01b039092168252519081900360200190f35b6047607e565b6047608d565b6002546001600160a01b031681565b6000546001600160a01b031681565b6001546001600160a01b03168156fea2646970667358221220c31ea41366cad7012828101b4afc802517121c1207d16fb343eedfb9d6c7bd6464736f6c63430007050033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c80630c53b2bd146041578063a051e9b3146063578063befddd1c146069575b600080fd5b6047606f565b604080516001600160a01b039092168252519081900360200190f35b6047607e565b6047608d565b6002546001600160a01b031681565b6000546001600160a01b031681565b6001546001600160a01b03168156fea2646970667358221220c31ea41366cad7012828101b4afc802517121c1207d16fb343eedfb9d6c7bd6464736f6c63430007050033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
